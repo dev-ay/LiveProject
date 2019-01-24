@@ -135,8 +135,8 @@
 3433 Fix runtime errors
 
 > Details:  
-> -Occasionally the delete button would show for a brand-new selection.  
-> -Occasionally the times in the input fields would mismatch the onscreen event. 
+>   \- Occasionally the delete button would show for a brand-new selection.  
+> \ \ \- Occasionally the times in the input fields would mismatch the onscreen event. 
 
 3432 Implement calendar event resizing feature
 
@@ -158,8 +158,8 @@
 3436 Round event start and end times to the nearest 15 minute increments: 
 
 > Details:  
-> -Date pickers in browsers such as Edge do not restrict time values.  Therefore, when the user attempts to save an event, round the times to the nearest 15 minute increments.   
-> -For browsers that do support value control, such as Chrome, cause time to change 15 minutes at a time. 
+>   - Date pickers in browsers such as Edge do not restrict time values.  Therefore, when the user attempts to save an event, round the times to the nearest 15 minute increments.   
+> \ \ - For browsers that do support value control, such as Chrome, cause time to change 15 minutes at a time. 
 
 
 
