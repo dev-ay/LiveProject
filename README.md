@@ -1,9 +1,9 @@
 # Agile Live Project --> Schedule-It
 
 ## Table of Contents
-* [Technologies Used](# Technologies Used)
-* [Introduction](# Introduction)
-* [Stories](# Stories)
+* [Technologies Used](#Technologies-Used)
+* [Introduction](#Introduction)
+* [Stories](#Stories)
 
 ## Technologies Used
 **Languages:** C#, JavaScript, HTML, CSS
