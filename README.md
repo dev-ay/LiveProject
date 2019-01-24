@@ -5,6 +5,7 @@
 * [Introduction](#Introduction)
 * [Stories](#Stories)
 
+
 ## Technologies Used
   **Languages:** C#, JavaScript, HTML, CSS
   
@@ -14,7 +15,9 @@
   
   **Project Tools:** Visual Studio, SQL Server, Azure DevOps, Chrome Developer Tools
 
+
 ## Introduction
+
 
 
 ## Stories
