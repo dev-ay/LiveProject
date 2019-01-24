@@ -7,9 +7,9 @@
 
 
 ## Technologies Used
-  **Languages:** C#, JavaScript, HTML, CSS
+  **Languages:** C#, T-SQL, JavaScript, HTML, CSS
   
-  **Frameworks/Libraries:**  ASP.NET MVC, Entity Framework, T-SQL, jQuery, Bootstrap, FullCalendar, MomentJS
+  **Frameworks/Libraries:**  ASP.NET MVC, Entity Framework, jQuery, Bootstrap, FullCalendar, MomentJS
   
   **Version Control:** Git, GitHub, Team Foundation Server
   
