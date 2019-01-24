@@ -119,7 +119,7 @@
 3412 Make calendar events visually responsive
 
 > Details:  
->When a user makes adjustments to the start/end times of either an existing event or a brand-new selection, cause the event to update visually on the calendar while the edit modal is displayed.  However, if the user does not save the event and exits the modal, visually restore the event to the original state (i.e. existing event returns to original state, and brand-new selection disappears) 
+> When a user makes adjustments to the start/end times of either an existing event or a brand-new selection, cause the event to update visually on the calendar while the edit modal is displayed.  However, if the user does not save the event and exits the modal, visually restore the event to the original state (i.e. existing event returns to original state, and brand-new selection disappears) 
  
  
 3428 Add features in TimeOffEvents/Create and fix runtime errors: 
@@ -135,7 +135,7 @@
 3433 Fix runtime errors
 
 > Details:  
-> -Occasionally the delete button would show for a brand-new selection. 
+> -Occasionally the delete button would show for a brand-new selection.  
 > -Occasionally the times in the input fields would mismatch the onscreen event. 
 
 3432 Implement calendar event resizing feature
