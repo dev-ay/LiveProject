@@ -90,8 +90,9 @@
 > **Details:**
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
 
-<div style="background-color: green">
-### Solution:
+<div>
+<strong>Solution:<strong>
+<a href="">Test text</a>
 </div>
 
 ## 3192 clicking on a day on the calendar should pop up a modal
