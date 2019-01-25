@@ -91,12 +91,6 @@
 ## 3189 Make a few changes to the ScheduleTemplate / Create view  
 **Details:**  
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
-> //![Schedule-It Photo](/img/Schedule-It.JPG)
-<div>
-<strong><span style="color: green">Solution:</font></strong>
-<a href="">Test text</a>
-</div>
-
 ## 3192 clicking on a day on the calendar should pop up a modal
     ### Solution: 
 ## 3191 make the calendar display as just a one week view. you may need to do some research on fullcalendar
