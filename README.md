@@ -1,4 +1,7 @@
 ![Live Project Header](/img/SI-header.jpg)
+![Live Project Header](/img/SI-header.png)
+![Live Project Header](/img/SI-month.jpg)
+![Live Project Header](/img/SI-month.png)
 # AGILE MVC LIVE PROJECT: Schedule-It (..under construction...)
 
 ## TABLE OF CONTENTS
