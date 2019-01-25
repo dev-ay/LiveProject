@@ -69,10 +69,8 @@
 * 3157 On the TempSchedule controller, change the Create function so that the DateCreated property gets set to the current time
 * 3168 Remove the Payperiods / Details view. Dont forget to include your .csproj file with your changes
 * 3172 Implement the modal found in the TimeOff/Create view into the Schedule/Create view
-
 * 3178 On the Event model, make the End property nullable. This will require a migration
 * 3206 Revise the ScheduleTemplate model
-
 * 3176 On the TimeOffEvent controller, create a function that will generate a message for every admin in the user table. Only define the function, do not call it just yet
 * 3213 Add 3 admin users to the seed data. look at migrations > configuration
 
@@ -89,7 +87,7 @@
 ## 3189 Make a few changes to the ScheduleTemplate / Create view  
 **Details:**  
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
-> ![Schedule-It Photo](/img/Schedule-It.JPG)
+> //![Schedule-It Photo](/img/Schedule-It.JPG)
 <div>
 <strong><span style="color: green">Solution:</font></strong>
 <a href="">Test text</a>
