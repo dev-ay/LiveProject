@@ -87,11 +87,11 @@
       
 # FullCalendar Stories:
 ## 3189 Make a few changes to the ScheduleTemplate / Create view  
-> **Details:**
+**Details:**  
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
 
 <div>
-<strong><font color="green">Solution:</font></strong>
+<strong><span style="color: green">Solution:</font></strong>
 <a href="">Test text</a>
 </div>
 
@@ -107,7 +107,8 @@
     ### Solution: 
 ## 3194 The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers 
     ### Solution: 
-## 3209 Implement a mouse hand cursor on hover over calendar
+## 3209 Implement a mouse hand cursor on hover over calendar  
+> **Details:**  
 > When the user hovers over any of the calendars, the cursor should change to reflect that the calendar is clickable.  
 > This story is for all of the calendars.  This includes the schedule create view, the tempschedule create view, and the timeoffevent create view.  
 
