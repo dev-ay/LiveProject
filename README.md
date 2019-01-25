@@ -1,5 +1,6 @@
-# AGILE MVC LIVE PROJECT: Schedule-It (..under construction...)
 ![Live Project Header](/img/SI-header.jpg)
+# AGILE MVC LIVE PROJECT: Schedule-It (..under construction...)
+
 ## TABLE OF CONTENTS
 * [Technologies Used](#Technologies-Used)
 * [Introduction](#Introduction)
