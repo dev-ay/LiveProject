@@ -90,7 +90,7 @@
 > **Details:**
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
 
-<div>
+<div style="color:green">
 <strong>Solution:<strong>
 <a href="">Test text</a>
 </div>
