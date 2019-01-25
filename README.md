@@ -49,13 +49,13 @@
 * **Additional Enhancements**
   * Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
 ### Other Minor Stories:
-* 3108 Rename Model.ID 
-* 3109 Redirect "Manage" button 
-* 3111 Modify "Mail" button on the nav-bar 
-* 3113 Change ScheduleId type 
+* 3108 Rename Model.ID
+* 3109 Redirect "Manage" button
+* 3111 Modify "Mail" button on the nav-bar
+* 3113 Change ScheduleId type
 * 3121 Add a PayPeriod controller with views
 * 3110 Remove TemplateID from Schedule model
-* 3126 Add "Request Time Off" to nav menu 
+* 3126 Add "Request Time Off" to nav menu
 * 3127 Add a button to the navigation drop down to shift/create
 * 3131 Add a link to the navigation dropdown leading to the TempSchedule / Index page
 * 3130 On the Schedule model, change the UserId from a string to a Guid. This will require a migration
@@ -89,7 +89,7 @@
 ## 3189 Make a few changes to the ScheduleTemplate / Create view  
 **Details:**  
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
-
+> ![Schedule-It Photo](/img/Schedule-It.jpg)
 <div>
 <strong><span style="color: green">Solution:</font></strong>
 <a href="">Test text</a>
