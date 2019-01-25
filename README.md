@@ -89,7 +89,10 @@
 ## 3189 Make a few changes to the ScheduleTemplate / Create view  
 > **Details:**
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
-    ### Solution:  
+
+<div style="background-color: green">
+### Solution:
+</div>
 ## 3192 clicking on a day on the calendar should pop up a modal
     ### Solution: 
 ## 3191 make the calendar display as just a one week view. you may need to do some research on fullcalendar
@@ -105,6 +108,7 @@
 ## 3209 Implement a mouse hand cursor on hover over calendar
 > When the user hovers over any of the calendars, the cursor should change to reflect that the calendar is clickable.  
 > This story is for all of the calendars.  This includes the schedule create view, the tempschedule create view, and the timeoffevent create view.  
+
     ### Solution: 
 ## 3405 Implement CRUD operations on TimeOffEvents  
 > **Details:**  
@@ -112,26 +116,32 @@
 ## 3413 Create a details modal  
 > **Details:**  
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
+
     ### Solution: 
 ## 3408 Create delete feature  
 > **Details:**  
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
+
     ### Solution: 
 ## 3409 Enable reading and loading of events on calendar  
 > **Details:**  
 > Read entries from Events table pertaining to Time Off Events and populate the calendar  
+
     ### Solution: 
 ## 3410 Implement an events creation feature  
 > **Details:**  
 > When the user clicks a time slot on Calendar or selects a time range, open an edit modal with the corresponding start and end times pre-entered into time inputs  
+
     ### Solution: 
 ## 3411 Implement an update feature  
 > **Details:**  
 > When the user clicks on an existing event, open an edit modal with form inputs pre-populated with event data, and allow users to make changes, and a Save button to save and update that entry in the database.  Also include button to cancel the edit and to delete the event.  
+
     ### Solution: 
 ## 3412 Make calendar events visually responsive  
 > **Details:**  
 > When a user makes adjustments to the start/end times of either an existing event or a brand-new selection, cause the event to update visually on the calendar while the edit modal is displayed.  However, if the user does not save the event and exits the modal, visually restore the event to the original state (i.e. existing event returns to original state, and brand-new selection disappears) 
+
     ### Solution: 
 ## 3428 Add features in TimeOffEvents/Create and fix runtime errors  
 > **Details:**  
@@ -139,23 +149,28 @@
 ## 3437 Enable view persistence on calendar  
 > **Details:**  
 > Currently, whenever a change is made to the calendar, the view would return to the default, i.e. monthly view.  Implement a feature where if the user selects the weekly view, it will remain after changes are made to the calendar.  
+
     ### Solution: 
 ## 3433 Fix runtime errors  
 > **Details:**  
 > &nbsp;&nbsp;\- Occasionally the delete button would show for a brand-new selection.  
 > &nbsp;&nbsp;\- Occasionally the times in the input fields would mismatch the onscreen event.  
+
     ### Solution: 
 ## 3432 Implement calendar event resizing feature  
 > **Details:**  
 > When the user resizes an existing event, display the edit modal with updated start and end times pre-populated  
+
     ### Solution: 
 ## 3429 Implement calendar events drag and drop capabilities  
 > **Details:**  
 >When the user drags an existing event to a new time, display the edit modal with updated start and end times pre-populated  
+
     ### Solution: 
 ## 3434 Prevent edit modal from closing automatically if save is unsuccessful  
 > **Details:**  
 > Allow users to continue editing if a save attempt is unsuccessful, until the user closes the modal manually  
+
     ### Solution: 
 ## 3435 Prevent users from creating events shorter than 15 minutes  
     ### Solution: 
@@ -163,6 +178,7 @@
 > **Details:**  
 > &nbsp;&nbsp;\- Date pickers in browsers such as Edge do not restrict time values.  Therefore, when the user attempts to save an event, round the times to the nearest 15 minute increments.   
 > &nbsp;&nbsp;\- For browsers that do support value control, such as Chrome, cause time to change 15 minutes at a time.  
+
     ### Solution: 
 
 
