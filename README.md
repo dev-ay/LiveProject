@@ -93,6 +93,7 @@
 <div style="background-color: green">
 ### Solution:
 </div>
+
 ## 3192 clicking on a day on the calendar should pop up a modal
     ### Solution: 
 ## 3191 make the calendar display as just a one week view. you may need to do some research on fullcalendar
