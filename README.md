@@ -2,7 +2,7 @@
 
 # AGILE MVC LIVE PROJECT: Schedule-It (..under construction...)
 
-![Live Project Header](/img/SI-header-month.png)
+![Live Project Header](/img/SI-header-week.png)
 
 ## TABLE OF CONTENTS
 * [Technologies Used](#Technologies-Used)
@@ -92,17 +92,17 @@
 **Details:**  
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
 ## 3192 clicking on a day on the calendar should pop up a modal
-    ### Solution: 
+### Solution: 
 ## 3191 make the calendar display as just a one week view. you may need to do some research on fullcalendar
-    ### Solution: 
+### Solution: 
 ## 3190 Remove the notes input box and the create button
-    ### Solution: 
+### Solution: 
 ## 3195 The modal should have a checkbox for "Day Off" 
-    ### Solution: 
+### Solution: 
 ## 3193 the modal should have an input for start and end time 
-    ### Solution: 
+### Solution: 
 ## 3194 The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers 
-    ### Solution: 
+### Solution: 
 ## 3209 Implement a mouse hand cursor on hover over calendar  
 > **Details:**  
 > When the user hovers over any of the calendars, the cursor should change to reflect that the calendar is clickable.  
