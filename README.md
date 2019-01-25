@@ -1,5 +1,4 @@
-# Agile MVC Live Project --> Schedule-It
-# (Under Construction...)
+# **Agile MVC Live Project: Schedule-It (..Under Construction...)**
 
 ## TABLE OF CONTENTS
 * [Technologies Used](#Technologies-Used)
@@ -87,11 +86,11 @@
       
 # FullCalendar Stories:
 ## 3405 Implement CRUD operations on TimeOffEvents  
-> **Details:**  
-> Parent story.  See 3408, 3409, 3410, 3411, 3412, 3413  
+ > **Details:**  
+ > Parent story.  See 3408, 3409, 3410, 3411, 3412, 3413  
 ## 3413 Create a details modal  
 > **Details:**  
-> When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
+  > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
 ## 3408 Create delete feature  
 > **Details:**  
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
