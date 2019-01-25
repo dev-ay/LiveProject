@@ -1,4 +1,4 @@
-# **Agile MVC Live Project: Schedule-It (..Under Construction...)**
+# AGILE MVC LIVE PROJECT: Schedule-It (..under construction...)
 
 ## TABLE OF CONTENTS
 * [Technologies Used](#Technologies-Used)
@@ -41,7 +41,8 @@
   
 * **Additional Enhancements**
   * Update TimeOffEvent Approval Status From Database When DetailsModal Opens
-### Other Minor Stories:   
+### Other Minor Stories:
+* **
   * 3108 Rename Model.ID 
   * 3109 Redirect "Manage" button 
   * 3111 Modify "Mail" button on the nav-bar 
