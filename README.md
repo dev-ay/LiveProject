@@ -86,11 +86,11 @@
       
 # FullCalendar Stories:
 ## 3405 Implement CRUD operations on TimeOffEvents  
-    > **Details:**  
-    > Parent story.  See 3408, 3409, 3410, 3411, 3412, 3413  
+> **Details:**  
+> Parent story.  See 3408, 3409, 3410, 3411, 3412, 3413  
 ## 3413 Create a details modal  
-        > **Details:**  
-        > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
+> **Details:**  
+> When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
 ## 3408 Create delete feature  
 > **Details:**  
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
@@ -143,49 +143,50 @@
 
 
 
-### Other Minor Stories
-3108 Under Views\Schedule\Create.cshtml change Model.ID to Model.Id 
-3109 "Manage" button under the navigation button should bring you to the manage index view, not the schedule index view. 
-3111 Remove the text from the mail button on the nav-bar. It should just be an icon. 
-3113 On the ScheduledWorkPeriod model, change the ScheduleId to be a Guid type. 
-3121 Add a PayPeriod controller with views for Index, Create, Delete, Edit etc. 
+# Other Minor Stories
+## 3108 Under Views\Schedule\Create.cshtml change Model.ID to Model.Id 
+## 3109 "Manage" button under the navigation button should bring you to the manage index view, not the schedule index view. 
+## 3111 Remove the text from the mail button on the nav-bar. It should just be an icon. 
+## 3113 On the ScheduledWorkPeriod model, change the ScheduleId to be a Guid type. 
+## 3121 Add a PayPeriod controller with views for Index, Create, Delete, Edit etc. 
  
-3110 Remove TemplateID from schedule model.  This change will require a migration. 
-3126 Add a link to the navigation drop-down titled "Request Time Off" that takes the user to the TimeOffEvent / Create page 
-3127 Add a button to the navigation drop down to shift/create. 
-3131 Add a link to the navigation dropdown leading to the TempSchedule / Index page: 
-3130 On the Schedule model, change the UserId from a string to a Guid. This will require a migration: 
-3141 On the PayPeriods / Create view, add some text to the "Pay Period Length" label so that is says "Pay Period Length (Days)" 
-3137 Fix the Schedule / Create bug 
-3135 On the TimeOffEvent Create view, remove the input boxes from the top 
-3134 Fix the Messages / Inbox bug 
-3142 On the Message controller, change the create method so that DateSent is set to the current time. 
-3143 Fix the Message / Create bug 
-3145 On the index/home view, Remove the clock out button and make the clock in button say simply "Clock".  Then center all content on home/index view. 
-3157 On the TempSchedule controller, change the Create function so that the DateCreated property gets set to the current time.  
-3168 Remove the Payperiods / Details view. Dont forget to include your .csproj file with your changes. 
-3172 Implement the modal found in the TimeOff/Create view into the Schedule/Create view.  
-3174 Add a one week fullCalendar to the tempSchedule/Create view. 
-3178 On the Event model, make the End property nullable. This will require a migration. 
-3206 Revise the ScheduleTemplate model. See Description:   
-Properties should look somewhat like the schedule model. 
- 
-[key] guid Id 
-string Title 
-List<ScheduledWorkPeriod> ScheduledWorkPeriods 
- 
-dont forget migration 
-3189 Make a few changes to the ScheduleTemplate / Create view. See Tasks 
-3192 clicking on a day on the calendar should pop up a modal 
-3191 make the calendar display as just a one week view. you may need to do some research on fullcalendar 
-3190 Remove the notes input box and the create button 
-3195 The modal should have a checkbox for "Day Off" 
-3193 the modal should have an input for start and end time 
-3194 The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers 
-3176 On the TimeOffEvent controller, create a function that will generate a message for every admin in the user table. Only define the function, do not call it just yet. 
-3213 Add 3 admin users to the seed data. look at migrations > configuration 
-3209 When the user hovers over any of the calendars, the cursor should change to reflect that the calendar is clickable.  See Description.:  This story is for all of the calendars.  This includes the schedule create view, the tempschedule create view, and the timeoffevent create view.   
-3210 Add hover functionality to all calendars. 
+## 3110 Remove TemplateID from schedule model.  This change will require a migration. 
+## 3126 Add a link to the navigation drop-down titled "Request Time Off" that takes the user to the TimeOffEvent / Create page 
+## 3127 Add a button to the navigation drop down to shift/create. 
+## 3131 Add a link to the navigation dropdown leading to the TempSchedule / Index page: 
+## 3130 On the Schedule model, change the UserId from a string to a Guid. This will require a migration: 
+## 3141 On the PayPeriods / Create view, add some text to the "Pay Period Length" label so that is says "Pay Period Length (Days)" 
+## 3137 Fix the Schedule / Create bug 
+## 3135 On the TimeOffEvent Create view, remove the input boxes from the top 
+## 3134 Fix the Messages / Inbox bug 
+## 3142 On the Message controller, change the create method so that DateSent is set to the current time. 
+## 3143 Fix the Message / Create bug 
+## 3145 On the index/home view, Remove the clock out button and make the clock in button say simply "Clock".  Then center all content on home/index view. 
+## 3157 On the TempSchedule controller, change the Create function so that the DateCreated property gets set to the current time.  
+## 3168 Remove the Payperiods / Details view. Dont forget to include your .csproj file with your changes. 
+## 3172 Implement the modal found in the TimeOff/Create view into the Schedule/Create view.  
+## 3174 Add a one week fullCalendar to the tempSchedule/Create view. 
+## 3178 On the Event model, make the End property nullable. This will require a migration. 
+## 3206 Revise the ScheduleTemplate model  
+> **Details:**
+> Properties should look somewhat like the schedule model. 
+> [key] guid Id 
+> string Title 
+> List<ScheduledWorkPeriod> ScheduledWorkPeriods 
+> dont forget migration  
+## 3189 Make a few changes to the ScheduleTemplate / Create view. See Tasks 
+> **Details:**
+> Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
+## 3192 clicking on a day on the calendar should pop up a modal 
+## 3191 make the calendar display as just a one week view. you may need to do some research on fullcalendar 
+## 3190 Remove the notes input box and the create button 
+## 3195 The modal should have a checkbox for "Day Off" 
+## 3193 the modal should have an input for start and end time 
+## 3194 The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers 
+## 3176 On the TimeOffEvent controller, create a function that will generate a message for every admin in the user table. Only define the function, do not call it just yet. 
+## 3213 Add 3 admin users to the seed data. look at migrations > configuration 
+## 3209 When the user hovers over any of the calendars, the cursor should change to reflect that the calendar is clickable.  See Description.:  This story is for all of the calendars.  This includes the schedule create view, the tempschedule create view, and the timeoffevent create view.   
+## 3210 Add hover functionality to all calendars. 
 
 
 
