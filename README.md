@@ -3,7 +3,7 @@
 # AGILE MVC LIVE PROJECT: Schedule-It (..under construction...)
 
 <p align="center">
-  <img src="https://github.com/dev-ay/img/SI-header-week.png" alt="Live Project Header"/>
+  <img src="/img/SI-header-week.png" alt="Live Project Header"/>
 </p>
 
 ## TABLE OF CONTENTS
