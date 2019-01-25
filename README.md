@@ -1,8 +1,8 @@
-![Live Project Header](/img/SI-header-week.jpg)
-![Live Project Header](/img/SI-header-week.png)
-![Live Project Header](/img/SI-header-month.jpg)
-![Live Project Header](/img/SI-header-month.png)
+
+
 # AGILE MVC LIVE PROJECT: Schedule-It (..under construction...)
+
+![Live Project Header](/img/SI-header-month.png)
 
 ## TABLE OF CONTENTS
 * [Technologies Used](#Technologies-Used)
