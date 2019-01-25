@@ -2,7 +2,9 @@
 
 # AGILE MVC LIVE PROJECT: Schedule-It (..under construction...)
 
-![Live Project Header](/img/SI-header-week.png)
+<p align="center">
+  <img src="https://github.com/dev-ay/img/SI-header-week.png" alt="Live Project Header"/>
+</p>
 
 ## TABLE OF CONTENTS
 * [Technologies Used](#Technologies-Used)
