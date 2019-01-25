@@ -75,6 +75,7 @@
 * 3157-Set TempSchedule/Create DateCreated to the current time
 * 3168-Remove the Payperiods/Details view
 * 3172-Implement Schedule/Create modal
+* 3174-Add a one week FullCalendar to the TempSchedule/Create view
 * 3178-Make Event model End property nullable
 * 3206-Revise the ScheduleTemplate model
 * 3176-Implement message-all feature in TimeOffEvent controller
@@ -205,21 +206,6 @@ On the ScheduledWorkPeriod model, change the ScheduleId to be a Guid type
 ## 3131-Add TempSchedule/Index to nav menu
 > **Details:**
 > Add a link to the navigation dropdown leading to the TempSchedule / Index page
-
-
-
-
-* 3157-
-* 3168-
-* 3172-
-3174????
-* 3178-
-* 3206
-* 3176-
-* 3213-Add 3 more admin users to the seed data
-
-
-
 ## 3130-Change Schedule model UserId type
 > **Details:**
 > On the Schedule model, change the UserId from a string to a Guid. This will require a migration
@@ -247,7 +233,7 @@ On the ScheduledWorkPeriod model, change the ScheduleId to be a Guid type
 ## 3172-Implement Schedule/Create modal
 > **Details:**
 > Implement the modal found in the TimeOff/Create view into the Schedule/Create view
-## 3174-
+## 3174-Add a one week FullCalendar to the TempSchedule/Create view. 
 > **Details:**
 > Add a one week fullCalendar to the tempSchedule/Create view
 ## 3178-Make Event model End property nullable
