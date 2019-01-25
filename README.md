@@ -1,9 +1,8 @@
+# AGILE MVC LIVE PROJECT: Schedule-It (..under construction...)
+
 <p align="center">
   <img src="/img/SI-header.png" alt="Live Project Header"/>
 </p>
-
-# AGILE MVC LIVE PROJECT: Schedule-It (..under construction...)
-
 
 
 ## TABLE OF CONTENTS
