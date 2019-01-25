@@ -91,7 +91,7 @@
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
 
 <div>
-<font color="green"><strong>Solution:<strong></font>
+<strong><font color="green">Solution:</font></strong>
 <a href="">Test text</a>
 </div>
 
