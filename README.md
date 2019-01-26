@@ -1,4 +1,4 @@
-# AGILE FULLSTACK MVC LIVE PROJECT: Schedule-It 
+# AGILE FULLSTACK MVC LIVE PROJECT:&nbsp;&nbsp;Schedule-It 
 ### (...Page still under construction. Please check back for updates...)
 
 <p align="center">
