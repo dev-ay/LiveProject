@@ -94,7 +94,7 @@ ___
 ___
 
 ## OVERVIEW
-This is an agile live project I participated in at the Tech Academy for a production clock-in software.  
+This is an Agile/SCRUM live project that I participated in at the Tech Academy for a production clock-in software.  The overall project occurs over many months, but my participation was for a single 2-week sprint.  This Readme only lists the stories assigned to me.
 
 **Product Features:**  
 <img align="right" src="/img/SI-Day-Week-tiny.png" alt="Calendar Thumbnail"/>
