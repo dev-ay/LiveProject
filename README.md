@@ -215,6 +215,7 @@ For the highlights of my work on this live project I recommend you jump to the f
 > &nbsp;&nbsp;\- For browsers that do support value control, such as Chrome, cause time to change 15 minutes at a time.  
 ### Solution: 
 ## Additional Enhancements:
+> Parent story.  Please see the following sub-stories
 ## Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
 ### Solution: 
 ## Modify Test Entries in Seed Data To Begin Dynamically On Current Week  
