@@ -26,7 +26,7 @@
 This is an agile live project I participated in at the Tech Academy for a production clock-in software.  
 
 **Product Features:**  
-<img align="right" src="/img/SI-Day-Week-tiny.png" alt="Calendar Thumbnail" border='1'/>
+<img align="right" src="/img/SI-Day-Week-tiny.png" alt="Calendar Thumbnail" border='10'/>
 The ultimate scope of the end product was an employee clock-in fullstack MVC web application with the following features:
   * Users can clock-in their work time
   * Users can request time off and admins can view requests and approve
