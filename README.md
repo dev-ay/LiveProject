@@ -9,8 +9,8 @@
 ## TABLE OF CONTENTS
 1. [Technologies Used](#Technologies-Used)  
 2. [Overview](#Overview)  
-3. [Stories](#Stories)  
-* ###FullCalendar Stories:  
+3. [Stories](#Stories)
+* ### FullCalendar Stories:  
   * **3174-Add a one week fullCalendar to the tempSchedule/Create view**  
   * **3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks**  
     * 3192-clicking on a day on the calendar should pop up a modal
@@ -40,7 +40,7 @@
     * Modify Test Entries in Seed Data To Begin Dynamically On Current Week
     * Modify calendar display preperties based on viewport size
     * Implement persistence of displayed time range across sessions
-* ###Other Minor Stories:  
+* ### Other Minor Stories:  
   * **3108-Rename Model.ID**
   * **3109-Redirect "Manage" button**
   * **3111-Modify "Mail" button on the nav-bar**
