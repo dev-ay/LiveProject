@@ -9,7 +9,7 @@
 ## TABLE OF CONTENTS
 1. **[TECHNOLOGIES USED](#Technologies-Used)**
 2. **[OVERVIEW](#Overview)**
-3. **[FULLCALENDAR STORIES](#Stories)**
+3. **[FULLCALENDAR STORIES](#FULLCALENDAR-STORIES)**
   * 3174-Add a one week fullCalendar to the tempSchedule/Create view
   * 3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks
     * 3192-clicking on a day on the calendar should pop up a modal
@@ -158,7 +158,8 @@ For the highlights of my work on this live project I recommend you jump to the f
 ## 3405-Implement CRUD operations on TimeOffEvents  
 > **Details:**  
 > Parent story.  See 3408, 3409, 3410, 3411, 3412, 3413  
-[TOC](#TABLE-OF-CONTENTS) > [FULLCALENDAR STORIES](#FULLCALENDAR-STORIES)
+
+*Path: [TOC](#TABLE-OF-CONTENTS) > [FULLCALENDAR STORIES](#FULLCALENDAR-STORIES)*
 ## 3413-Create a details modal  
 > **Details:**  
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
