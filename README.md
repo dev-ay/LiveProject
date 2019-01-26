@@ -5,15 +5,13 @@
   <img src="/img/SI-header.png" alt="Live Project Header"/>
 </p>
 
-
-
+<br/><br/>
 ## TABLE OF CONTENTS
 * [Technologies Used](#Technologies-Used)
 * [Summary](#Summary)
 * [Stories](#Stories)
 
-
-
+<br/><br/>
 ## TECHNOLOGIES USED
   **Languages:** C#, T-SQL, JavaScript, HTML, CSS
   
@@ -23,13 +21,11 @@
   
   **Project Tools:** Visual Studio, SQL Server, Azure DevOps, Chrome Developer Tools, Edge Developer Tools, Google Hangout, Slack
 
-
-
+<br/><br/>
 ## SUMMARY
 <img align="right" src="/img/test.png" alt="Test Image"/>
 This is an agile live project I participated in at the Tech Academy for a production clock-in software.  
-
-
+<br/><br/>
 **Product Features:**  
 The ultimate scope of the end product was an employee clock-in fullstack MVC web application with the following features:
   * Users can clock-in their work time
@@ -42,7 +38,7 @@ The ultimate scope of the end product was an employee clock-in fullstack MVC web
   * Implement user authentification
   * Various other features
   * See [Technologies Used](#Technologies-Used) for the underlying technologies utilized  
-  
+
 **Project Format:**
 This was a multiple-month SCRUM project.  At the time of my participation, there were around 15 members on the team, many of them remote.  We held daily stand-up meetings over Google Hangout discussing our progress from the previous day and upcoming tasks.  We also held occassional story-building sessions to discuss and brainstorm overall product features and design.  Team members sought and offered help from and to one another through Slack.  We used Microsoft's Azure DevOps online project management system to track each story through "New", "Active", "Resolved", and "Closed" phases. During the first half of my sprint we used Microsoft's Team Foundation Server version control system to make commits and merge every team member's work.  During the second half we migrated over to Git version control instead.  
 The structure of the software is an ASP.NET MVC Application using Code-First Entity Framework to manage a SQL Server database.  We used Visual Studio Community for development with version control extensions. See [Technologies Used](#Technologies-Used) for the software technologies used.  
