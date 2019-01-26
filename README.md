@@ -68,6 +68,8 @@ ___
   * [3176-Implement message-all feature in TimeOffEvent controller][3176]
   * [3213-Add 3 more admin users to the seed data][3213]
 
+<br />
+
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) >*
 
 <br/>
@@ -82,6 +84,8 @@ ___
   **Version Control:**&nbsp;&nbsp;Git, Team Foundation Server
   
   **Project Tools:**&nbsp;&nbsp;Visual Studio, SQL Server, Azure DevOps, Chrome Developer Tools, Edge Developer Tools, Google Hangout, Slack  
+
+<br />
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [Technologies Used](#TECHNOLOGIES-USED) >*
 
@@ -140,6 +144,8 @@ For the highlights of my work on this live project I recommend you jump to the f
 *Note: The 4-digit number in front of each story is the associated work item number from the version control systems.   I have listed the stories in the order in which I completed them or by context, so you will often notice the numbers being listed out of numeric order.*
 
 *Note: Per request from end customer I will not be uploading source code files to my GitHub repository.  However, I have permission to include code snippets and screenshots in this readme file.*
+
+<br />
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [Overview](#OVERVIEW) >*
 
