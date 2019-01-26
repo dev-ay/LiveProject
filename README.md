@@ -37,7 +37,7 @@ ___
   * 3434-Prevent Edit Modal From Closing Automatically If Save Is Unsuccessful
   * 3435-Prevent Users From Creating Events Shorter Than 15 Minutes
   * 3436-Found Event Start and End Times to the Nearest 15 Minute Increments  
-* Additional Enhancements
+* [Additional Enhancements](#Additional-Enhancements)
   * Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
   * Modify Test Entries in Seed Data To Begin Dynamically On Current Week
   * Modify calendar display preperties based on viewport size
@@ -76,13 +76,13 @@ ___
 ___
 
 ## TECHNOLOGIES USED
-  **Languages:** C#, T-SQL, JavaScript, HTML, CSS
+  **Languages:**&nbsp;&nbsp;C#, T-SQL, JavaScript, HTML, CSS
   
-  **Frameworks/Libraries:**  ASP.NET MVC, Entity Framework, jQuery, Bootstrap, FullCalendar, MomentJS
+  **Frameworks/Libraries:**&nbsp;&nbsp;ASP.NET MVC, Entity Framework, jQuery, Bootstrap, FullCalendar, MomentJS
   
-  **Version Control:** Git, Team Foundation Server
+  **Version Control:**&nbsp;&nbsp;Git, Team Foundation Server
   
-  **Project Tools:** Visual Studio, SQL Server, Azure DevOps, Chrome Developer Tools, Edge Developer Tools, Google Hangout, Slack  
+  **Project Tools:**&nbsp;&nbsp;Visual Studio, SQL Server, Azure DevOps, Chrome Developer Tools, Edge Developer Tools, Google Hangout, Slack  
 
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Technologies Used](#TECHNOLOGIES-USED)*
 
