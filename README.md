@@ -87,10 +87,10 @@ For the highlights of my work on this live project I recommend you jump to the f
   * Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
   * Modify Test Entries in Seed Data To Begin Dynamically On Current Week
 ### Other Minor Stories:
-* 3108-Rename Model.ID
-* 3109-Redirect "Manage" button
-* 3111-Modify "Mail" button on the nav-bar
-* 3113-Change ScheduleId type
+  * 3108-Rename Model.ID
+  * 3109-Redirect "Manage" button
+* * 3111-Modify "Mail" button on the nav-bar
+* * 3113-Change ScheduleId type
 * 3121-Add a PayPeriod controller with views
 * 3110-Remove TemplateID from Schedule model
 * 3126-Add "Request Time Off" to nav menu
