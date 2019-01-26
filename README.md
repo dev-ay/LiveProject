@@ -28,7 +28,7 @@ ___
   * [3409-Enable Reading and Loading of Events on Calendar][3409]
   * [3410-Implement an Events Creation Feature][3410]
   * [3411-Implement an Update Feature][3411]
-  * [3412-Make Calendar Events Visually Responsive][3432]
+  * [3412-Make Calendar Events Visually Responsive][3412]
 * [3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors][3428]
   * [3437-Enable View Persistence on Calendar][3437]
   * [3433-Fix Runtime Errors][3433]
@@ -462,8 +462,8 @@ ___
 [3409]:#3409-enable-reading-and-loading-of-events-on-calendar
 [3410]:#3410-implement-an-events-creation-feature
 [3411]:#3411-implement-an-update-feature
-[3412]:
-[3432]:
+[3412]:#3412-make-calendar-events-visually-responsive
+[3432]:#3432-implement-calendar-event-resizing-feature
 [3428]:#3428-add-features-in-timeoffeventscreate-and-fix-runtime-errors
 [3437]:#3437-enable-view-persistence-on-calendar
 [3433]:#3433-fix-runtime-errors
