@@ -43,30 +43,30 @@ ___
   * [Modify calendar display preperties based on viewport size][C]
   * [Implement persistence of displayed time range across sessions][D]
 4. **[OTHER STORIES](#OTHER-STORIES)**
-  * 3108-Rename Model.ID
-  * 3109-Redirect "Manage" button
-  * 3111-Modify "Mail" button on the nav-bar
-  * 3113-Change ScheduleId type
-  * 3121-Add a PayPeriod controller with views
-  * 3110-Remove TemplateID from Schedule model
-  * 3126-Add "Request Time Off" to nav menu
-  * 3127-Add Shift/Create to nav menu
-  * 3131-Add TempSchedule/Index to nav menu
-  * 3130-Change Schedule model UserId type
-  * 3141-Modify "Pay Period Length" label
-  * 3137-Fix the Schedule/Create bug
-  * 3135-Remove Inputs boxes from TimeOffEvent/Create
-  * 3134-Fix the Messages/Inbox bug
-  * 3142-Set Message/Create DateSent to the current time
-  * 3143-Fix the Message/Create bug
-  * 3145-Rearrange and modify Home/Index view
-  * 3157-Set TempSchedule/Create DateCreated to the current time
-  * 3168-Remove the Payperiods/Details view
-  * 3172-Implement Schedule/Create modal
-  * 3178-Make Event model End property nullable
-  * 3206-Revise the ScheduleTemplate model
-  * 3176-Implement message-all feature in TimeOffEvent controller
-  * 3213-Add 3 more admin users to the seed data
+  * [3108-Rename Model.ID][3108]
+  * [3109-Redirect "Manage" button][3109]
+  * [3111-Modify "Mail" button on the nav-bar][3111]
+  * [3113-Change ScheduleId type][3113]
+  * [3121-Add a PayPeriod controller with views][3121]
+  * [3110-Remove TemplateID from Schedule model][3110]
+  * [3126-Add "Request Time Off" to nav menu][3126]
+  * [3127-Add Shift/Create to nav menu][3127]
+  * [3131-Add TempSchedule/Index to nav menu][3131]
+  * [3130-Change Schedule model UserId type][3130]
+  * [3141-Modify "Pay Period Length" label][3141]
+  * [3137-Fix the Schedule/Create bug][3137]
+  * [3135-Remove Inputs boxes from TimeOffEvent/Create][3135]
+  * [3134-Fix the Messages/Inbox bug][3134]
+  * [3142-Set Message/Create DateSent to the current time][3142]
+  * [3143-Fix the Message/Create bug][3143]
+  * [3145-Rearrange and modify Home/Index view][3145]
+  * [3157-Set TempSchedule/Create DateCreated to the current time][3157]
+  * [3168-Remove the Payperiods/Details view][3168]
+  * [3172-Implement Schedule/Create modal][3172]
+  * [3178-Make Event model End property nullable][3178]
+  * [3206-Revise the ScheduleTemplate model][3206]
+  * [3176-Implement message-all feature in TimeOffEvent controller][3176]
+  * [3213-Add 3 more admin users to the seed data][3213]
 
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) >*
 
@@ -475,6 +475,32 @@ ___
 [B]:#modify-test-entries-in-seed-data-to-begin-dynamically-on-current-week
 [C]:#modify-calendar-display-preperties-based-on-viewport-size
 [D]:#implement-persistence-of-displayed-time-range-across-sessions
+
+[3108]:#3108-rename-modelid
+[3109]:#3109-redirect-manage-button
+[3111]:#3111-modify-mail-button-on-the-nav-bar
+[3113]:#3113-change-scheduleid-type
+[3121]:#3121-add-a-payperiod-controller-with-views
+[3110]:#3110-remove-templateid-from-schedule-model
+[3126]:#3126-add-request-time-off-to-nav-menu
+[3127]:#3127-add-shiftcreate-to-nav-menu
+[3131]:#3131-add-tempscheduleindex-to-nav-menu
+[3130]:#3130-change-schedule-model-userid-type
+[3141]:#3141-modify-pay-period-length-label
+[3137]:#3137-fix-the-schedulecreate-bug
+[3135]:#3135-remove-inputs-boxes-from-timeoffeventcreate
+[3134]:#3134-fix-the-messagesinbox-bug
+[3142]:#3142-set-messagecreate-datesent-to-the-current-time
+[3143]:#3143-fix-the-messagecreate-bug
+[3145]:#3145-rearrange-and-modify-homeindex-view
+[3157]:#3157-set-tempschedulecreate-datecreated-to-the-current-time
+[3168]:#3168-remove-the-payperiodsdetails-view
+[3172]:#3172-implement-schedulecreate-modal
+[3178]:#3178-make-event-model-end-property-nullable
+[3206]:#3206-revise-the-scheduletemplate-model
+[3176]:#3176-implement-message-all-feature-in-timeoffevent-controller
+[3213]:#3213-add-3-more-admin-users-to-the-seed-data
+
 
 
 
