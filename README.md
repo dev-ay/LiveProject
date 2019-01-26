@@ -76,7 +76,7 @@ ___
 ___
 
 ## TECHNOLOGIES USED
-  **Languages:**&nbsp;&nbsp;C#, T-SQL, JavaScript, HTML, CSS
+  **Languages:**&nbsp;&nbsp;C#, T-SQL, JavaScript, HTML, [CSS]
   
   **Frameworks/Libraries:**&nbsp;&nbsp;ASP.NET MVC, Entity Framework, jQuery, Bootstrap, FullCalendar, MomentJS
   
@@ -87,6 +87,8 @@ ___
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Technologies Used](#TECHNOLOGIES-USED) >*
 
 <br/>
+
+[CSS]: (#TABLE-OF-CONTENTS)
 
 ___
 
