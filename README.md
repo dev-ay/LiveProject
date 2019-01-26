@@ -69,7 +69,7 @@ ___
   * 3176-Implement message-all feature in TimeOffEvent controller
   * 3213-Add 3 more admin users to the seed data
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) >*
 
 <br/>
 
@@ -84,7 +84,7 @@ ___
   
   **Project Tools:**&nbsp;&nbsp;Visual Studio, SQL Server, Azure DevOps, Chrome Developer Tools, Edge Developer Tools, Google Hangout, Slack  
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Technologies Used](#TECHNOLOGIES-USED)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Technologies Used](#TECHNOLOGIES-USED) >*
 
 <br/>
 
@@ -136,7 +136,7 @@ For the highlights of my work on this live project I recommend you jump to the f
   * 3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors
   * Additional Enhancements
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Overview](#OVERVIEW)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Overview](#OVERVIEW) >*
 
 <br/>
 
@@ -148,90 +148,90 @@ ___
 **Details:**  
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3192-clicking on a day on the calendar should pop up a modal
 ### Solution: 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3191-Make the calendar display as just a one week view. you may need to do some research on fullcalendar
 ### Solution: 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3190-Remove the notes input box and the create button
 ### Solution: 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3195-The modal should have a checkbox for "Day Off" 
 ### Solution: 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3193 the modal should have an input for start and end time 
 ### Solution: 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3194-The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers 
 ### Solution: 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3209-Implement a mouse hand cursor on hover over calendar  
 > **Details:**  
 > When the user hovers over any of the calendars, the cursor should change to reflect that the calendar is clickable.  
 > This story is for all of the calendars.  This includes the schedule create view, the tempschedule create view, and the timeoffevent create view.  
 ### Solution: 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3405-Implement CRUD operations on TimeOffEvents  
 > **Details:**  
 > Parent story.  See 3408, 3409, 3410, 3411, 3412, 3413  
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3413-Create a details modal  
 > **Details:**  
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3408-Create delete feature  
 > **Details:**  
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3409-Enable reading and loading of events on calendar  
 > **Details:**  
 > Read entries from Events table pertaining to Time Off Events and populate the calendar  
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3410-Implement an events creation feature  
 > **Details:**  
 > When the user clicks a time slot on Calendar or selects a time range, open an edit modal with the corresponding start and end times pre-entered into time inputs  
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3411-Implement an update feature  
 > **Details:**  
 > When the user clicks on an existing event, open an edit modal with form inputs pre-populated with event data, and allow users to make changes, and a Save button to save and update that entry in the database.  Also include button to cancel the edit and to delete the event.  
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3412-Make calendar events visually responsive  
 > **Details:**  
 > When a user makes adjustments to the start/end times of either an existing event or a brand-new selection, cause the event to update visually on the calendar while the edit modal is displayed.  However, if the user does not save the event and exits the modal, visually restore the event to the original state (i.e. existing event returns to original state, and brand-new selection disappears) 
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3428-Add features in TimeOffEvents/Create and fix runtime errors  
 > **Details:**  
 > Parent story.  See 3429, 3432, 3433, 3434, 3435, 3436, 3437  
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3437-Enable view persistence on calendar  
 > **Details:**  
 > Currently, whenever a change is made to the calendar, the view would return to the default, i.e. monthly view.  Implement a feature where if the user selects the weekly view, it will remain after changes are made to the calendar.  
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3433-Fix runtime errors  
 > **Details:**  
 > &nbsp;&nbsp;\- Occasionally the delete button would show for a brand-new selection.  
 > &nbsp;&nbsp;\- Occasionally the times in the input fields would mismatch the onscreen event.  
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3432-Implement calendar event resizing feature  
 > **Details:**  
 > When the user resizes an existing event, display the edit modal with updated start and end times pre-populated  
@@ -243,42 +243,42 @@ ___
 >When the user drags an existing event to a new time, display the edit modal with updated start and end times pre-populated  
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3434-Prevent edit modal from closing automatically if save is unsuccessful  
 > **Details:**  
 > Allow users to continue editing if a save attempt is unsuccessful, until the user closes the modal manually  
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3435-Prevent users from creating events shorter than 15 minutes  
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3436-Round event start and end times to the nearest 15 minute increments  
 > **Details:**  
 > &nbsp;&nbsp;\- Date pickers in browsers such as Edge do not restrict time values.  Therefore, when the user attempts to save an event, round the times to the nearest 15 minute increments.   
 > &nbsp;&nbsp;\- For browsers that do support value control, such as Chrome, cause time to change 15 minutes at a time.  
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## Additional Enhancements:
 > Parent story.  Please see the following sub-stories
 ## Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## Modify Test Entries in Seed Data To Begin Dynamically On Current Week  
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## Modify calendar display preperties based on viewport size  
 ### Solution:  
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## Implement persistence of displayed time range across sessions  
 ### Solution: 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 
 <br />
 
@@ -290,103 +290,103 @@ ___
 > **Details:**  
 > Under Views\Schedule\Create.cshtml change Model.ID to Model.Id
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3109-Redirect "Manage" button
 > **Details:**  
 > "Manage" button under the navigation button should bring you to the manage index view, not the schedule index view
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3111-Modify "Mail" button on the nav-bar
 > **Details:**  
 > Remove the text from the mail button on the nav-bar. It should just be an icon
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3113-Change ScheduleId type
 > **Details:**
 > On the ScheduledWorkPeriod model, change the ScheduleId to be a Guid type
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3121-Add a PayPeriod controller with views
 > **Details:**
 > Add a PayPeriod controller with views for Index, Create, Delete, Edit etc
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3110-Remove TemplateID from Schedule model
 > **Details:**
 > Remove TemplateID from schedule model.  This change will require a migration
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3126-Add "Request Time Off" to nav menu
 > **Details:**
 > Add a link to the navigation drop-down titled "Request Time Off" that takes the user to the TimeOffEvent / Create page
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3127-Add Shift/Create to nav menu
 > **Details:**
 > Add a button to the navigation drop down to shift/create
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3131-Add TempSchedule/Index to nav menu
 > **Details:**
 > Add a link to the navigation dropdown leading to the TempSchedule / Index page
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3130-Change Schedule model UserId type
 > **Details:**
 > On the Schedule model, change the UserId from a string to a Guid. This will require a migration
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3141-Modify "Pay Period Length" label
 > **Details:**
 > On the PayPeriods / Create view, add some text to the "Pay Period Length" label so that is says "Pay Period Length (Days)"
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3137-Fix the Schedule/Create bug
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3135-Remove Inputs boxes from TimeOffEvent/Create
 > **Details:**
 > On the TimeOffEvent Create view, remove the input boxes from the top
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3134-Fix the Messages/Inbox bug
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3142-Set Message/Create DateSent to the current time
 > **Details:**
 > On the Message controller, change the create method so that DateSent is set to the current time.
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3143-Fix the Message/Create bug
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3145-Rearrange and modify Home/Index view
 > **Details:**
 > On the index/home view, Remove the clock out button and make the clock in button say simply "Clock".  Then center all content on home/index view
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3157-Set TempSchedule/Create DateCreated to the current time
 > **Details:**
 > On the TempSchedule controller, change the Create function so that the DateCreated property gets set to the current time
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3168-Remove the Payperiods/Details view
 > **Details:**
 > Remove the Payperiods / Details view. Dont forget to include your .csproj file with your changes
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3172-Implement Schedule/Create modal
 > **Details:**
 > Implement the modal found in the TimeOff/Create view into the Schedule/Create view
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3174-Add a one week FullCalendar to the TempSchedule/Create view. 
 > **Details:**
 > Add a one week fullCalendar to the tempSchedule/Create view
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3178-Make Event model End property nullable
 > **Details:**
 > On the Event model, make the End property nullable. This will require a migration
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3206-Revise the ScheduleTemplate model
 > **Details:**
 > Properties should look somewhat like the schedule model. 
@@ -395,17 +395,17 @@ ___
 > List<ScheduledWorkPeriod> ScheduledWorkPeriods 
 > dont forget migration  
   
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3176-Implement message-all feature in TimeOffEvent controller
 > **Details:**
 > On the TimeOffEvent controller, create a function that will generate a message for every admin in the user table. Only define the function, do not call it just yet. 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3213-Add 3 more admin users to the seed data
 > **Details:**
 > Add 3 admin users to the seed data. Look at migrations > configuration 
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 
 
 
