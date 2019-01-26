@@ -1,6 +1,11 @@
 # AGILE FULLSTACK MVC LIVE PROJECT: Schedule-It 
 ### (...Page still under construction. Please check back for updates...)
 
+
+    - Test text
+
+<span style="color:blue">some <em>blue</em> text</span>
+
 <p align="center">
   <img src="/img/SI-header.png" alt="Live Project Header"/>
 </p>
