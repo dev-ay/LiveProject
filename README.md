@@ -75,7 +75,7 @@ ___
 ___
 
 ## TECHNOLOGIES USED
-  **Languages:**&nbsp;&nbsp;C#, T-SQL, JavaScript, HTML, [CSS][24680]
+  **Languages:**&nbsp;&nbsp;C#, T-SQL, JavaScript, HTML, CSS
   
   **Frameworks/Libraries:**&nbsp;&nbsp;ASP.NET MVC, Entity Framework, jQuery, Bootstrap, FullCalendar, MomentJS
   
@@ -86,8 +86,6 @@ ___
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Technologies Used](#TECHNOLOGIES-USED) >*
 
 <br/>
-
-[24680]: #3189-make-a-few-changes-to-the-scheduletemplate--create-view
 
 ___
 
@@ -181,7 +179,7 @@ ___
 > Add a one week fullCalendar to the tempSchedule/Create view  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3189-Make a few changes to the ScheduleTemplate / Create view  
 **Details:**  
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
