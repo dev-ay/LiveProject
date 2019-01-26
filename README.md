@@ -88,7 +88,7 @@ ___
 
 <br/>
 
-[24680]: #3195-the-modal-should-have-a-checkbox-for-day-off
+[24680]: #3189-make-a-few-changes-to-the-scheduletemplate--create-view
 
 ___
 
