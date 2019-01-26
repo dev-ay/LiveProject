@@ -6,6 +6,8 @@
 </p>
 <br/>
 
+___
+
 ## TABLE OF CONTENTS
 1. **[TECHNOLOGIES USED](#Technologies-Used)**
 2. **[OVERVIEW](#Overview)**
@@ -65,9 +67,10 @@
   * 3206-Revise the ScheduleTemplate model
   * 3176-Implement message-all feature in TimeOffEvent controller
   * 3213-Add 3 more admin users to the seed data
+*Jump to: [TOC](#TABLE-OF-CONTENTS)*
 <br/>
 
-***
+___
 
 ## TECHNOLOGIES USED
   **Languages:** C#, T-SQL, JavaScript, HTML, CSS
@@ -77,9 +80,10 @@
   **Version Control:** Git, Team Foundation Server
   
   **Project Tools:** Visual Studio, SQL Server, Azure DevOps, Chrome Developer Tools, Edge Developer Tools, Google Hangout, Slack  
+*Jump to: [TOC](#TABLE-OF-CONTENTS) > [Technologies Used](#TECHNOLOGIES-USED)*
 <br/>
 
-***
+___
 
 ## OVERVIEW
 This is an agile live project I participated in at the Tech Academy for a production clock-in software.  
@@ -126,13 +130,14 @@ For the highlights of my work on this live project I recommend you jump to the f
   * 3405-Implement CRUD Operations on TimeOffEvens
   * 3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors
   * Additional Enhancements
+*Jump to: [TOC](#TABLE-OF-CONTENTS) > [Overview](#OVERVIEW)*
 <br/>
 
 
 
 
       
-***
+___
       
       
       
@@ -142,23 +147,31 @@ For the highlights of my work on this live project I recommend you jump to the f
 ## 3189-Make a few changes to the ScheduleTemplate / Create view  
 **Details:**  
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
+*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3192-clicking on a day on the calendar should pop up a modal
 ### Solution: 
+*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3191-Make the calendar display as just a one week view. you may need to do some research on fullcalendar
 ### Solution: 
+*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3190-Remove the notes input box and the create button
 ### Solution: 
+*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3195-The modal should have a checkbox for "Day Off" 
 ### Solution: 
+*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3193 the modal should have an input for start and end time 
 ### Solution: 
+*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3194-The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers 
 ### Solution: 
+*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3209-Implement a mouse hand cursor on hover over calendar  
 > **Details:**  
 > When the user hovers over any of the calendars, the cursor should change to reflect that the calendar is clickable.  
 > This story is for all of the calendars.  This includes the schedule create view, the tempschedule create view, and the timeoffevent create view.  
 ### Solution: 
+*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3405-Implement CRUD operations on TimeOffEvents  
 > **Details:**  
 > Parent story.  See 3408, 3409, 3410, 3411, 3412, 3413  
@@ -267,7 +280,7 @@ For the highlights of my work on this live project I recommend you jump to the f
 *Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 
 
-
+___
 
 
 # OTHER MINOR STORIES
