@@ -88,7 +88,7 @@ ___
 
 <br/>
 
-[CSS]: (#TABLE-OF-CONTENTS)
+[CSS]: #TABLE-OF-CONTENTS
 
 ___
 
