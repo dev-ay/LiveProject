@@ -42,7 +42,7 @@ ___
   * [Modify Test Entries in Seed Data To Begin Dynamically On Current Week][B]
   * [Modify calendar display preperties based on viewport size][C]
   * [Implement persistence of displayed time range across sessions][D]
-4. **[OTHER MINOR STORIES](#OTHER-MINOR-STORIES)**
+4. **[OTHER STORIES](#OTHER-STORIES)**
   * 3108-Rename Model.ID
   * 3109-Redirect "Manage" button
   * 3111-Modify "Mail" button on the nav-bar
@@ -63,7 +63,6 @@ ___
   * 3157-Set TempSchedule/Create DateCreated to the current time
   * 3168-Remove the Payperiods/Details view
   * 3172-Implement Schedule/Create modal
-  * 3174-Add a one week FullCalendar to the TempSchedule/Create view
   * 3178-Make Event model End property nullable
   * 3206-Revise the ScheduleTemplate model
   * 3176-Implement message-all feature in TimeOffEvent controller
@@ -303,120 +302,120 @@ ___
 > Under Views\Schedule\Create.cshtml change Model.ID to Model.Id  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3109-Redirect "Manage" button
 > **Details:**  
 > "Manage" button under the navigation button should bring you to the manage index view, not the schedule index view  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3111-Modify "Mail" button on the nav-bar
 > **Details:**  
 > Remove the text from the mail button on the nav-bar. It should just be an icon  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3113-Change ScheduleId type
 > **Details:**
 > On the ScheduledWorkPeriod model, change the ScheduleId to be a Guid type  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3121-Add a PayPeriod controller with views
 > **Details:**
 > Add a PayPeriod controller with views for Index, Create, Delete, Edit etc  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3110-Remove TemplateID from Schedule model
 > **Details:**
 > Remove TemplateID from schedule model.  This change will require a migration  
 
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3126-Add "Request Time Off" to nav menu
 > **Details:**
 > Add a link to the navigation drop-down titled "Request Time Off" that takes the user to the TimeOffEvent / Create page  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3127-Add Shift/Create to nav menu
 > **Details:**
 > Add a button to the navigation drop down to shift/create  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3131-Add TempSchedule/Index to nav menu
 > **Details:**
 > Add a link to the navigation dropdown leading to the TempSchedule / Index page  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3130-Change Schedule model UserId type
 > **Details:**
 > On the Schedule model, change the UserId from a string to a Guid. This will require a migration  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3141-Modify "Pay Period Length" label
 > **Details:**
 > On the PayPeriods / Create view, add some text to the "Pay Period Length" label so that is says "Pay Period Length (Days)"  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3137-Fix the Schedule/Create bug  
 ### Solution:
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3135-Remove Inputs boxes from TimeOffEvent/Create
 > **Details:**
 > On the TimeOffEvent Create view, remove the input boxes from the top  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3134-Fix the Messages/Inbox bug
 ### Solution:
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3142-Set Message/Create DateSent to the current time
 > **Details:**
 > On the Message controller, change the create method so that DateSent is set to the current time.  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3143-Fix the Message/Create bug
 ### Solution:
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3145-Rearrange and modify Home/Index view
 > **Details:**
 > On the index/home view, Remove the clock out button and make the clock in button say simply "Clock".  Then center all content on home/index view  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3157-Set TempSchedule/Create DateCreated to the current time
 > **Details:**
 > On the TempSchedule controller, change the Create function so that the DateCreated property gets set to the current time  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3168-Remove the Payperiods/Details view
 > **Details:**
 > Remove the Payperiods / Details view. Dont forget to include your .csproj file with your changes  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3172-Implement Schedule/Create modal
 > **Details:**
 > Implement the modal found in the TimeOff/Create view into the Schedule/Create view  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 
 ## 3178-Make Event model End property nullable
 > **Details:**
 > On the Event model, make the End property nullable. This will require a migration  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3206-Revise the ScheduleTemplate model
 > **Details:**
 > Properties should look somewhat like the schedule model. 
@@ -426,19 +425,19 @@ ___
 > dont forget migration  
 ### Solution:
   
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3176-Implement message-all feature in TimeOffEvent controller
 > **Details:**
 > On the TimeOffEvent controller, create a function that will generate a message for every admin in the user table. Only define the function, do not call it just yet.  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3213-Add 3 more admin users to the seed data
 > **Details:**
 > Add 3 admin users to the seed data. Look at migrations > configuration  
 ### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 
 
 
