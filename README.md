@@ -45,7 +45,19 @@ This was a multiple-month SCRUM project.  At the time of my participation, there
 The structure of the software is an ASP.NET MVC Application using Code-First Entity Framework to manage a SQL Server database.  We used Visual Studio Community for development with version control extensions. See [Technologies Used](#Technologies-Used) for the software technologies used.  
 
 ### **My Role:**  
-My role on the project was a 2 week long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar, capable of all CRUD operations, features mouse-based dragging and dropping and resizing for event modification, and features visually responsive calendar events that update based on changes to input times.  I created backend CRUD methods that utilized Entity Framework to access the database.  On the frontend I largely relied on jQuery, and utilized AJAX to communicate with the backend.  
+My role on the project was a 2 week long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar. I created backend CRUD methods that utilized Entity Framework to access the database.  On the frontend I largely relied on jQuery, and utilized AJAX to communicate with the backend.  The features of the calendar system include the following:
+* Performs all CRUD operations
+* Enables creation of event by selecting time range on calendar
+* Enables mouse-based resizing and dragging and dropping to modify calendar events
+* Provides edit modal where users can edit event details using form inputs
+* Enables visually responsive calendar events that update based on changes to input times on edit modal
+* Utilizes AJAX to only update relevant data when needed
+* Provides monthly calendar view, and weekly agenda view
+* Allows all day events as well as hourly events
+* Permits dragging and dropping of events between all day and agenda sections
+* Displays unapproved events in silver, and approved events in green
+* Utilizes AJAX to occassionally check for event approval status
+* Various other features
 
 Initially I reloaded the calendar after each event update, as that was the most straightforward way to ensure the calendar precisely reflects the backend database.  This approach was not unreasonably slow.  However, in the interest of providing the best user experience, I decided to modify my program design so that the backend database and frontend calendar were updated separately.  My motivation for this was to optimize the program for potentially slow network connections and to operate as efficiently as possible for the end user.  
 
@@ -86,36 +98,35 @@ For the highlights of my work on this live project I recommend you jump to the f
 * **Additional Enhancements**
   * Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
   * Modify Test Entries in Seed Data To Begin Dynamically On Current Week
+  * Modify calendar display preperties based on viewport size
+  * Implement persistence of displayed time range across sessions
 ### Other Minor Stories:
-<ul>
-  <li>
-* 3108-Rename Model.ID
-* 3109-Redirect "Manage" button
-* 3111-Modify "Mail" button on the nav-bar
-* 3113-Change ScheduleId type
-* 3121-Add a PayPeriod controller with views
-* 3110-Remove TemplateID from Schedule model
-* 3126-Add "Request Time Off" to nav menu
-* 3127-Add Shift/Create to nav menu
-* 3131-Add TempSchedule/Index to nav menu
-* 3130-Change Schedule model UserId type
-* 3141-Modify "Pay Period Length" label
-* 3137-Fix the Schedule/Create bug
-* 3135-Remove Inputs boxes from TimeOffEvent/Create
-* 3134-Fix the Messages/Inbox bug
-* 3142-Set Message/Create DateSent to the current time
-* 3143-Fix the Message/Create bug
-* 3145-Rearrange and modify Home/Index view
-* 3157-Set TempSchedule/Create DateCreated to the current time
-* 3168-Remove the Payperiods/Details view
-* 3172-Implement Schedule/Create modal
-* 3174-Add a one week FullCalendar to the TempSchedule/Create view
-* 3178-Make Event model End property nullable
-* 3206-Revise the ScheduleTemplate model
-* 3176-Implement message-all feature in TimeOffEvent controller
-* 3213-Add 3 more admin users to the seed data
-    </li>
-</ul>
+* **3108-Rename Model.ID**
+* **3109-Redirect "Manage" button**
+* **3111-Modify "Mail" button on the nav-bar**
+* **3113-Change ScheduleId type**
+* **3121-Add a PayPeriod controller with views**
+* **3110-Remove TemplateID from Schedule model**
+* **3126-Add "Request Time Off" to nav menu**
+* **3127-Add Shift/Create to nav menu**
+* **3131-Add TempSchedule/Index to nav menu**
+* **3130-Change Schedule model UserId type**
+* **3141-Modify "Pay Period Length" label**
+* **3137-Fix the Schedule/Create bug**
+* **3135-Remove Inputs boxes from TimeOffEvent/Create**
+* **3134-Fix the Messages/Inbox bug**
+* **3142-Set Message/Create DateSent to the current time**
+* **3143-Fix the Message/Create bug**
+* **3145-Rearrange and modify Home/Index view**
+* **3157-Set TempSchedule/Create DateCreated to the current time**
+* **3168-Remove the Payperiods/Details view**
+* **3172-Implement Schedule/Create modal**
+* **3174-Add a one week FullCalendar to the TempSchedule/Create view**
+* **3178-Make Event model End property nullable**
+* **3206-Revise the ScheduleTemplate model**
+* **3176-Implement message-all feature in TimeOffEvent controller**
+* **3213-Add 3 more admin users to the seed data**
+
 
       
 
