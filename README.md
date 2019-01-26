@@ -14,7 +14,7 @@ ___
 2. **[OVERVIEW](#Overview)**
 3. **[FULLCALENDAR STORIES](#FULLCALENDAR-STORIES)**
   * [3174-Add a one week fullCalendar to the tempSchedule/Create view][3174]
-  * [3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks][3189]
+  * [3189-Make a few changes to the ScheduleTemplate/Create view][3189]
     * [3192-clicking on a day on the calendar should pop up a modal][3192]
     * [3191-Modify calendar to display one week view][3191]
     * [3190-Remove the notes input box and the create button][3190]
@@ -96,8 +96,9 @@ ___
 ## OVERVIEW
 This is an Agile/SCRUM live project that I participated in at the Tech Academy for a production clock-in software.  The overall project occurs over many months, but my personal participation was over a single 2-week sprint.  This Readme only lists the stories assigned to me.
 
-**Overall Product Features:**  
 <img align="right" src="/img/SI-Day-Week-Thumbnail.png" alt="Agenda Week Thumbnail"/>
+
+**Overall Product Features:**  
 The ultimate scope of the end product was an employee clock-in fullstack MVC web application with the following features:
   * Users can clock-in their work time
   * Users can request time off and admins can view requests and approve
@@ -118,7 +119,9 @@ The structure of the software is an ASP.NET MVC Application using Code-First Ent
 ### **My Role:**  
 My role on the project was a 2-week-long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar. I created backend CRUD methods that utilized Entity Framework to access a database.  On the frontend I largely relied on jQuery, and utilized AJAX to communicate with the backend.  The features of my calendar system include the following:  
 
+
 <img align="right" src="/img/SI-DragDrop-Thumbnail.png" alt="Drag and Drop Thumbnail"/>
+
 
 * Performs all CRUD operations
 * Enables creation of event by selecting time range on calendar
@@ -160,7 +163,7 @@ ___
 # FULLCALENDAR STORIES:
 This section includes stories relating to the operation of, and interactions with, calendars
   * [3174-Add a one week fullCalendar to the tempSchedule/Create view][3174]
-  * [3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks][3189]
+  * [3189-Make a few changes to the ScheduleTemplate/Create view][3189]
     * [3192-clicking on a day on the calendar should pop up a modal][3192]
     * [3191-Modify calendar to display one week view][3191]
     * [3190-Remove the notes input box and the create button][3190]
