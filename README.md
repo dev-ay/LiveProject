@@ -88,6 +88,7 @@ For the highlights of my work on this live project I recommend you jump to the f
   * Modify Test Entries in Seed Data To Begin Dynamically On Current Week
 ### Other Minor Stories:
 <ul>
+  <li>
 * 3108-Rename Model.ID
 * 3109-Redirect "Manage" button
 * 3111-Modify "Mail" button on the nav-bar
@@ -113,6 +114,7 @@ For the highlights of my work on this live project I recommend you jump to the f
 * 3206-Revise the ScheduleTemplate model
 * 3176-Implement message-all feature in TimeOffEvent controller
 * 3213-Add 3 more admin users to the seed data
+    </li>
 </ul>
 
       
