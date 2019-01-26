@@ -1,4 +1,5 @@
 # AGILE FULLSTACK MVC LIVE PROJECT: Schedule-It 
+***
 ### (...Page still under construction. Please check back for updates...)
 
 <p align="center">
@@ -159,7 +160,7 @@ For the highlights of my work on this live project I recommend you jump to the f
 > **Details:**  
 > Parent story.  See 3408, 3409, 3410, 3411, 3412, 3413  
 
-*Path: [TOC](#TABLE-OF-CONTENTS) > [FULLCALENDAR STORIES](#FULLCALENDAR-STORIES)*
+*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3413-Create a details modal  
 > **Details:**  
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
