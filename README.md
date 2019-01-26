@@ -16,7 +16,7 @@ ___
   * [3174-Add a one week fullCalendar to the tempSchedule/Create view][3174]
   * [3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks][3189]
     * [3192-clicking on a day on the calendar should pop up a modal][3192]
-    * [3191-Make the calendar display as just a one week view. you may need to do some research on fullcalendar][3191]
+    * [3191-Modify calendar to display one week view][3191]
     * [3190-Remove the notes input box and the create button][3190]
     * [3195-The modal should have a checkbox for "Day Off"][3195]
     * [3193-The modal should have an input for start and end time][3193]
@@ -160,7 +160,9 @@ ___
 ## 3192-clicking on a day on the calendar should pop up a modal
 ### Solution: 
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
-## 3191-Make the calendar display as just a one week view. you may need to do some research on fullcalendar
+## 3191-Modify calendar to display one week view
+> Details:
+> Make the calendar display as just a one week view. you may need to do some research on fullcalendar
 ### Solution: 
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3190-Remove the notes input box and the create button
@@ -446,7 +448,7 @@ ___
 [3174]:#3174-add-a-one-week-fullcalendar-to-the-tempschedulecreate-view
 [3189]:#3189-make-a-few-changes-to-the-scheduletemplate--create-view
 [3192]:#3192-clicking-on-a-day-on-the-calendar-should-pop-up-a-modal
-[3191]:
+[3191]:#3191-Modify-calendar-to-display-one-week-view
 [3190]:#3190-remove-the-notes-input-box-and-the-create-button
 [3195]:#3195-the-modal-should-have-a-checkbox-for-day-off
 [3193]:#3193-the-modal-should-have-an-input-for-start-and-end-time
