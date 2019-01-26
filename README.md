@@ -4,14 +4,14 @@
 <p align="center">
   <img src="/img/SI-header.png" alt="Live Project Header"/>
 </p>
-
 <br/>
+
 ## TABLE OF CONTENTS
 * [Technologies Used](#Technologies-Used)
 * [Summary](#Summary)
 * [Stories](#Stories)
-
 <br/>
+
 ## TECHNOLOGIES USED
   **Languages:** C#, T-SQL, JavaScript, HTML, CSS
   
@@ -20,8 +20,8 @@
   **Version Control:** Git, Team Foundation Server
   
   **Project Tools:** Visual Studio, SQL Server, Azure DevOps, Chrome Developer Tools, Edge Developer Tools, Google Hangout, Slack
-
 <br/>
+
 ## SUMMARY
 This is an agile live project I participated in at the Tech Academy for a production clock-in software.  
 
@@ -50,8 +50,8 @@ For the highlights of my work on this live project I recommend you jump to the f
   * 3405-Implement CRUD Operations on TimeOffEvens
   * 3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors
   * Additional Enhancements
-
 <br/>
+
 ## STORIES
 ### FullCalendar Stories:
 * **3174-Add a one week fullCalendar to the tempSchedule/Create view**
