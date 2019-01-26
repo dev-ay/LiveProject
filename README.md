@@ -88,7 +88,7 @@ ___
 
 <br/>
 
-[24680]: #3190-Remove-the-notes-input-box-and-the-create-button
+[24680]: #3195-the-modal-should-have-a-checkbox-for-day-off
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 
 # FULLCALENDAR STORIES:
-## 3189    -    Make a few changes to the ScheduleTemplate / Create view  
+## 3189-Make a few changes to the ScheduleTemplate / Create view  
 **Details:**  
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
 
