@@ -22,26 +22,26 @@ ___
     * [3193-The modal should have an input for start and end time][3193]
     * [3194-Implement user-friendly time pickers][3194]
   * [3209-Implement a mouse hand cursor on hover over calendar][3209]
-* [3405-Implement CRUD Operations on TimeOffEvens][3405]
-  * [3413-Create a Details Modal][3413]
-  * [3408-Create Delete Feature][3408]
-  * [3409-Enable Reading and Loading of Events on Calendar][3409]
-  * [3410-Implement an Events Creation Feature][3410]
-  * [3411-Implement an Update Feature][3411]
-  * [3412-Make Calendar Events Visually Responsive][3412]
-* [3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors][3428]
-  * [3437-Enable View Persistence on Calendar][3437]
-  * [3433-Fix Runtime Errors][3433]
-  * [3432-Implement Calendar Event Resizing Feature][3432]
-  * [3429-Implement Calendar Events Drag and Drop Capabilities][3429]
-  * [3434-Prevent Edit Modal From Closing Automatically If Save Is Unsuccessful][3434]
-  * [3435-Prevent Users From Creating Events Shorter Than 15 Minutes][3435]
-  * [3436-Found Event Start and End Times to the Nearest 15 Minute Increments][3436]
-* [Additional Enhancements](#Additional-Enhancements)
-  * [Update TimeOffEvent Approval Status From Database When DetailsModal Opens][A]
-  * [Modify Test Entries in Seed Data To Begin Dynamically On Current Week][B]
-  * [Modify calendar display preperties based on viewport size][C]
-  * [Implement persistence of displayed time range across sessions][D]
+  * [3405-Implement CRUD Operations on TimeOffEvens][3405]
+    * [3413-Create a Details Modal][3413]
+    * [3408-Create Delete Feature][3408]
+    * [3409-Enable Reading and Loading of Events on Calendar][3409]
+    * [3410-Implement an Events Creation Feature][3410]
+    * [3411-Implement an Update Feature][3411]
+    * [3412-Make Calendar Events Visually Responsive][3412]
+  * [3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors][3428]
+    * [3437-Enable View Persistence on Calendar][3437]
+    * [3433-Fix Runtime Errors][3433]
+    * [3432-Implement Calendar Event Resizing Feature][3432]
+    * [3429-Implement Calendar Events Drag and Drop Capabilities][3429]
+    * [3434-Prevent Edit Modal From Closing Automatically If Save Is Unsuccessful][3434]
+    * [3435-Prevent Users From Creating Events Shorter Than 15 Minutes][3435]
+    * [3436-Found Event Start and End Times to the Nearest 15 Minute Increments][3436]
+  * [Additional Enhancements](#Additional-Enhancements)
+    * [Update TimeOffEvent Approval Status From Database When DetailsModal Opens][A]
+    * [Modify Test Entries in Seed Data To Begin Dynamically On Current Week][B]
+    * [Modify calendar display preperties based on viewport size][C]
+    * [Implement persistence of displayed time range across sessions][D]
 4. **[OTHER STORIES](#OTHER-STORIES)**
   * [3108-Rename Model.ID][3108]
   * [3109-Redirect "Manage" button][3109]
@@ -145,6 +145,37 @@ ___
 
 
 # FULLCALENDAR STORIES:
+  * [3174-Add a one week fullCalendar to the tempSchedule/Create view][3174]
+  * [3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks][3189]
+    * [3192-clicking on a day on the calendar should pop up a modal][3192]
+    * [3191-Modify calendar to display one week view][3191]
+    * [3190-Remove the notes input box and the create button][3190]
+    * [3195-The modal should have a checkbox for "Day Off"][3195]
+    * [3193-The modal should have an input for start and end time][3193]
+    * [3194-Implement user-friendly time pickers][3194]
+  * [3209-Implement a mouse hand cursor on hover over calendar][3209]
+  * [3405-Implement CRUD Operations on TimeOffEvens][3405]
+    * [3413-Create a Details Modal][3413]
+    * [3408-Create Delete Feature][3408]
+    * [3409-Enable Reading and Loading of Events on Calendar][3409]
+    * [3410-Implement an Events Creation Feature][3410]
+    * [3411-Implement an Update Feature][3411]
+    * [3412-Make Calendar Events Visually Responsive][3412]
+  * [3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors][3428]
+    * [3437-Enable View Persistence on Calendar][3437]
+    * [3433-Fix Runtime Errors][3433]
+    * [3432-Implement Calendar Event Resizing Feature][3432]
+    * [3429-Implement Calendar Events Drag and Drop Capabilities][3429]
+    * [3434-Prevent Edit Modal From Closing Automatically If Save Is Unsuccessful][3434]
+    * [3435-Prevent Users From Creating Events Shorter Than 15 Minutes][3435]
+    * [3436-Found Event Start and End Times to the Nearest 15 Minute Increments][3436]
+  * [Additional Enhancements](#Additional-Enhancements)
+    * [Update TimeOffEvent Approval Status From Database When DetailsModal Opens][A]
+    * [Modify Test Entries in Seed Data To Begin Dynamically On Current Week][B]
+    * [Modify calendar display preperties based on viewport size][C]
+    * [Implement persistence of displayed time range across sessions][D]
+
+
 ## 3174-Add a one week FullCalendar to the TempSchedule/Create view. 
 > **Details:**
 > Add a one week fullCalendar to the tempSchedule/Create view  
@@ -297,6 +328,32 @@ ___
 
 
 # OTHER STORIES
+  * [3108-Rename Model.ID][3108]
+  * [3109-Redirect "Manage" button][3109]
+  * [3111-Modify "Mail" button on the nav-bar][3111]
+  * [3113-Change ScheduleId type][3113]
+  * [3121-Add a PayPeriod controller with views][3121]
+  * [3110-Remove TemplateID from Schedule model][3110]
+  * [3126-Add "Request Time Off" to nav menu][3126]
+  * [3127-Add Shift/Create to nav menu][3127]
+  * [3131-Add TempSchedule/Index to nav menu][3131]
+  * [3130-Change Schedule model UserId type][3130]
+  * [3141-Modify "Pay Period Length" label][3141]
+  * [3137-Fix the Schedule/Create bug][3137]
+  * [3135-Remove Inputs boxes from TimeOffEvent/Create][3135]
+  * [3134-Fix the Messages/Inbox bug][3134]
+  * [3142-Set Message/Create DateSent to the current time][3142]
+  * [3143-Fix the Message/Create bug][3143]
+  * [3145-Rearrange and modify Home/Index view][3145]
+  * [3157-Set TempSchedule/Create DateCreated to the current time][3157]
+  * [3168-Remove the Payperiods/Details view][3168]
+  * [3172-Implement Schedule/Create modal][3172]
+  * [3178-Make Event model End property nullable][3178]
+  * [3206-Revise the ScheduleTemplate model][3206]
+  * [3176-Implement message-all feature in TimeOffEvent controller][3176]
+  * [3213-Add 3 more admin users to the seed data][3213]
+
+
 ## 3108-Rename Model.ID
 > **Details:**  
 > Under Views\Schedule\Create.cshtml change Model.ID to Model.Id  
