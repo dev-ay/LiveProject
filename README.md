@@ -13,35 +13,35 @@ ___
 1. **[TECHNOLOGIES USED](#Technologies-Used)**
 2. **[OVERVIEW](#Overview)**
 3. **[FULLCALENDAR STORIES](#FULLCALENDAR-STORIES)**
-  * 3174-Add a one week fullCalendar to the tempSchedule/Create view
-  * 3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks
-    * 3192-clicking on a day on the calendar should pop up a modal
-    * 3191-Make the calendar display as just a one week view. you may need to do some research on fullcalendar
-    * 3190-Remove the notes input box and the create button
-    * 3195-The modal should have a checkbox for "Day Off"
-    * 3193-The modal should have an input for start and end time
-    * 3194-The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers
-  * 3209-Implement a mouse hand cursor on hover over calendar
-* 3405-Implement CRUD Operations on TimeOffEvens
-  * 3413-Create a Details Modal
-  * 3408-Create Delete Feature
-  * 3409-Enable Reading and Loading of Events on Calendar
-  * 3410-Implement an Events Creation Feature
-  * 3411-Implement an Update Feature
-  * 3412-Make Calendar Events Visually Responsive
-* 3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors
-  * 3437-Enable View Persistence on Calendar
-  * 3433-Fix Runtime Errors
-  * 3432-Implement Calendar Event Resizing Feature
-  * 3429-Implement Calendar Events Drag and Drop Capabilities
-  * 3434-Prevent Edit Modal From Closing Automatically If Save Is Unsuccessful
-  * 3435-Prevent Users From Creating Events Shorter Than 15 Minutes
-  * 3436-Found Event Start and End Times to the Nearest 15 Minute Increments  
+  * [3174-Add a one week fullCalendar to the tempSchedule/Create view][3174]
+  * [3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks][3189]
+    * [3192-clicking on a day on the calendar should pop up a modal][3192]
+    * [3191-Make the calendar display as just a one week view. you may need to do some research on fullcalendar][3191]
+    * [3190-Remove the notes input box and the create button][3190]
+    * [3195-The modal should have a checkbox for "Day Off"][3195]
+    * [3193-The modal should have an input for start and end time][3193]
+    * [3194-The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers][3194]
+  * [3209-Implement a mouse hand cursor on hover over calendar][3209]
+* [3405-Implement CRUD Operations on TimeOffEvens][3405]
+  * [3413-Create a Details Modal][3413]
+  * [3408-Create Delete Feature][3408]
+  * [3409-Enable Reading and Loading of Events on Calendar][3409]
+  * [3410-Implement an Events Creation Feature][3410]
+  * [3411-Implement an Update Feature][3411]
+  * [3412-Make Calendar Events Visually Responsive][3432]
+* [3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors][3428]
+  * [3437-Enable View Persistence on Calendar][3437]
+  * [3433-Fix Runtime Errors][3433]
+  * [3432-Implement Calendar Event Resizing Feature][3432]
+  * [3429-Implement Calendar Events Drag and Drop Capabilities][3429]
+  * [3434-Prevent Edit Modal From Closing Automatically If Save Is Unsuccessful][3434]
+  * [3435-Prevent Users From Creating Events Shorter Than 15 Minutes][3435]
+  * [3436-Found Event Start and End Times to the Nearest 15 Minute Increments][3436]
 * [Additional Enhancements](#Additional-Enhancements)
-  * Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
-  * Modify Test Entries in Seed Data To Begin Dynamically On Current Week
-  * Modify calendar display preperties based on viewport size
-  * Implement persistence of displayed time range across sessions
+  * [Update TimeOffEvent Approval Status From Database When DetailsModal Opens][A]
+  * [Modify Test Entries in Seed Data To Begin Dynamically On Current Week][B]
+  * [Modify calendar display preperties based on viewport size][C]
+  * [Implement persistence of displayed time range across sessions][D]
 4. **[OTHER MINOR STORIES](#OTHER-MINOR-STORIES)**
   * 3108-Rename Model.ID
   * 3109-Redirect "Manage" button
@@ -146,6 +146,12 @@ ___
 
 
 # FULLCALENDAR STORIES:
+## 3174-Add a one week FullCalendar to the TempSchedule/Create view. 
+> **Details:**
+> Add a one week fullCalendar to the tempSchedule/Create view  
+### Solution:
+
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3189-Make a few changes to the ScheduleTemplate / Create view  
 **Details:**  
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
@@ -400,12 +406,7 @@ ___
 ### Solution:
 
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
-## 3174-Add a one week FullCalendar to the TempSchedule/Create view. 
-> **Details:**
-> Add a one week fullCalendar to the tempSchedule/Create view  
-### Solution:
 
-*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Other Minor Stories](#OTHER-MINOR-STORIES) >*
 ## 3178-Make Event model End property nullable
 > **Details:**
 > On the Event model, make the End property nullable. This will require a migration  
@@ -438,4 +439,41 @@ ___
 
 
 
-[CSS]: #3198
+
+
+
+
+[3174]:#3174-add-a-one-week-fullcalendar-to-the-tempschedulecreate-view
+[3189]:#3189-make-a-few-changes-to-the-scheduletemplate--create-view
+[3192]:#3192-clicking-on-a-day-on-the-calendar-should-pop-up-a-modal
+[3191]:
+[3190]:#3190-remove-the-notes-input-box-and-the-create-button
+[3195]:#3195-the-modal-should-have-a-checkbox-for-day-off
+[3193]:#3193-the-modal-should-have-an-input-for-start-and-end-time
+[3194]:
+[3209]:#3209-implement-a-mouse-hand-cursor-on-hover-over-calendar
+[3405]:#3405-implement-crud-operations-on-timeoffevents
+[3413]:#3413-create-a-details-modal
+[3408]:#3408-create-delete-feature
+[3409]:#3409-enable-reading-and-loading-of-events-on-calendar
+[3410]:#3410-implement-an-events-creation-feature
+[3411]:#3411-implement-an-update-feature
+[3412]:
+[3432]:
+[3428]:#3428-add-features-in-timeoffeventscreate-and-fix-runtime-errors
+[3437]:#3437-enable-view-persistence-on-calendar
+[3433]:#3433-fix-runtime-errors
+[3432]:#3432-implement-calendar-event-resizing-feature
+[3429]:#3429-implement-calendar-events-drag-and-drop-capabilities
+[3434]:#3434-prevent-edit-modal-from-closing-automatically-if-save-is-unsuccessful
+[3435]:#3435-prevent-users-from-creating-events-shorter-than-15-minutes
+[3436]:#3436-round-event-start-and-end-times-to-the-nearest-15-minute-increments
+[A]:#update-timeoffevent-approval-status-from-database-when-detailsmodal-opens
+[B]:#modify-test-entries-in-seed-data-to-begin-dynamically-on-current-week
+[C]:#modify-calendar-display-preperties-based-on-viewport-size
+[D]:#implement-persistence-of-displayed-time-range-across-sessions
+
+
+
+
+
