@@ -143,7 +143,7 @@ ___
 
 
 # FULLCALENDAR STORIES:
-This section includes stories related to the operation of, and interactions with, calendars
+This section includes stories relating to the operation of, and interactions with, calendars
   * [3174-Add a one week fullCalendar to the tempSchedule/Create view][3174]
   * [3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks][3189]
     * [3192-clicking on a day on the calendar should pop up a modal][3192]
@@ -327,7 +327,7 @@ ___
 
 
 # OTHER STORIES
-This section lists stories related to other aspects of the project but unrelated to the usage of calendars
+This section lists stories relating to other aspects of the project but unrelated to the usage of calendars
   * [3108-Rename Model.ID][3108]
   * [3109-Redirect "Manage" button][3109]
   * [3111-Modify "Mail" button on the nav-bar][3111]
