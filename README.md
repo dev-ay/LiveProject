@@ -67,9 +67,10 @@ ___
   * 3206-Revise the ScheduleTemplate model
   * 3176-Implement message-all feature in TimeOffEvent controller
   * 3213-Add 3 more admin users to the seed data
-<br/>
+
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS)*
 
+<br/>
 ___
 
 ## TECHNOLOGIES USED
@@ -80,9 +81,10 @@ ___
   **Version Control:** Git, Team Foundation Server
   
   **Project Tools:** Visual Studio, SQL Server, Azure DevOps, Chrome Developer Tools, Edge Developer Tools, Google Hangout, Slack  
-<br/>
+
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Technologies Used](#TECHNOLOGIES-USED)*
 
+<br/>
 ___
 
 ## OVERVIEW
@@ -130,18 +132,14 @@ For the highlights of my work on this live project I recommend you jump to the f
   * 3405-Implement CRUD Operations on TimeOffEvens
   * 3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors
   * Additional Enhancements
-<br/>
+
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Overview](#OVERVIEW)*
 
+<br/>
 
-
-      
 ___
-      
-      
-      
-      
-      
+
+
 # FULLCALENDAR STORIES:
 ## 3189-Make a few changes to the ScheduleTemplate / Create view  
 **Details:**  
@@ -280,6 +278,7 @@ ___
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 
 <br />
+
 ___
 
 
