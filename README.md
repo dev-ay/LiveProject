@@ -296,7 +296,7 @@ ___
 ___
 
 
-# OTHER MINOR STORIES
+# OTHER STORIES
 ## 3108-Rename Model.ID
 > **Details:**  
 > Under Views\Schedule\Create.cshtml change Model.ID to Model.Id  
