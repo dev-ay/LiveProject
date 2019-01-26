@@ -41,7 +41,7 @@ ___
   * Modify Test Entries in Seed Data To Begin Dynamically On Current Week
   * Modify calendar display preperties based on viewport size
   * Implement persistence of displayed time range across sessions
-4. **OTHER MINOR STORIES**
+4. **[OTHER MINOR STORIES](#OTHER-MINOR-STORIES)**
   * 3108-Rename Model.ID
   * 3109-Redirect "Manage" button
   * 3111-Modify "Mail" button on the nav-bar
@@ -67,8 +67,8 @@ ___
   * 3206-Revise the ScheduleTemplate model
   * 3176-Implement message-all feature in TimeOffEvent controller
   * 3213-Add 3 more admin users to the seed data
-*Jump to: [TOC](#TABLE-OF-CONTENTS)*
 <br/>
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS)*
 
 ___
 
@@ -81,7 +81,7 @@ ___
   
   **Project Tools:** Visual Studio, SQL Server, Azure DevOps, Chrome Developer Tools, Edge Developer Tools, Google Hangout, Slack  
 <br/>
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [Technologies Used](#TECHNOLOGIES-USED)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Technologies Used](#TECHNOLOGIES-USED)*
 
 ___
 
@@ -131,7 +131,7 @@ For the highlights of my work on this live project I recommend you jump to the f
   * 3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors
   * Additional Enhancements
 <br/>
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [Overview](#OVERVIEW)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Overview](#OVERVIEW)*
 
 
 
@@ -147,139 +147,139 @@ ___
 **Details:**  
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3192-clicking on a day on the calendar should pop up a modal
 ### Solution: 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3191-Make the calendar display as just a one week view. you may need to do some research on fullcalendar
 ### Solution: 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3190-Remove the notes input box and the create button
 ### Solution: 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3195-The modal should have a checkbox for "Day Off" 
 ### Solution: 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3193 the modal should have an input for start and end time 
 ### Solution: 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3194-The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers 
 ### Solution: 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3209-Implement a mouse hand cursor on hover over calendar  
 > **Details:**  
 > When the user hovers over any of the calendars, the cursor should change to reflect that the calendar is clickable.  
 > This story is for all of the calendars.  This includes the schedule create view, the tempschedule create view, and the timeoffevent create view.  
 ### Solution: 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3405-Implement CRUD operations on TimeOffEvents  
 > **Details:**  
 > Parent story.  See 3408, 3409, 3410, 3411, 3412, 3413  
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3413-Create a details modal  
 > **Details:**  
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3408-Create delete feature  
 > **Details:**  
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3409-Enable reading and loading of events on calendar  
 > **Details:**  
 > Read entries from Events table pertaining to Time Off Events and populate the calendar  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3410-Implement an events creation feature  
 > **Details:**  
 > When the user clicks a time slot on Calendar or selects a time range, open an edit modal with the corresponding start and end times pre-entered into time inputs  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3411-Implement an update feature  
 > **Details:**  
 > When the user clicks on an existing event, open an edit modal with form inputs pre-populated with event data, and allow users to make changes, and a Save button to save and update that entry in the database.  Also include button to cancel the edit and to delete the event.  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3412-Make calendar events visually responsive  
 > **Details:**  
 > When a user makes adjustments to the start/end times of either an existing event or a brand-new selection, cause the event to update visually on the calendar while the edit modal is displayed.  However, if the user does not save the event and exits the modal, visually restore the event to the original state (i.e. existing event returns to original state, and brand-new selection disappears) 
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3428-Add features in TimeOffEvents/Create and fix runtime errors  
 > **Details:**  
 > Parent story.  See 3429, 3432, 3433, 3434, 3435, 3436, 3437  
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3437-Enable view persistence on calendar  
 > **Details:**  
 > Currently, whenever a change is made to the calendar, the view would return to the default, i.e. monthly view.  Implement a feature where if the user selects the weekly view, it will remain after changes are made to the calendar.  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3433-Fix runtime errors  
 > **Details:**  
 > &nbsp;&nbsp;\- Occasionally the delete button would show for a brand-new selection.  
 > &nbsp;&nbsp;\- Occasionally the times in the input fields would mismatch the onscreen event.  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3432-Implement calendar event resizing feature  
 > **Details:**  
 > When the user resizes an existing event, display the edit modal with updated start and end times pre-populated  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3429-Implement calendar events drag and drop capabilities  
 > **Details:**  
 >When the user drags an existing event to a new time, display the edit modal with updated start and end times pre-populated  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3434-Prevent edit modal from closing automatically if save is unsuccessful  
 > **Details:**  
 > Allow users to continue editing if a save attempt is unsuccessful, until the user closes the modal manually  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3435-Prevent users from creating events shorter than 15 minutes  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3436-Round event start and end times to the nearest 15 minute increments  
 > **Details:**  
 > &nbsp;&nbsp;\- Date pickers in browsers such as Edge do not restrict time values.  Therefore, when the user attempts to save an event, round the times to the nearest 15 minute increments.   
 > &nbsp;&nbsp;\- For browsers that do support value control, such as Chrome, cause time to change 15 minutes at a time.  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## Additional Enhancements:
 > Parent story.  Please see the following sub-stories
 ## Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## Modify Test Entries in Seed Data To Begin Dynamically On Current Week  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## Modify calendar display preperties based on viewport size  
 ### Solution:  
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## Implement persistence of displayed time range across sessions  
 ### Solution: 
 
-*Jump to: [TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
+*Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 
-
+<br />
 ___
 
 
