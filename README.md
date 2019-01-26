@@ -178,13 +178,13 @@ This section includes stories relating to the operation of, and interactions wit
 
 
 ## 3174-Add a one week FullCalendar to the TempSchedule/Create view. 
-> **Details:**
+> **Details:**  
 > Add a one week fullCalendar to the tempSchedule/Create view  
 ### Solution:
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3189-Make a few changes to the ScheduleTemplate / Create view  
-**Details:**  
+> **Details:**  
 > Parent story.  Please see [3192], [3191], [3190], [3195], [3193], [3194]  
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
@@ -192,7 +192,7 @@ This section includes stories relating to the operation of, and interactions wit
 ### Solution: 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3191-Modify calendar to display one week view
-> Details:
+> **Details:**  
 > Make the calendar display as just a one week view. you may need to do some research on fullcalendar
 ### Solution: 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
@@ -206,7 +206,7 @@ This section includes stories relating to the operation of, and interactions wit
 ### Solution: 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3194-Implement user-friendly time pickers
-> Details:
+> **Details:**
 > The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers  
 ### Solution: 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
