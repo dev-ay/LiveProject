@@ -88,7 +88,7 @@ ___
 
 <br/>
 
-[24680]: #TABLE-OF-CONTENTS
+[24680]: #3189
 
 ___
 
@@ -146,7 +146,8 @@ ___
 
 
 # FULLCALENDAR STORIES:
-## 3189-Make a few changes to the ScheduleTemplate / Create view  
+## 3189
+-Make a few changes to the ScheduleTemplate / Create view  
 **Details:**  
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
 
@@ -438,4 +439,4 @@ ___
 
 
 
-[3174]: #3174-Add-a-one-week-fullCalendar-to-the-tempSchedule/Create-view
+[CSS]: #3198
