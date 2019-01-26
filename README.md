@@ -47,9 +47,11 @@ The structure of the software is an ASP.NET MVC Application using Code-First Ent
 ### **My Role:**  
 My role on the project was a 2 week long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar, capable of all CRUD operations, features mouse-based dragging and dropping and resizing for event modification, and features visually responsive calendar events that update based on changes to input times.  I created backend CRUD methods that utilized Entity Framework to access the database.  On the frontend I largely relied on jQuery, and utilized AJAX to communicate with the backend.  
 
-Initially I reloaded the calendar after each event update, as that was the most straightforward way to ensure the calendar precisely reflects the backend database.  However, in the interest of providing the optimal user experience, I decided to modify my program design so that the backend database and frontend calendar were updated separately.  My motivation for this was to optimize the program for slow network connections and to operate as efficiently as possible for the end user.  Out of personal interest I continued to make enhancements to the program after my time on the project.  
+Initially I reloaded the calendar after each event update, as that was the most straightforward way to ensure the calendar precisely reflects the backend database.  This approach was not unreasonably slow.  However, in the interest of providing the best user experience, I decided to modify my program design so that the backend database and frontend calendar were updated separately.  My motivation for this was to optimize the program for potentially slow network connections and to operate as efficiently as possible for the end user.  
 
-For the highlights of my work on this live project I recommend you jump to the following sections  
+After my sprint concluded, I continued to make enhancements to the program on my own out of curiosity.  These changes are listed under [Additional Enhancements](#Additional-Enhancements).
+
+For the highlights of my work on this live project I recommend you jump to the following sections:  
   * 3405-Implement CRUD Operations on TimeOffEvens
   * 3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors
   * Additional Enhancements
@@ -83,6 +85,7 @@ For the highlights of my work on this live project I recommend you jump to the f
   * 3436-Found Event Start and End Times to the Nearest 15 Minute Increments  
 * **Additional Enhancements**
   * Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
+  *   
 ### Other Minor Stories:
 * 3108-Rename Model.ID
 * 3109-Redirect "Manage" button
