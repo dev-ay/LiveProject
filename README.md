@@ -185,7 +185,7 @@ This section includes stories relating to the operation of, and interactions wit
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3189-Make a few changes to the ScheduleTemplate / Create view  
 **Details:**  
-> Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
+> Parent story.  Please see [3192], [3191], [3190], [3195], [3193], [3194]  
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3192-clicking on a day on the calendar should pop up a modal
@@ -218,7 +218,7 @@ This section includes stories relating to the operation of, and interactions wit
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3405-Implement CRUD operations on TimeOffEvents  
 > **Details:**  
-> Parent story.  See 3408, 3409, 3410, 3411, 3412, 3413  
+> Parent story.  Please see [3408], [3409], [3410], [3411], [3412], [3413]  
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3413-Create a details modal  
@@ -259,7 +259,7 @@ This section includes stories relating to the operation of, and interactions wit
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3428-Add features in TimeOffEvents/Create and fix runtime errors  
 > **Details:**  
-> Parent story.  See 3429, 3432, 3433, 3434, 3435, 3436, 3437  
+> Parent story.  Please see [3429], [3432], [3433], [3434], [3435], [3436], [3437]  
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3437-Enable view persistence on calendar  
@@ -305,7 +305,7 @@ This section includes stories relating to the operation of, and interactions wit
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## Additional Enhancements:
-> Parent story.  Please see the following sub-stories
+> Parent story.  Please see the sub-stories below.
 ## Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
 ### Solution: 
 
