@@ -10,15 +10,15 @@
 1. [TECHNOLOGIES USED](#Technologies-Used)
 2. [OVERVIEW](#Overview)
 3. [FULLCALENDAR STORIES](#Stories)
-* 3174-Add a one week fullCalendar to the tempSchedule/Create view
-* 3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks
-  * 3192-clicking on a day on the calendar should pop up a modal
-  * 3191-Make the calendar display as just a one week view. you may need to do some research on fullcalendar
-  * 3190-Remove the notes input box and the create button
-  * 3195-The modal should have a checkbox for "Day Off"
-  * 3193-The modal should have an input for start and end time
-  * 3194-The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers
-* 3209-Implement a mouse hand cursor on hover over calendar
+  * 3174-Add a one week fullCalendar to the tempSchedule/Create view
+  * 3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks
+    * 3192-clicking on a day on the calendar should pop up a modal
+    * 3191-Make the calendar display as just a one week view. you may need to do some research on fullcalendar
+    * 3190-Remove the notes input box and the create button
+    * 3195-The modal should have a checkbox for "Day Off"
+    * 3193-The modal should have an input for start and end time
+    * 3194-The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers
+  * 3209-Implement a mouse hand cursor on hover over calendar
 * 3405-Implement CRUD Operations on TimeOffEvens
   * 3413-Create a Details Modal
   * 3408-Create Delete Feature
