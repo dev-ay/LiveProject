@@ -10,62 +10,62 @@
 [Technologies Used](#Technologies-Used)  
 [Summary](#Summary)  
 [Stories](#Stories)  
-  1. FullCalendar Stories:  
-    * **3174-Add a one week fullCalendar to the tempSchedule/Create view**  
-    * **3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks**  
-      * 3192-clicking on a day on the calendar should pop up a modal
-      * 3191-Make the calendar display as just a one week view. you may need to do some research on fullcalendar
-      * 3190-Remove the notes input box and the create button
-      * 3195-The modal should have a checkbox for "Day Off"
-      * 3193-The modal should have an input for start and end time
-      * 3194-The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers
-    * **3209-Implement a mouse hand cursor on hover over calendar**  
-    * **3405-Implement CRUD Operations on TimeOffEvens**  
-      * 3413-Create a Details Modal
-      * 3408-Create Delete Feature
-      * 3409-Enable Reading and Loading of Events on Calendar
-      * 3410-Implement an Events Creation Feature
-      * 3411-Implement an Update Feature
-      * 3412-Make Calendar Events Visually Responsive
-    * **3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors**  
-      * 3437-Enable View Persistence on Calendar
-      * 3433-Fix Runtime Errors
-      * 3432-Implement Calendar Event Resizing Feature
-      * 3429-Implement Calendar Events Drag and Drop Capabilities
-      * 3434-Prevent Edit Modal From Closing Automatically If Save Is Unsuccessful
-      * 3435-Prevent Users From Creating Events Shorter Than 15 Minutes
-      * 3436-Found Event Start and End Times to the Nearest 15 Minute Increments  
-    * **Additional Enhancements**  
-      * Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
-      * Modify Test Entries in Seed Data To Begin Dynamically On Current Week
-      * Modify calendar display preperties based on viewport size
-      * Implement persistence of displayed time range across sessions
-  2. Other Minor Stories:  
-    * **3108-Rename Model.ID**
-    * **3109-Redirect "Manage" button**
-    * **3111-Modify "Mail" button on the nav-bar**
-    * **3113-Change ScheduleId type**
-    * **3121-Add a PayPeriod controller with views**
-    * **3110-Remove TemplateID from Schedule model**
-    * **3126-Add "Request Time Off" to nav menu**
-    * **3127-Add Shift/Create to nav menu**
-    * **3131-Add TempSchedule/Index to nav menu**
-    * **3130-Change Schedule model UserId type**
-    * **3141-Modify "Pay Period Length" label**
-    * **3137-Fix the Schedule/Create bug**
-    * **3135-Remove Inputs boxes from TimeOffEvent/Create**
-    * **3134-Fix the Messages/Inbox bug**
-    * **3142-Set Message/Create DateSent to the current time**
-    * **3143-Fix the Message/Create bug**
-    * **3145-Rearrange and modify Home/Index view**
-    * **3157-Set TempSchedule/Create DateCreated to the current time**
-    * **3168-Remove the Payperiods/Details view**
-    * **3172-Implement Schedule/Create modal**
-    * **3174-Add a one week FullCalendar to the TempSchedule/Create view**
-    * **3178-Make Event model End property nullable**
-    * **3206-Revise the ScheduleTemplate model**
-    * **3176-Implement message-all feature in TimeOffEvent controller**
-    * **3213-Add 3 more admin users to the seed data**
+1. FullCalendar Stories:  
+  * **3174-Add a one week fullCalendar to the tempSchedule/Create view**  
+  * **3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks**  
+    * 3192-clicking on a day on the calendar should pop up a modal
+    * 3191-Make the calendar display as just a one week view. you may need to do some research on fullcalendar
+    * 3190-Remove the notes input box and the create button
+    * 3195-The modal should have a checkbox for "Day Off"
+    * 3193-The modal should have an input for start and end time
+    * 3194-The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers
+  * **3209-Implement a mouse hand cursor on hover over calendar**  
+  * **3405-Implement CRUD Operations on TimeOffEvens**  
+    * 3413-Create a Details Modal
+    * 3408-Create Delete Feature
+    * 3409-Enable Reading and Loading of Events on Calendar
+    * 3410-Implement an Events Creation Feature
+    * 3411-Implement an Update Feature
+    * 3412-Make Calendar Events Visually Responsive
+  * **3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors**  
+    * 3437-Enable View Persistence on Calendar
+    * 3433-Fix Runtime Errors
+    * 3432-Implement Calendar Event Resizing Feature
+    * 3429-Implement Calendar Events Drag and Drop Capabilities
+    * 3434-Prevent Edit Modal From Closing Automatically If Save Is Unsuccessful
+    * 3435-Prevent Users From Creating Events Shorter Than 15 Minutes
+    * 3436-Found Event Start and End Times to the Nearest 15 Minute Increments  
+  * **Additional Enhancements**  
+    * Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
+    * Modify Test Entries in Seed Data To Begin Dynamically On Current Week
+    * Modify calendar display preperties based on viewport size
+    * Implement persistence of displayed time range across sessions
+2. Other Minor Stories:  
+  * **3108-Rename Model.ID**
+  * **3109-Redirect "Manage" button**
+  * **3111-Modify "Mail" button on the nav-bar**
+  * **3113-Change ScheduleId type**
+  * **3121-Add a PayPeriod controller with views**
+  * **3110-Remove TemplateID from Schedule model**
+  * **3126-Add "Request Time Off" to nav menu**
+  * **3127-Add Shift/Create to nav menu**
+  * **3131-Add TempSchedule/Index to nav menu**
+  * **3130-Change Schedule model UserId type**
+  * **3141-Modify "Pay Period Length" label**
+  * **3137-Fix the Schedule/Create bug**
+  * **3135-Remove Inputs boxes from TimeOffEvent/Create**
+  * **3134-Fix the Messages/Inbox bug**
+  * **3142-Set Message/Create DateSent to the current time**
+  * **3143-Fix the Message/Create bug**
+  * **3145-Rearrange and modify Home/Index view**
+  * **3157-Set TempSchedule/Create DateCreated to the current time**
+  * **3168-Remove the Payperiods/Details view**
+  * **3172-Implement Schedule/Create modal**
+  * **3174-Add a one week FullCalendar to the TempSchedule/Create view**
+  * **3178-Make Event model End property nullable**
+  * **3206-Revise the ScheduleTemplate model**
+  * **3176-Implement message-all feature in TimeOffEvent controller**
+  * **3213-Add 3 more admin users to the seed data**
 <br/>
 
 ## TECHNOLOGIES USED
