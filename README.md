@@ -85,7 +85,7 @@ For the highlights of my work on this live project I recommend you jump to the f
   * 3436-Found Event Start and End Times to the Nearest 15 Minute Increments  
 * **Additional Enhancements**
   * Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
-  *   
+  * Modify Test Entries in Seed Data To Begin Dynamically On Current Week
 ### Other Minor Stories:
 * 3108-Rename Model.ID
 * 3109-Redirect "Manage" button
