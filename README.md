@@ -1,8 +1,6 @@
 # AGILE FULLSTACK MVC LIVE PROJECT: Schedule-It 
 ### (...Page still under construction. Please check back for updates...)
 
-   Test text
-
 <p align="center">
   <img src="/img/SI-header.png" alt="Live Project Header"/>
 </p>
@@ -136,7 +134,7 @@ For the highlights of my work on this live project I recommend you jump to the f
       
       
       
-# FullCalendar Stories:
+# FULLCALENDAR STORIES:
 ## 3189-Make a few changes to the ScheduleTemplate / Create view  
 **Details:**  
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
@@ -160,6 +158,7 @@ For the highlights of my work on this live project I recommend you jump to the f
 ## 3405-Implement CRUD operations on TimeOffEvents  
 > **Details:**  
 > Parent story.  See 3408, 3409, 3410, 3411, 3412, 3413  
+[TOC](#TABLE-OF-CONTENTS) > [FULLCALENDAR STORIES](#FULLCALENDAR-STORIES)
 ## 3413-Create a details modal  
 > **Details:**  
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
@@ -233,7 +232,7 @@ For the highlights of my work on this live project I recommend you jump to the f
 
 
 
-# Other Minor Stories
+# OTHER MINOR STORIES
 ## 3108-Rename Model.ID
 > **Details:**  
 > Under Views\Schedule\Create.cshtml change Model.ID to Model.Id
