@@ -88,7 +88,7 @@ ___
 
 <br/>
 
-[24680]: #3189
+[24680]: #3190-Remove-the-notes-input-box-and-the-create-button
 
 ___
 
