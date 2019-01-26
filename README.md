@@ -146,7 +146,7 @@ ___
 
 
 # FULLCALENDAR STORIES:
-## 3189  -Make a few changes to the ScheduleTemplate / Create view  
+## 3189    -    Make a few changes to the ScheduleTemplate / Create view  
 **Details:**  
 > Parent story.  Please see 3192, 3191, 3190, 3195, 3193, 3194  
 
