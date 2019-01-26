@@ -135,6 +135,8 @@ For the highlights of my work on this live project I recommend you jump to the f
   * [3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors][3428]
   * [Additional Enhancements](#Additional-Enhancements)
 
+*Note: The 4-digit number in front of each story is the associated work item number from the version control systems.   I have listed the stories in the order in which I completed them or by context, so you will often notice the numbers being listed out of order*
+
 *Note: Per request from end customer I will not be uploading source code files to my GitHub repository.  I do have permission to include code snippets and screenshots in this readme file.*
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [Overview](#OVERVIEW) >*
