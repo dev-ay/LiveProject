@@ -8,7 +8,7 @@
 
 ## TABLE OF CONTENTS
 * [Technologies Used](#Technologies-Used)
-* [Introduction](#Introduction)
+* [Summary](#Summary)
 * [Stories](#Stories)
 
 
@@ -17,13 +17,36 @@
   
   **Frameworks/Libraries:**  ASP.NET MVC, Entity Framework, jQuery, Bootstrap, FullCalendar, MomentJS
   
-  **Version Control:** Git, GitHub, Team Foundation Server
+  **Version Control:** Git, Team Foundation Server
   
-  **Project Tools:** Visual Studio, SQL Server, Azure DevOps, Chrome Developer Tools, Edge Developer Tools
+  **Project Tools:** Visual Studio, SQL Server, Azure DevOps, Chrome Developer Tools, Edge Developer Tools, Google Hangout, Slack
 
 
-## INTRODUCTION
-
+## SUMMARY
+<img align="right" src="/img/test.png" alt="Test Image"/>
+This is an agile live project I participated in at the Tech Academy for a production clock-in software.  
+**End Product:**  
+The ultimate scope of the end product was an employee clock-in fullstack MVC web application with the following features:
+  * Users can clock-in their work time
+  * Users can request time off and admins can view requests and approve
+  * Users can create multi-purpose schedules and create schedule templates
+  * Users can create temporary schedules to substitute long-term schedules
+  * Users can view their pay over flexible windows of time
+  * Users can message other users
+  * Implement a visual calendar system
+  * Implement user authentification
+  * Various other features
+  * See [Technologies Used](#Technologies-Used) for the underlying technologies utilized
+**Project Format:**
+This was a multiple-month SCRUM project.  At the time of my participation, there were around 15 members on the team, many of them remote.  We held daily stand-up meetings over Google Hangout discussing our progress from the previous day and upcoming tasks.  We also held occassional story-building sessions to discuss and brainstorm overall product features and design.  Team members sought and offered help from and to one another through Slack.  We used Microsoft's Azure DevOps online project management system to track each story through "New", "Active", "Resolved", and "Closed" phases. During the first half of my sprint we used Microsoft's Team Foundation Server version control system to make commits and merge every team member's work.  During the second half we migrated over to Git version control instead.
+The structure of the software is an ASP.NET MVC Application using Code-First Entity Framework to manage a SQL Server database.  We used Visual Studio Community for development with version control extensions. See [Technologies Used](#Technologies-Used) for the software technologies used.
+**My Role:**
+My role on the project was a 2 week long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar, capable of all CRUD operations, features mouse-based dragging and dropping and resizing for event modification, and features visually responsive calendar events that update based on changes to input times.  I created backend CRUD methods that utilized Entity Framework to access the database.  On the frontend I largely relied on jQuery, and utilized AJAX to communicate with the backend.
+Initially I reloaded the calendar after each event update, as that was the most straightforward way to ensure the calendar precisely reflects the backend database.  However, in the interest of providing the optimal user experience, I decided to modify my program design so that the backend database and frontend calendar were updated separately.  My motivation for this was to optimize the program for slow network connections and to operate as efficiently as possible for the end user.  Out of personal interest I continued to make enhancements to the program after my time on the project.
+For the highlights of my work on this live project I recommend you jump to the following sections
+  * 3405-Implement CRUD Operations on TimeOffEvens
+  * 3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors
+  * Additional Enhancements
 
 
 ## STORIES
