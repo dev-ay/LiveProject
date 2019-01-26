@@ -4,6 +4,7 @@
 <p align="center">
   <img src="/img/SI-header.png" alt="Live Project Header"/>
 </p>
+
 <br/>
 
 ___
@@ -71,6 +72,7 @@ ___
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS)*
 
 <br/>
+
 ___
 
 ## TECHNOLOGIES USED
@@ -85,6 +87,7 @@ ___
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [Technologies Used](#TECHNOLOGIES-USED)*
 
 <br/>
+
 ___
 
 ## OVERVIEW
