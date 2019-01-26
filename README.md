@@ -112,7 +112,7 @@ This was a multiple-month SCRUM project.  At the time of my participation, there
 The structure of the software is an ASP.NET MVC Application using Code-First Entity Framework to manage a SQL Server database.  We used Visual Studio Community for development with version control extensions. See [Technologies Used](#Technologies-Used) for the software technologies used.  
 
 ### **My Role:**  
-My role on the project was a 2-week-long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar. I created backend CRUD methods that utilized Entity Framework to access the database.  On the frontend I largely relied on jQuery, and utilized AJAX to communicate with the backend.  The features of the calendar system include the following:
+My role on the project was a 2-week-long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar. I created backend CRUD methods that utilized Entity Framework to access a database.  On the frontend I largely relied on jQuery, and utilized AJAX to communicate with the backend.  The features of the calendar system include the following:
 * Performs all CRUD operations
 * Enables creation of event by selecting time range on calendar
 * Enables mouse-based resizing and dragging and dropping to modify calendar events
@@ -131,9 +131,11 @@ Initially I reloaded the calendar after each event update, as that was the most 
 After my sprint concluded, I continued to make enhancements to the program on my own out of curiosity.  These changes are listed under [Additional Enhancements](#Additional-Enhancements).
 
 For the highlights of my work on this live project I recommend you jump to the following sections:  
-  * 3405-Implement CRUD Operations on TimeOffEvens
-  * 3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors
-  * Additional Enhancements
+  * [3405-Implement CRUD Operations on TimeOffEvens][3405]
+  * [3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors][3428]
+  * [Additional Enhancements](#Additional-Enhancements)
+
+*Note: Per request from end customer I will not be uploading source code files to my GitHub repository.  I do have permission to include code snippets and screenshots in this readme file.*
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [Overview](#OVERVIEW) >*
 
