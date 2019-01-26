@@ -9,7 +9,7 @@
 ## TABLE OF CONTENTS
 1. [TECHNOLOGIES USED](#Technologies-Used)
 2. [OVERVIEW](#Overview)
-3. [STORIES](#Stories)
+3. [STORIES](#Stories)  
 &nbsp;&nbsp;**FULLCALENDAR STORIES:**
   * 3174-Add a one week fullCalendar to the tempSchedule/Create view
   * 3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks
