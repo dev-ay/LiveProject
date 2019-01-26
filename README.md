@@ -20,7 +20,7 @@ ___
     * [3190-Remove the notes input box and the create button][3190]
     * [3195-The modal should have a checkbox for "Day Off"][3195]
     * [3193-The modal should have an input for start and end time][3193]
-    * [3194-The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers][3194]
+    * [3194-Implement user-friendly time pickers][3194]
   * [3209-Implement a mouse hand cursor on hover over calendar][3209]
 * [3405-Implement CRUD Operations on TimeOffEvens][3405]
   * [3413-Create a Details Modal][3413]
@@ -174,7 +174,9 @@ ___
 ## 3193 the modal should have an input for start and end time 
 ### Solution: 
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
-## 3194-The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers 
+## 3194-Implement user-friendly time pickers
+> Details:
+> The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers  
 ### Solution: 
 *Jump to:&nbsp;&nbsp;[TOC](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3209-Implement a mouse hand cursor on hover over calendar  
@@ -452,7 +454,7 @@ ___
 [3190]:#3190-remove-the-notes-input-box-and-the-create-button
 [3195]:#3195-the-modal-should-have-a-checkbox-for-day-off
 [3193]:#3193-the-modal-should-have-an-input-for-start-and-end-time
-[3194]:
+[3194]:#3194-Implement-user-friendly-time-pickers
 [3209]:#3209-implement-a-mouse-hand-cursor-on-hover-over-calendar
 [3405]:#3405-implement-crud-operations-on-timeoffevents
 [3413]:#3413-create-a-details-modal
