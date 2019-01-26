@@ -10,7 +10,7 @@
 1. [TECHNOLOGIES USED](#Technologies-Used)
 2. [OVERVIEW](#Overview)
 3. [STORIES](#Stories)
-* **FULLCALENDAR STORIES:**
+&nbsp;&nbsp;**FULLCALENDAR STORIES:**
   * 3174-Add a one week fullCalendar to the tempSchedule/Create view
   * 3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks
     * 3192-clicking on a day on the calendar should pop up a modal
