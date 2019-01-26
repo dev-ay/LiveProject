@@ -13,7 +13,7 @@ ___
 1. **[TECHNOLOGIES USED](#Technologies-Used)**
 2. **[OVERVIEW](#Overview)**
 3. **[FULLCALENDAR STORIES](#FULLCALENDAR-STORIES)**
-  * 3174-Add a one week fullCalendar to the tempSchedule/Create view
+  * [3174-Add a one week fullCalendar to the tempSchedule/Create view][3174]
   * 3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks
     * 3192-clicking on a day on the calendar should pop up a modal
     * 3191-Make the calendar display as just a one week view. you may need to do some research on fullcalendar
@@ -438,4 +438,4 @@ ___
 
 
 
-
+[3174]: #3174-Add-a-one-week-fullCalendar-to-the-tempSchedule/Create-view
