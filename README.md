@@ -6,10 +6,10 @@
 </p>
 <br/>
 
-## TABLE OF CONTENTS
-1. [Technologies Used](#Technologies-Used)  
-2. [Overview](#Overview)  
-3. [Stories](#Stories)
+# TABLE OF CONTENTS
+1. ## [Technologies Used](#Technologies-Used)  
+2. ## [Overview](#Overview)  
+3. ## [Stories](#Stories)
 * ### FullCalendar Stories:  
   * **3174-Add a one week fullCalendar to the tempSchedule/Create view**  
   * **3189-Make a few changes to the ScheduleTemplate / Create view. See Tasks**  
@@ -68,7 +68,7 @@
   * **3213-Add 3 more admin users to the seed data**
 <br/>
 
-## TECHNOLOGIES USED
+# TECHNOLOGIES USED
   **Languages:** C#, T-SQL, JavaScript, HTML, CSS
   
   **Frameworks/Libraries:**  ASP.NET MVC, Entity Framework, jQuery, Bootstrap, FullCalendar, MomentJS
@@ -78,7 +78,7 @@
   **Project Tools:** Visual Studio, SQL Server, Azure DevOps, Chrome Developer Tools, Edge Developer Tools, Google Hangout, Slack  
 <br/>
 
-## OVERVIEW
+# OVERVIEW
 This is an agile live project I participated in at the Tech Academy for a production clock-in software.  
 
 **Product Features:**  
