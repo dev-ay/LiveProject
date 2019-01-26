@@ -45,7 +45,7 @@ This was a multiple-month SCRUM project.  At the time of my participation, there
 The structure of the software is an ASP.NET MVC Application using Code-First Entity Framework to manage a SQL Server database.  We used Visual Studio Community for development with version control extensions. See [Technologies Used](#Technologies-Used) for the software technologies used.  
 
 ### **My Role:**  
-My role on the project was a 2 week long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar. I created backend CRUD methods that utilized Entity Framework to access the database.  On the frontend I largely relied on jQuery, and utilized AJAX to communicate with the backend.  The features of the calendar system include the following:
+My role on the project was a 2-week-long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar. I created backend CRUD methods that utilized Entity Framework to access the database.  On the frontend I largely relied on jQuery, and utilized AJAX to communicate with the backend.  The features of the calendar system include the following:
 * Performs all CRUD operations
 * Enables creation of event by selecting time range on calendar
 * Enables mouse-based resizing and dragging and dropping to modify calendar events
@@ -61,7 +61,7 @@ My role on the project was a 2 week long sprint, and this readme details the sto
 
 Initially I reloaded the calendar after each event update, as that was the most straightforward way to ensure the calendar precisely reflects the backend database.  This approach was not unreasonably slow.  However, in the interest of providing the best user experience, I decided to modify my program design so that the backend database and frontend calendar were updated separately.  My motivation for this was to optimize the program for potentially slow network connections and to operate as efficiently as possible for the end user.  
 
-After my sprint concluded, I continued to make enhancements to the program on my own out of curiosity.  These changes are listed under [Additional Enhancements](#Additional-Enhancements).
+After my sprint concluded, I continued to make enhancements to the program on my own out of curiosity.  These changes are listed under [Additional Enhancements](#Additional-Enhancements:).
 
 For the highlights of my work on this live project I recommend you jump to the following sections:  
   * 3405-Implement CRUD Operations on TimeOffEvens
@@ -214,8 +214,15 @@ For the highlights of my work on this live project I recommend you jump to the f
 > &nbsp;&nbsp;\- Date pickers in browsers such as Edge do not restrict time values.  Therefore, when the user attempts to save an event, round the times to the nearest 15 minute increments.   
 > &nbsp;&nbsp;\- For browsers that do support value control, such as Chrome, cause time to change 15 minutes at a time.  
 ### Solution: 
-
-
+## Additional Enhancements:
+## Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
+### Solution: 
+## Modify Test Entries in Seed Data To Begin Dynamically On Current Week  
+### Solution: 
+## Modify calendar display preperties based on viewport size  
+### Solution:  
+## Implement persistence of displayed time range across sessions  
+### Solution: 
 
 
 
