@@ -5,13 +5,13 @@
   <img src="/img/SI-header.png" alt="Live Project Header"/>
 </p>
 
-<br/><br/>
+<br/>
 ## TABLE OF CONTENTS
 * [Technologies Used](#Technologies-Used)
 * [Summary](#Summary)
 * [Stories](#Stories)
 
-<br/><br/>
+<br/>
 ## TECHNOLOGIES USED
   **Languages:** C#, T-SQL, JavaScript, HTML, CSS
   
@@ -21,12 +21,12 @@
   
   **Project Tools:** Visual Studio, SQL Server, Azure DevOps, Chrome Developer Tools, Edge Developer Tools, Google Hangout, Slack
 
-<br/><br/>
+<br/>
 ## SUMMARY
-<img align="right" src="/img/test.png" alt="Test Image"/>
 This is an agile live project I participated in at the Tech Academy for a production clock-in software.  
-<br/><br/>
+
 **Product Features:**  
+<img align="right" src="/img/test.png" alt="Test Image"/>
 The ultimate scope of the end product was an employee clock-in fullstack MVC web application with the following features:
   * Users can clock-in their work time
   * Users can request time off and admins can view requests and approve
@@ -51,7 +51,7 @@ For the highlights of my work on this live project I recommend you jump to the f
   * 3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors
   * Additional Enhancements
 
-
+<br/>
 ## STORIES
 ### FullCalendar Stories:
 * **3174-Add a one week fullCalendar to the tempSchedule/Create view**
