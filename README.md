@@ -515,7 +515,7 @@ This is a minor story involving the simple renaming of a model property.  Once r
 > **Details:**
 > Add 3 admin users to the seed data. Look at migrations > configuration  
 ### Solution:
-```csharp
+```c#
 if (!context.Users.Any(u => u.UserName == "admin1@FakeEmail.com"))
 {
     userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
