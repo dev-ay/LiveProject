@@ -119,9 +119,10 @@ The structure of the software is an ASP.NET MVC Application using Code-First Ent
 ### **My Role:**  
 My role on the project was a 2-week-long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar. I created backend CRUD methods that utilized Entity Framework to access a database.  On the frontend I largely relied on jQuery, and utilized AJAX to communicate with the backend.  The features of my calendar system include the following:  
 
-
-<img align="right" src="/img/SI-DragDrop-Thumbnail.png" alt="Drag and Drop Thumbnail"/>
-
+<figure>
+  <img align="right" src="/img/SI-DragDrop-Thumbnail.png" alt="Drag and Drop Thumbnail"/>
+  <figcaption>Figure- Dragging and dropping an event</figcaption>
+</figure>
 
 * Performs all CRUD operations
 * Enables creation of event by selecting time range on calendar
@@ -375,8 +376,9 @@ This section lists stories relating to other aspects of the project but unrelate
 
 ## 3108-Rename Model.ID
 > **Details:**
-> Under Views\Schedule\Create.cshtml change Model.ID to Model.Id  
+> Under Views\Schedule\Create.cshtml rename Model.ID
 ### Solution:
+This is a minor story involving the simple renaming of a model property.  Once renamed, a migration must be added due to the use of a Code-First Database by Entity Framework.  
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 ## 3109-Redirect "Manage" button
