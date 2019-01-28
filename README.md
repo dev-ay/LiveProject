@@ -96,7 +96,7 @@ ___
 ## OVERVIEW
 This is an Agile/SCRUM live project that I participated in at the Tech Academy for a production clock-in software.  The overall project occurs over many months, but my personal participation was over a single 2-week sprint.  This Readme only lists the stories assigned to me.
 
-<img align="right" src="/img/SI-Day-Week-Thumbnail.png" alt="1-week view with all-day and agenda sections title="1-week view with all-day and agenda sections"/>
+<img align="right" src="/img/SI-Day-Week-Thumbnail.png" alt="1-week view with all-day and agenda sections" title="1-week view with all-day and agenda sections"/>
 
 **Overall Product Features:**  
 The ultimate scope of the end product was an employee clock-in fullstack MVC web application with the following features:
