@@ -119,10 +119,9 @@ The structure of the software is an ASP.NET MVC Application using Code-First Ent
 ### **My Role:**  
 My role on the project was a 2-week-long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar. I created backend CRUD methods that utilized Entity Framework to access a database.  On the frontend I largely relied on jQuery, and utilized AJAX to communicate with the backend.  The features of my calendar system include the following:  
 
-<figure>
-  <img align="right" src="/img/SI-DragDrop-Thumbnail.png" alt="Drag and Drop Thumbnail"/>
-  <figcaption>Figure- Dragging and dropping an event</figcaption>
-</figure>
+
+<img align="right" src="/img/SI-DragDrop-Thumbnail.png" alt="Dragging and dropping an event" title="Dragging and dropping an event"/>
+  
 
 * Performs all CRUD operations
 * Enables creation of event by selecting time range on calendar
