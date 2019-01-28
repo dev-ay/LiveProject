@@ -515,6 +515,25 @@ This is a minor story involving the simple renaming of a model property.  Once r
 > **Details:**
 > Add 3 admin users to the seed data. Look at migrations > configuration  
 ### Solution:
+```csharp
+if (!context.Users.Any(u => u.UserName == "admin1@FakeEmail.com"))
+{
+    userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+
+    for (int i = 1; i <= 3; i++)
+    {
+        user = new ApplicationUser()
+        {
+            UserName = String.Format("admin{0}@FakeEmail.com", i),
+            Email = String.Format("admin{0}@FakeEmail.com", i),
+            EmailConfirmed = true
+        };
+            manager.Create(user, "Admin1234");
+            userManager.AddToRole(user.Id, "Admin");
+    }
+
+}
+```
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
 
