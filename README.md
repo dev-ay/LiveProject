@@ -511,10 +511,13 @@ This is a minor story involving the simple renaming of a model property.  Once r
 ### Solution:
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [Other Stories](#OTHER-STORIES) >*
-## 3213-Add 3 more admin users to the seed data
+## 3213-Add 3 admin users to the seed data
 > **Details:**
 > Add 3 admin users to the seed data. Look at migrations > configuration  
 ### Solution:
+
+The following code was added to the Seed() method in the Configuration.cs file.  The Entity Framework database 'context' was passed in to the Seed() method as an input parameter.  I used lambda syntax to check the database context whether one of the admin users already exist in the database, and if not, then add 3 admin users.  The way I added the users was to use a FOR loop with string formatting to auto-increment.  In each loop iteration an admin user is created, confirmed, and assigned the role of "Admin".
+
 ```c#
 if (!context.Users.Any(u => u.UserName == "admin1@FakeEmail.com"))
 {
@@ -528,7 +531,7 @@ if (!context.Users.Any(u => u.UserName == "admin1@FakeEmail.com"))
             Email = String.Format("admin{0}@FakeEmail.com", i),
             EmailConfirmed = true
         };
-            manager.Create(user, "Admin1234");
+            userManager.Create(user, "Admin1234");
             userManager.AddToRole(user.Id, "Admin");
     }
 
