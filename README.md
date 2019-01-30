@@ -225,30 +225,32 @@ The way to customize your calendar is to realize that FullCalendar offers you 3 
   
 In the solution above I have set the ***option*** of the default view to a weekly agenda view (i.e. 1-week view with a slot on top for all-day events, and an hourly view on the bottom).  In the later stories you will see examples of more options, as well as methods and callbacks being used.
   
-*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
+
 ## 3189-Make a few changes to the ScheduleTemplate / Create view  
 > **Details:**
 > This is a parent story.  Please see [3192], [3191], [3190], [3195], [3193], [3194]  
 
-*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
+
 ## 3192-clicking on a day on the calendar should pop up a modal
 ### Solution: 
 A modal is essentially a dialog box or popup that appears over your webpage to either display information or receive input.  A modal in `Bootstrap3` can be implemented as follows
 ```html
-//Modal
+<!--Modal-->
 <div id="DetailsModal" class="modal fade" role="dialog" style="overflow:scroll">
     <div class="modal-dialog">
       
-        //Modal content
+        <!--Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-              //Header portion
+              <!--Header portion-->
             </div>
             <div class="modal-body">
-              //Modal main content area
+              <!--Modal main content area-->
             </div>
             <div class="modal-footer">
-              //Modal footer
+              <!--Modal footer-->
             </div>
         </div>
       
@@ -256,22 +258,26 @@ A modal is essentially a dialog box or popup that appears over your webpage to e
 </div>
 ```
 
-*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
+
 ## 3191-Modify calendar to display one week view
 > **Details:**
 > Make the calendar display as just a one week view. you may need to do some research on fullcalendar
 ### Solution: 
 FullCalendar displays a monthly view by default.  This story is to modify the calendar in the *ScheduleTemplate* portion of project from the default monthly view to a weekly view.  The implementation will be identical to [3174].  Please see [3174] for more information on how to display a calendar and how to set the default view option to a weekly view.  
 
-*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
+
 ## 3190-Remove the notes input box and the create button
 ### Solution: 
 This story involves simply removing certain existing `HTML` elements.
 
-*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
+
 ## 3195-The modal should have a checkbox for "Day Off" 
 ### Solution: 
-*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
+
 ## 3193 the modal should have an input for start and end time 
 ### Solution: 
 `HTML` input elements have many options for type, such as textbox or checkbox.  When it comes to *date* and/or *time*, there are 5 related types:
@@ -301,23 +307,27 @@ In this case, within the `modal-body` portion of the modal form, you could add t
 
 **Please Note:** *datetime-local* uses the ISO 8601 format without time zones (i.e. "YYYY-MM-DDTHH:mm" e.g. "2019-02-01T08:00") 
 
-*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
+
 ## 3194-Implement user-friendly time pickers
 > **Details:**
 > The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers  
 ### Solution: 
-*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
+
 ## 3209-Implement a mouse hand cursor on hover over calendar  
 > **Details:**
 > When the user hovers over any of the calendars, the cursor should change to reflect that the calendar is clickable.  
 > This story is for all of the calendars.  This includes the schedule create view, the tempschedule create view, and the timeoffevent create view.  
 ### Solution: 
-*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
+
 ## 3405-Implement CRUD operations on TimeOffEvents  
 > **Details:**
 > Parent story.  Please see [3408], [3409], [3410], [3411], [3412], [3413]  
 
-*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
+*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
+
 ## 3413-Create a details modal  
 > **Details:**
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
