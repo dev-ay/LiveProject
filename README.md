@@ -275,12 +275,29 @@ This story involves simply removing certain existing `HTML` elements.
 ## 3193 the modal should have an input for start and end time 
 ### Solution: 
 `HTML` input elements have many options for type, such as textbox or checkbox.  For handling *date* and/or *time* there are 4 options for type:
-- *Date*
-- *Time*
-- *Datetime*
-- *Datetime-Local*
+- *date*
+- *time*
+- *datetime-local*
+- *week*
+- *month*
 
-I have chosen *Datetime-Local* for input type since it includes both *date* and *time* but excludes *time-offset* information which would overcomplicate the experience for the end user.
+I have chosen *datetime-local* for input type since it includes both *date* and *time*.  (Alternatively, you can include separate *date* and *time* inputs)
+
+Within the `modal-body` portion of the modal form, add the following:
+```html
+<div class="form-group">
+  <label class="control-label col-sm-2" for="inputStart">Start:</label>
+  <div class="col-sm-10">
+    <input type="datetime-local" class="form-control" id="inputStart">
+  </div>
+</div>
+<div class="form-group" id="divEnd">
+  <label class="control-label col-sm-2" for="inputEnd">End:</label>
+  <div class="col-sm-10">
+    <input type="datetime-local" class="form-control" id="inputEnd">
+  </div>
+</div>
+```
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3194-Implement user-friendly time pickers
