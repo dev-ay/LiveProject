@@ -198,7 +198,7 @@ This section includes stories relating to the operation of, and interactions wit
 > **Details:**
 > Add a one week fullCalendar to the ScheduleTemplate/Create view  
 ### Solution:
-The way to add a calendar through FullCalendar is first of all to add a <div> section with an id, like the following:
+The way to add a calendar through FullCalendar is first of all to add a `<div>` section with an id, like the following:
 ```html
 <div id="calendarScheduleTemplate" class="mt-40"></div>
 ```
@@ -208,7 +208,7 @@ In this case the class "mt-40" was simply a CSS formatting class for adding 40 p
     margin-top:40px;
 }
 ```
-The way to display a calendar is by calling the FullCalendar constructor using jQuery on the <div> element id created earlier.  In this case I placed the following code in the javascript script file:
+The way to display a calendar is by calling the FullCalendar constructor using jQuery on the `<div>` element id created earlier.  In this case I placed the following code in the javascript script file:
 ```javascript
 $(function () {
     $('#calendarScheduleTemplate').fullCalendar({
@@ -216,10 +216,11 @@ $(function () {
     })
 });
 ```
-The way to customize your calendar is to realize that FullCalendar offers you 3 ways to customize calendar appearance and behavior: options, methods, and callbacks.
-  **Options** are properties of the calendar that you can set, such as size and view format.
-  **Methods** are predefined functions that allow you to perform an action on the calendar, such as to update a single event, or to re-render the whole calendar.
-  **Callbacks** are functions that you can define, that are triggered when specific events occur, such as when a user clicked resizes an event or clicks on a time slot.  When those events occur, the program will automatically execute the functions that you define for those situations.
+The way to customize your calendar is to realize that FullCalendar offers you 3 ways to customize calendar appearance and behavior: options, methods, and callbacks.  
+  **Options** are properties of the calendar that you can set, such as size and view format.  
+  **Methods** are predefined functions that allow you to perform an action on the calendar, such as to update a single event, or to re-render the whole calendar.  
+  **Callbacks** are functions that you can define, that are triggered when specific events occur, such as when a user clicked resizes an event or clicks on a time slot.  When those events occur, the program will automatically execute the functions that you define for those situations.  
+  
 In the solution above I have set the **option** of the default view to a weekly agenda view (i.e. with a slot on top for all-day events, and an hourly view on the bottom).  In the later stories you will see examples of more options, as well as methods and callbacks being used.
   
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
@@ -570,7 +571,7 @@ if (!context.Users.Any(u => u.UserName == "admin1@FakeEmail.com"))
 
 
 
-[3174]:#3174-add-a-one-week-fullcalendar-to-the-tempschedulecreate-view
+[3174]:#3174-add-a-one-week-fullcalendar-to-the-scheduletemplatecreate-view
 [3189]:#3189-make-a-few-changes-to-the-scheduletemplate--create-view
 [3192]:#3192-clicking-on-a-day-on-the-calendar-should-pop-up-a-modal
 [3191]:#3191-Modify-calendar-to-display-one-week-view
