@@ -311,7 +311,7 @@ In this case, within the `modal-body` portion of the modal form, you could add t
 </div>
 ```
 
-**Please Note:** *datetime-local* uses the ISO 8601 format without time zones (i.e. "YYYY-MM-DDTHH:mm" e.g. "2019-02-01T08:00") 
+**Please Note:** *datetime-local* uses the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format without time zones (i.e. "YYYY-MM-DD[T]HH:mm" e.g. "2019-02-01T08:00") 
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
 <br />
