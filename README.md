@@ -281,12 +281,13 @@ This story involves simply removing certain existing `HTML` elements.
 
 ## 3195-The modal should have a checkbox for "Day Off" 
 ### Solution: 
+```html
 <div class="form-group">
   <label class="control-label col-sm-2" for="inputDayOff">Day Off:</label>
   <div class="col-sm-10">
     <input type="checkbox" class="form-control" id="inputDayOff">
   </div>
-</div>
+</div>```
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
 <br />
@@ -327,7 +328,7 @@ In this case, within the `modal-body` portion of the modal form, you could add t
 > **Details:**
 > The start and end time inputs should be time pickers that are easy for a user to use.
 ### Solution: 
-Most modern browers now actually have implementations of date and time pickers associated with *date* and *time* related input types.  The downside to using default browser pickers is having non-uniform pickers across browsers.  However, they are very quick to implement.  If uniformity of picker style is desired across browsers, there are various `Bootstrap` based [datetime pickers](https://www.codexworld.com/bootstrap-datetimepicker-add-date-time-picker-input-field/) available
+Most modern browers now actually have implementations of pickers associated with *date* and *time* related input types.  The downside to using default browser pickers is having non-uniform pickers across browsers.  However, they are very quick to implement.  If uniformity of picker style is desired across browsers, there are various `Bootstrap` based pickers available online such as [this one from codexworld](https://www.codexworld.com/bootstrap-datetimepicker-add-date-time-picker-input-field/).
 
 In this case, however, the *datetime-local* inputs from [3193] already come with default pickers in modern browsers.
 
