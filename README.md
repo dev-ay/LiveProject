@@ -281,17 +281,24 @@ This story involves simply removing certain existing `HTML` elements.
 
 ## 3195-The modal should have a checkbox for "Day Off" 
 ### Solution: 
+<div class="form-group">
+  <label class="control-label col-sm-2" for="inputDayOff">Day Off:</label>
+  <div class="col-sm-10">
+    <input type="checkbox" class="form-control" id="inputDayOff">
+  </div>
+</div>
+
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
 <br />
 
 ## 3193 the modal should have an input for start and end time 
 ### Solution: 
 `HTML` input elements have many options for type, such as textbox or checkbox.  When it comes to *date* and/or *time*, there are 5 related types:
-- *date*: date only
-- *time*: time only
-- *datetime-local*: date plus time, without time zone information
-- *week*: week of the year
-- *month*: month of the year and year
+- ***date***: date only
+- ***time***: time only
+- ***datetime-local***: date plus time, without time zone information
+- ***week***: week of the year
+- ***month***: month of the year and year
 
 In our backend database, we store times as both date plus time, with no time zones.  It makes sense, therefore, to choose *datetime-local* here for input.  If our database stored *date* and *time* separately, you can still use *datetime-local*, or use two separate inputs one for *date* and another for *time*.
 
@@ -311,15 +318,19 @@ In this case, within the `modal-body` portion of the modal form, you could add t
 </div>
 ```
 
-**Please Note:** *datetime-local* uses the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format without time zones (i.e. "YYYY-MM-DD[T]HH:mm" e.g. "2019-02-01T08:00") 
+**Please Note:** *datetime-local* uses the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format without time zones (i.e. "YYYY-MM-DD[T]HH:mm" e.g. "2019-02-01T17:30") 
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
 <br />
 
 ## 3194-Implement user-friendly time pickers
 > **Details:**
-> The start and end time inputs should be time pickers that are easy for a user to use. look at bootstrap time pickers  
+> The start and end time inputs should be time pickers that are easy for a user to use.
 ### Solution: 
+Most modern browers now actually have implementations of date and time pickers associated with *date* and *time* related input types.  The downside to using default browser pickers is having non-uniform pickers across browsers.  However, they are very quick to implement.  If uniformity of picker style is desired across browsers, there are various `Bootstrap` based [datetime pickers](https://www.codexworld.com/bootstrap-datetimepicker-add-date-time-picker-input-field/) available
+
+In this case, however, the *datetime-local* inputs from [3193] already come with default pickers in modern browsers.
+
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
 <br />
 
