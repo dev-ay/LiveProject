@@ -202,13 +202,13 @@ The way to add a calendar through FullCalendar is first of all to add a `<div>` 
 ```html
 <div id="calendarTempSchedule" class="mt-40"></div>
 ```
-In this case the class "mt-40" was simply a CSS formatting class for adding 40 pixels to the top margin.  I modeled it after Bootstrap4 (which was not available to me because we were using Bootstrap3 on this project):
+In this case the class "mt-40" was simply a `CSS` formatting class for adding 40 pixels to the top margin.  I modeled it after `Bootstrap4` (which was not available to me because we were using `Bootstrap3` on this project):
 ```css
 .mt-40{
     margin-top:40px;
 }
 ```
-The way to display a calendar is by calling the FullCalendar constructor using jQuery on the `<div>` element id created earlier.  In this case I placed the following code in the javascript script file:
+The way to display a calendar is by calling the FullCalendar constructor using jQuery on the `<div>` element id created earlier.  In this case I placed the following code in the `JavaScript` script file:
 ```javascript
 $(function () {
     $('#calendarTempSchedule').fullCalendar({
@@ -228,11 +228,34 @@ In the solution above I have set the ***option*** of the default view to a weekl
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3189-Make a few changes to the ScheduleTemplate / Create view  
 > **Details:**
-> Parent story.  Please see [3192], [3191], [3190], [3195], [3193], [3194]  
+> This is a parent story.  Please see [3192], [3191], [3190], [3195], [3193], [3194]  
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3192-clicking on a day on the calendar should pop up a modal
 ### Solution: 
+A modal is essentially a dialog box or popup that appears over your webpage to either display information or receive input.  A modal in `Bootstrap3` can be implemented as follows
+```html
+//Modal
+<div id="DetailsModal" class="modal fade" role="dialog" style="overflow:scroll">
+    <div class="modal-dialog">
+      
+        //Modal content
+        <div class="modal-content">
+            <div class="modal-header">
+              //Header portion
+            </div>
+            <div class="modal-body">
+              //Modal main content area
+            </div>
+            <div class="modal-footer">
+              //Modal footer
+            </div>
+        </div>
+      
+    </div>
+</div>
+```
+
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3191-Modify calendar to display one week view
 > **Details:**
@@ -251,6 +274,13 @@ This story involves simply removing certain existing `HTML` elements.
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3193 the modal should have an input for start and end time 
 ### Solution: 
+`HTML` input elements have many options for type, such as textbox or checkbox.  For handling *date* and/or *time* there are 4 options for type:
+- Date
+- Time
+- Datetime
+- Datetime-Local
+I have chosen *Datetiem-Local* for input type since it includes both *date* and *time* but excludes time offset information which would overcomplicate the experience for the end user.
+
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3194-Implement user-friendly time pickers
 > **Details:**
