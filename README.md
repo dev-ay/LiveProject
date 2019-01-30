@@ -216,12 +216,12 @@ $(function () {
     })
 });
 ```
-The way to customize your calendar is to realize that FullCalendar offers you 3 ways to customize calendar appearance and behavior: options, methods, and callbacks.  
-  **Options** are properties of the calendar that you can set, such as size and view format.  
-  **Methods** are predefined functions that allow you to perform an action on the calendar, such as to update a single event, or to re-render the whole calendar.  
-  **Callbacks** are functions that you can define, that are triggered when specific events occur, such as when a user clicked resizes an event or clicks on a time slot.  When those events occur, the program will automatically execute the functions that you define for those situations.  
+The way to customize your calendar is to realize that FullCalendar offers you 3 ways to customize calendar appearance and behavior: *options, methods, and callbacks.*  
+- ***Options*** are properties of the calendar that you can set, such as size and view format.  
+- ***Methods*** are predefined functions that allow you to perform an action on the calendar, such as to update a single event, or to re-render the whole calendar.  
+- ***Callbacks*** are functions that you can define, that are triggered when specific events occur, such as when a user resizes an event or clicks on a time slot.  When those events occur, the program will automatically execute the functions that you define for those situations.  
   
-In the solution above I have set the **option** of the default view to a weekly agenda view (i.e. with a slot on top for all-day events, and an hourly view on the bottom).  In the later stories you will see examples of more options, as well as methods and callbacks being used.
+In the solution above I have set the ***option*** of the default view to a weekly agenda view (i.e. with a slot on top for all-day events, and an hourly view on the bottom).  In the later stories you will see examples of more options, as well as methods and callbacks being used.
   
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3189-Make a few changes to the ScheduleTemplate / Create view  
