@@ -223,7 +223,7 @@ The way to customize your calendar is to realize that FullCalendar offers you 3 
 - ***Methods*** are predefined functions that allow you to perform an action on the calendar, such as to update a single event, or to re-render the whole calendar.  
 - ***Callbacks*** are functions that you can define, that are triggered when specific events occur, such as when a user resizes an event or clicks on a time slot.  When those events occur, the program will automatically execute the functions that you define for those situations.  
   
-In the solution above I have set the ***option*** of the default view to a weekly agenda view (i.e. with a slot on top for all-day events, and an hourly view on the bottom).  In the later stories you will see examples of more options, as well as methods and callbacks being used.
+In the solution above I have set the ***option*** of the default view to a weekly agenda view (i.e. 1-week view with a slot on top for all-day events, and an hourly view on the bottom).  In the later stories you will see examples of more options, as well as methods and callbacks being used.
   
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3189-Make a few changes to the ScheduleTemplate / Create view  
@@ -274,16 +274,16 @@ This story involves simply removing certain existing `HTML` elements.
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3193 the modal should have an input for start and end time 
 ### Solution: 
-`HTML` input elements have many options for type, such as textbox or checkbox.  For handling *date* and/or *time* there are 4 options for type:
-- *date*
-- *time*
-- *datetime-local*
-- *week*
-- *month*
+`HTML` input elements have many options for type, such as textbox or checkbox.  When it comes to *date* and/or *time*, there are 5 related types:
+- *date*: date only
+- *time*: time only
+- *datetime-local*: date plus time, without time zone information
+- *week*: week of the year
+- *month*: month of the year and year
 
-I have chosen *datetime-local* for input type since it includes both *date* and *time*.  (Alternatively, you can include separate *date* and *time* inputs)
+In our backend database, we store times as both date plus time, with no time zones.  It makes sense, therefore, to choose *datetime-local* here for input.  If our database stored *date* and *time* separately, you can still use *datetime-local*, or use two separate inputs one for *date* and another for *time*.
 
-Within the `modal-body` portion of the modal form, add the following:
+In this case, within the `modal-body` portion of the modal form, you could add the following:
 ```html
 <div class="form-group">
   <label class="control-label col-sm-2" for="inputStart">Start:</label>
@@ -298,6 +298,8 @@ Within the `modal-body` portion of the modal form, add the following:
   </div>
 </div>
 ```
+
+**Please Note:** *datetime-local* uses the ISO 8601 format without time zones (i.e. "YYYY-MM-DDTHH:mm" e.g. "2019-02-01T08:00") 
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3194-Implement user-friendly time pickers
