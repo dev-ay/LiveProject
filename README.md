@@ -275,11 +275,12 @@ This story involves simply removing certain existing `HTML` elements.
 ## 3193 the modal should have an input for start and end time 
 ### Solution: 
 `HTML` input elements have many options for type, such as textbox or checkbox.  For handling *date* and/or *time* there are 4 options for type:
-- Date
-- Time
-- Datetime
-- Datetime-Local
-I have chosen *Datetiem-Local* for input type since it includes both *date* and *time* but excludes time offset information which would overcomplicate the experience for the end user.
+- *Date*
+- *Time*
+- *Datetime*
+- *Datetime-Local*
+
+I have chosen *Datetime-Local* for input type since it includes both *date* and *time* but excludes *time-offset* information which would overcomplicate the experience for the end user.
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3194-Implement user-friendly time pickers
@@ -607,7 +608,7 @@ if (!context.Users.Any(u => u.UserName == "admin1@FakeEmail.com"))
 
 
 
-[3174]:#3174-add-a-one-week-fullcalendar-to-the-scheduletemplatecreate-view
+[3174]:#3174-add-a-one-week-fullcalendar-to-the-tempschedulecreate-view
 [3189]:#3189-make-a-few-changes-to-the-scheduletemplate--create-view
 [3192]:#3192-clicking-on-a-day-on-the-calendar-should-pop-up-a-modal
 [3191]:#3191-Modify-calendar-to-display-one-week-view
