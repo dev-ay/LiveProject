@@ -194,13 +194,13 @@ This section includes stories relating to the operation of, and interactions wit
     * [Implement persistence of displayed time range across sessions][D]
 
 
-## 3174-Add a one week FullCalendar to the ScheduleTemplate/Create view. 
+## 3174-Add a one week FullCalendar to the tempSchedule/Create view. 
 > **Details:**
-> Add a one week fullCalendar to the ScheduleTemplate/Create view  
+> Add a one week fullCalendar to the tempSchedule/Create view  
 ### Solution:
 The way to add a calendar through FullCalendar is first of all to add a `<div>` section with an id to your `HTML` page, like the following:
 ```html
-<div id="calendarScheduleTemplate" class="mt-40"></div>
+<div id="calendarTempSchedule" class="mt-40"></div>
 ```
 In this case the class "mt-40" was simply a CSS formatting class for adding 40 pixels to the top margin.  I modeled it after Bootstrap4 (which was not available to me because we were using Bootstrap3 on this project):
 ```css
@@ -211,7 +211,7 @@ In this case the class "mt-40" was simply a CSS formatting class for adding 40 p
 The way to display a calendar is by calling the FullCalendar constructor using jQuery on the `<div>` element id created earlier.  In this case I placed the following code in the javascript script file:
 ```javascript
 $(function () {
-    $('#calendarScheduleTemplate').fullCalendar({
+    $('#calendarTempSchedule').fullCalendar({
         defaultView: 'agendaWeek'
     })
 });
@@ -238,7 +238,7 @@ In the solution above I have set the ***option*** of the default view to a weekl
 > **Details:**
 > Make the calendar display as just a one week view. you may need to do some research on fullcalendar
 ### Solution: 
-FullCalendar displays a monthly view by default.  This story is to modify the calendar in the *Schedule* portion of project from the default monthly view to a weekly view.  The implementation will be identical to [3174].  Please see [3174] for more information on how to display a calendar and how to set the default view option to a weekly view.  
+FullCalendar displays a monthly view by default.  This story is to modify the calendar in the *ScheduleTemplate* portion of project from the default monthly view to a weekly view.  The implementation will be identical to [3174].  Please see [3174] for more information on how to display a calendar and how to set the default view option to a weekly view.  
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3190-Remove the notes input box and the create button
