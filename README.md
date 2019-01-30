@@ -198,11 +198,11 @@ This section includes stories relating to the operation of, and interactions wit
 > **Details:**
 > Add a one week fullCalendar to the ScheduleTemplate/Create view  
 ### Solution:
-The way to add a calendar through FullCalendar is first of all to add a `<div>` section with an id, like the following:
+The way to add a calendar through FullCalendar is first of all to add a `<div>` section with an id to your `HTML` page, like the following:
 ```html
 <div id="calendarScheduleTemplate" class="mt-40"></div>
 ```
-In this case the class "mt-40" was simply a CSS formatting class for adding 40 pixels to the top margin.  I modeled it after Bootstrap4 (which was not available to me because we were using Bootstrap3 in this project):
+In this case the class "mt-40" was simply a CSS formatting class for adding 40 pixels to the top margin.  I modeled it after Bootstrap4 (which was not available to me because we were using Bootstrap3 on this project):
 ```css
 .mt-40{
     margin-top:40px;
@@ -216,6 +216,8 @@ $(function () {
     })
 });
 ```
+*Note: the calendar must be initialized after the webpage has been initialized.*
+
 The way to customize your calendar is to realize that FullCalendar offers you 3 ways to customize calendar appearance and behavior: *options, methods, and callbacks.*  
 - ***Options*** are properties of the calendar that you can set, such as size and view format.  
 - ***Methods*** are predefined functions that allow you to perform an action on the calendar, such as to update a single event, or to re-render the whole calendar.  
@@ -236,9 +238,13 @@ In the solution above I have set the ***option*** of the default view to a weekl
 > **Details:**
 > Make the calendar display as just a one week view. you may need to do some research on fullcalendar
 ### Solution: 
+FullCalendar displays a monthly view by default.  This story is to modify the calendar in the *Schedule* portion of project from the default monthly view to a weekly view.  The implementation will be identical to [3174].  Please see [3174] for more information on how to display a calendar and how to set the default view option to a weekly view.  
+
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3190-Remove the notes input box and the create button
 ### Solution: 
+This story involves simply removing certain existing `HTML` elements.
+
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3195-The modal should have a checkbox for "Day Off" 
 ### Solution: 
