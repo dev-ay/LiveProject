@@ -226,12 +226,14 @@ The way to customize your calendar is to realize that FullCalendar offers you 3 
 In the solution above I have set the ***option*** of the default view to a weekly agenda view (i.e. 1-week view with a slot on top for all-day events, and an hourly view on the bottom).  In the later stories you will see examples of more options, as well as methods and callbacks being used.
   
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
+<br />
 
 ## 3189-Make a few changes to the ScheduleTemplate / Create view  
 > **Details:**
 > This is a parent story.  Please see [3192], [3191], [3190], [3195], [3193], [3194]  
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
+<br />
 
 ## 3192-clicking on a day on the calendar should pop up a modal
 ### Solution: 
