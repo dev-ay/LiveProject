@@ -287,7 +287,8 @@ This story involves simply removing certain existing `HTML` elements.
   <div class="col-sm-10">
     <input type="checkbox" class="form-control" id="inputDayOff">
   </div>
-</div>```
+</div>
+```
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
 <br />
