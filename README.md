@@ -341,6 +341,20 @@ In this case, however, the *datetime-local* inputs from [3193] already come with
 > When the user hovers over any of the calendars, the cursor should change to reflect that the calendar is clickable.  
 > This story is for all of the calendars.  This includes the schedule create view, the tempschedule create view, and the timeoffevent create view.  
 ### Solution: 
+The element inspector in Chrome Developer Tools is very helpful for this task.  As you inspect each element in a FullCalendar calendar you'll notice that it is constructed as a complex table with varying combination of classes assigned to each cell.  With some experimentation, I found that the simplest solution is to modify the cursor hover attribute for classes `.fc-day-grid` and `.fc-time-grid` to *"pointer"* (i.e. the normal cursor in `css` is called *"default"*, and the hand-cursor is called *"pointer"* ).
+
+```css
+/*Change cursor for calendar day view*/
+.fc-day-grid:hover{
+    cursor: pointer;
+}
+
+/*Change cursor for calendar time view*/
+.fc-time-grid:hover {
+    cursor: pointer;
+}
+```
+
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
 <br />
 
