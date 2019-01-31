@@ -23,9 +23,9 @@ ___
     * [3194-Implement user-friendly time pickers][3194]
   * [3209-Implement a mouse hand cursor on hover over calendar][3209]
   * [3405-Implement CRUD Operations on TimeOffEvens][3405]
+    * [3409-Enable Reading and Loading of Events on Calendar][3409]
     * [3413-Create a Details Modal][3413]
     * [3408-Create Delete Feature][3408]
-    * [3409-Enable Reading and Loading of Events on Calendar][3409]
     * [3410-Implement an Events Creation Feature][3410]
     * [3411-Implement an Update Feature][3411]
     * [3412-Make Calendar Events Visually Responsive][3412]
@@ -173,9 +173,9 @@ This section includes stories relating to the operation of, and interactions wit
     * [3194-Implement user-friendly time pickers][3194]
   * [3209-Implement a mouse hand cursor on hover over calendar][3209]
   * [3405-Implement CRUD Operations on TimeOffEvens][3405]
+    * [3409-Enable Reading and Loading of Events on Calendar][3409]
     * [3413-Create a Details Modal][3413]
     * [3408-Create Delete Feature][3408]
-    * [3409-Enable Reading and Loading of Events on Calendar][3409]
     * [3410-Implement an Events Creation Feature][3410]
     * [3411-Implement an Update Feature][3411]
     * [3412-Make Calendar Events Visually Responsive][3412]
@@ -341,7 +341,7 @@ In this case, however, the *datetime-local* inputs from [3193] already come with
 > When the user hovers over any of the calendars, the cursor should change to reflect that the calendar is clickable.  
 > This story is for all of the calendars.  This includes the schedule create view, the tempschedule create view, and the timeoffevent create view.  
 ### Solution: 
-The element inspector in Chrome Developer Tools is very helpful for this task.  As you inspect each element in a FullCalendar calendar you'll notice that it is constructed as a complex table with varying combination of classes assigned to each cell.  With some experimentation, I found that the simplest solution is to modify the cursor hover attribute for classes `.fc-day-grid` and `.fc-time-grid` to *"pointer"* (i.e. the normal cursor in `css` is called *"default"*, and the hand-cursor is called *"pointer"* ).
+The element inspector in Chrome Developer Tools is very helpful for this task.  As you inspect each element in a FullCalendar calendar you'll notice that it is constructed as a complex table with varying combinations of classes assigned to each cell.  With some experimentation, I found that the simplest solution is to modify the cursor hover attribute for classes `.fc-day-grid` and `.fc-time-grid` to *"pointer"* (i.e. the normal cursor in `css` is called *"default"*, and the hand-cursor is called *"pointer"* ).
 
 ```css
 /*Change cursor for calendar day view*/
@@ -365,6 +365,12 @@ The element inspector in Chrome Developer Tools is very helpful for this task.  
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
 <br />
 
+## 3409-Enable reading and loading of events on calendar  
+> **Details:**
+> Read entries from Events table pertaining to Time Off Events and populate the calendar  
+### Solution: 
+
+*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3413-Create a details modal  
 > **Details:**
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
@@ -374,12 +380,6 @@ The element inspector in Chrome Developer Tools is very helpful for this task.  
 ## 3408-Create delete feature  
 > **Details:**
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
-### Solution: 
-
-*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
-## 3409-Enable reading and loading of events on calendar  
-> **Details:**
-> Read entries from Events table pertaining to Time Off Events and populate the calendar  
 ### Solution: 
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
@@ -684,9 +684,9 @@ if (!context.Users.Any(u => u.UserName == "admin1@FakeEmail.com"))
 [3194]:#3194-Implement-user-friendly-time-pickers
 [3209]:#3209-implement-a-mouse-hand-cursor-on-hover-over-calendar
 [3405]:#3405-implement-crud-operations-on-timeoffevents
+[3409]:#3409-enable-reading-and-loading-of-events-on-calendar
 [3413]:#3413-create-a-details-modal
 [3408]:#3408-create-delete-feature
-[3409]:#3409-enable-reading-and-loading-of-events-on-calendar
 [3410]:#3410-implement-an-events-creation-feature
 [3411]:#3411-implement-an-update-feature
 [3412]:#3412-make-calendar-events-visually-responsive
