@@ -23,7 +23,7 @@ ___
     * [3194-Implement user-friendly time pickers][3194]
   * [3209-Implement a mouse hand cursor on hover over calendar][3209]
   * [3405-Implement CRUD Operations on TimeOffEvens][3405]
-    * [3409-Enable Reading and Loading of Events on Calendar][3409]
+    * [3409-Enable Reading and Loading of Database Events onto Calendar][3409]
     * [3413-Create a Details Modal][3413]
     * [3408-Create Delete Feature][3408]
     * [3410-Implement an Events Creation Feature][3410]
@@ -173,7 +173,7 @@ This section includes stories relating to the operation of, and interactions wit
     * [3194-Implement user-friendly time pickers][3194]
   * [3209-Implement a mouse hand cursor on hover over calendar][3209]
   * [3405-Implement CRUD Operations on TimeOffEvens][3405]
-    * [3409-Enable Reading and Loading of Events on Calendar][3409]
+    * [3409-Enable Reading and Loading of Database Events onto Calendar][3409]
     * [3413-Create a Details Modal][3413]
     * [3408-Create Delete Feature][3408]
     * [3410-Implement an Events Creation Feature][3410]
@@ -365,10 +365,26 @@ The element inspector in Chrome Developer Tools is very helpful for this task.  
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*  
 <br />
 
-## 3409-Enable reading and loading of events on calendar  
+## 3409-Enable reading and loading of database events onto calendar  
 > **Details:**
 > Read entries from Events table pertaining to Time Off Events and populate the calendar  
 ### Solution: 
+On the backend, create the following GetEvents method using Entity Framework for database context:
+...csharp
+        //Get events from database context
+        public JsonResult GetEvents()
+        {
+            var events = db.TimeOffEvents.ToList();
+            return new JsonResult
+            {
+                Data = events,
+                JsonRequestBehavior = JsonRequestBehavior.AllowGet
+            };
+        }
+```
+The above code uses `db` which is the name of the database context created through Entity Framework instantiated elsewhere in the source file.  This action/method will be called by the frontend `JavaScript` and will return a list of events in `JSON` object format as *"Data"*.
+
+
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3413-Create a details modal  
@@ -684,7 +700,7 @@ if (!context.Users.Any(u => u.UserName == "admin1@FakeEmail.com"))
 [3194]:#3194-Implement-user-friendly-time-pickers
 [3209]:#3209-implement-a-mouse-hand-cursor-on-hover-over-calendar
 [3405]:#3405-implement-crud-operations-on-timeoffevents
-[3409]:#3409-enable-reading-and-loading-of-events-on-calendar
+[3409]:#3409-enable-reading-and-loading-of-database-events-onto-calendar
 [3413]:#3413-create-a-details-modal
 [3408]:#3408-create-delete-feature
 [3410]:#3410-implement-an-events-creation-feature
