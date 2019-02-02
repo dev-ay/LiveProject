@@ -431,6 +431,10 @@ This is where we would utilize a FullCalendar **callback**, specifically the "ev
 
 In the **.fullcalendar()** constructor/initializer, add the following "eventClick" attribute:
 ```javascript
+                $('#calendarTimeOff').fullCalendar({
+                
+                    ...
+                    
                     eventClick: function (calEvent, jsEvent, view) {
                         isNewSelection = false; 
                         selectedEvent = calEvent;
@@ -465,6 +469,10 @@ In the **.fullcalendar()** constructor/initializer, add the following "eventClic
                         $('#DetailsModal').modal();
 
                     },
+                    
+                    ...
+                    
+                }
 ```
 
 Add the following `HTML` code:
