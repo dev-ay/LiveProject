@@ -369,7 +369,7 @@ The element inspector in Chrome Developer Tools is very helpful for this task.  
 > **Details:**
 > Read entries from Events table pertaining to Time Off Events and populate the calendar  
 ### Solution: 
-On the backend, create the following GetEvents method using Entity Framework for database context:
+On the backend, create the following *"GetEvents"* method using Entity Framework for database context:
 ```csharp
         //Get events from database context
         public JsonResult GetEvents()
@@ -382,7 +382,7 @@ On the backend, create the following GetEvents method using Entity Framework for
             };
         }
 ```
-The above code uses `db` which is the name of the database context created through Entity Framework instantiated elsewhere in the source file.  This action/method will be called by the frontend `JavaScript` and will return a list of events in `JSON` object format as *"Data"*.
+The above code uses `db` which is the name of the database context created through Entity Framework instantiated elsewhere in the source file.  This action/method will be called by the frontend `AJAX` and will return a list of events in `JSON` object format as *"Data"*.
 
 
 
