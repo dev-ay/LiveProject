@@ -25,9 +25,9 @@ ___
   * [3405-Implement CRUD Operations on TimeOffEvens][3405]
     * [3409-Enable Reading and Loading of Database Events onto Calendar][3409]
     * [3413-Create a Details Modal][3413]
+    * [3411-Implement an Update Feature][3411]  
+    * [3410-Implement an Events Creation Feature][3410]    
     * [3408-Create Delete Feature][3408]
-    * [3410-Implement an Events Creation Feature][3410]
-    * [3411-Implement an Update Feature][3411]
     * [3412-Make Calendar Events Visually Responsive][3412]
   * [3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors][3428]
     * [3437-Enable View Persistence on Calendar][3437]
@@ -175,9 +175,9 @@ This section includes stories relating to the operation of, and interactions wit
   * [3405-Implement CRUD Operations on TimeOffEvens][3405]
     * [3409-Enable Reading and Loading of Database Events onto Calendar][3409]
     * [3413-Create a Details Modal][3413]
+    * [3411-Implement an Update Feature][3411]  
+    * [3410-Implement an Events Creation Feature][3410]    
     * [3408-Create Delete Feature][3408]
-    * [3410-Implement an Events Creation Feature][3410]
-    * [3411-Implement an Update Feature][3411]
     * [3412-Make Calendar Events Visually Responsive][3412]
   * [3428-Add Features in TimeOffEvents/Create and Fix Runtime Errors][3428]
     * [3437-Enable View Persistence on Calendar][3437]
@@ -507,13 +507,10 @@ Add the following `HTML` code:
 </div>
 ```
 
-
-
-
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
-## 3408-Create delete feature  
+## 3411-Implement an update feature  
 > **Details:**
-> When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
+> When the user clicks on an existing event, open an edit modal with form inputs pre-populated with event data, and allow users to make changes, and a Save button to save and update that entry in the database.  Also include button to cancel the edit and to delete the event.  
 ### Solution: 
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
@@ -523,9 +520,9 @@ Add the following `HTML` code:
 ### Solution: 
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
-## 3411-Implement an update feature  
+## 3408-Create delete feature  
 > **Details:**
-> When the user clicks on an existing event, open an edit modal with form inputs pre-populated with event data, and allow users to make changes, and a Save button to save and update that entry in the database.  Also include button to cancel the edit and to delete the event.  
+> When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
 ### Solution: 
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
@@ -820,9 +817,9 @@ if (!context.Users.Any(u => u.UserName == "admin1@FakeEmail.com"))
 [3405]:#3405-implement-crud-operations-on-timeoffevents
 [3409]:#3409-enable-reading-and-loading-of-database-events-onto-calendar
 [3413]:#3413-create-a-details-modal
-[3408]:#3408-create-delete-feature
-[3410]:#3410-implement-an-events-creation-feature
 [3411]:#3411-implement-an-update-feature
+[3410]:#3410-implement-an-events-creation-feature
+[3408]:#3408-create-delete-feature
 [3412]:#3412-make-calendar-events-visually-responsive
 [3432]:#3432-implement-calendar-event-resizing-feature
 [3428]:#3428-add-features-in-timeoffeventscreate-and-fix-runtime-errors
