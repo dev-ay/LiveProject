@@ -445,19 +445,19 @@ In the **.fullcalendar()** constructor/initializer, add the following "eventClic
                             $description.append($('<p/>').html('<h4><b>End:  </b>' + calEvent.end.format("M/D/YYYY hh:mm a") + '</h4>'));
                         }
                         $description.append($('<p/>').html('<h4><b>Note:  </b>' + (calEvent.description == null ? '' : calEvent.description) + '</h4>'));
-                        $('#DetailsModal #pDetails').empty().html($description);
+                        $('#DetailsModal #modalDetails').empty().html($description);
 
                         //Clear approval status
-                        $('#DetailsModal #pApproval').html('');
+                        $('#DetailsModal #modalApproval').html('');
 
                         //Set approval status
                         if (calEvent.approved) {
-                            $('#DetailsModal #pApproval').html('Approved');
-                            $('#DetailsModal #pApproval').css('color', 'green');
+                            $('#DetailsModal #modalApproval').html('Approved');
+                            $('#DetailsModal #modalApproval').css('color', 'green');
                         }
                         else {
-                            $('#DetailsModal #pApproval').html('Pending Approval');
-                            $('#DetailsModal #pApproval').css('color', 'silver');
+                            $('#DetailsModal #modalApproval').html('Pending Approval');
+                            $('#DetailsModal #modalApproval').css('color', 'silver');
                             GetApproval(calEvent); //If not yet approved, call GetApproval action to check for status changes
                         }
 
@@ -478,10 +478,10 @@ Add the following `HTML` code:
                 <h3 class="modal-title"><strong><span class="eventTitle"></span></strong></h3>
             </div>
             <div class="modal-body">
-                <p id="pDetails"></p>
+                <p id="modalDetails"></p>
             </div>
             <div class="text-center">
-                <h3><strong><span id="pApproval" style="color:silver;"></span></strong></h3>
+                <h3><strong><span id="modalApproval" style="color:silver;"></span></strong></h3>
             </div>
             <div class="modal-footer mt-40">
                 <button type="button" class="btn btn-danger pull-left EventDelete" data-dismiss="modal">
