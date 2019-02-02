@@ -658,13 +658,13 @@ Here I re-utilize the *"SaveModal"* created in story [3411] for updating events,
 > **Details:**
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
 ### Solution: 
-In modal footers of both the *"DetailsModal"* from story [3413] and the *"SaveModal"* from story [3411] I would add delete buttons as follows:
+In the modal footers of both the *"DetailsModal"* from story [3413] and the *"SaveModal"* from story [3411] I add delete buttons as follows:
 ```html
                 <button type="button" class="btn btn-danger pull-left EventDelete" data-dismiss="modal">
                     <span class="glyphicon glyphicon-trash"></span> Delete
                 </button>
 ```
-I add the following `JavaScript` code for making a backend request through `AJAX`:
+Then add the following `JavaScript` code for making a backend request through `AJAX`:
 ```javascript
             //Delete current event when Delete button is clicked
             $('.EventDelete').click(function () {
