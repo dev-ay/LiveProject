@@ -382,8 +382,44 @@ On the backend, create the following *"GetEvents"* method using Entity Framework
             };
         }
 ```
-The above code uses `db` which is the name of the database context created through Entity Framework instantiated elsewhere in the source file.  This action/method will be called by the frontend `AJAX` and will return a list of events in `JSON` object format as *"Data"*.
+The above code uses *"db"* which is the name of the database context created through Entity Framework instantiated elsewhere in the source file.  This action/method will be called by the frontend `AJAX` and will return a list of events in `JSON` object format as *"Data"*.
 
+On the frontend, in the webpage script section, add the following:
+```javascript
+            //Retrieve events from database and call GenerateCalendar()
+            function DisplayEvents() {
+                events = []; //Reset events in case this function needs to be called again
+                isNewSelection = false; // Reset
+                wantToSave = false; //Reset
+
+                //Make database call to retrieve events
+                $.ajax({
+                    type: "GET",
+                    url: "/TimeOffEvent/GetEvents",
+                    success: function (data) {
+                        $.each(data, function (i, c) {
+                            console.log(c.EventId);
+                            events.push({
+                                id: c.EventId,
+                                eventID: c.EventId,
+                                title: c.Title,
+                                description: c.Note,
+                                start: moment(c.Start),
+                                end: c.End != null ? moment(c.End) : null,
+                                color: c.ApproverId != null ? 'green' : 'silver',
+                                allDay: (moment(c.Start).format('HH:mm:ss') == '00:00:00') && (moment(c.End).format('HH:mm:ss') == '00:00:00'),
+                                approved: c.ApproverId == null ? false : true,
+                            });
+                        })
+                        GenerateCalendar(events);  //Pass events list to generate calendar
+                    },
+                    error: function (error) {
+                        alert("There was an error retrieving your calendar.  Please try again or contact your system admin.");
+                    }
+
+                })
+            }
+```
 
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
@@ -391,6 +427,80 @@ The above code uses `db` which is the name of the database context created throu
 > **Details:**
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
 ### Solution: 
+This is where we would utilize a FullCalendar **callback**, specifically the "eventClick" callback.
+
+In the **.fullcalendar()** constructor/initializer, add the following "eventClick" attribute:
+```javascript
+                    eventClick: function (calEvent, jsEvent, view) {
+                        isNewSelection = false; 
+                        selectedEvent = calEvent;
+                        startCache = selectedEvent.start;  //cache the start time
+                        endCache = selectedEvent.end;  //cache the end time
+
+                        //Prepare DetailsModal display information
+                        $('.eventTitle').text(calEvent.title);
+                        var $description = $('<div/>');
+                        $description.append($('<p/>').html('<h4><b>Start:  </b>' + calEvent.start.format("M/D/YYYY hh:mm a") + '</h4>'));
+                        if (calEvent.end != null) {
+                            $description.append($('<p/>').html('<h4><b>End:  </b>' + calEvent.end.format("M/D/YYYY hh:mm a") + '</h4>'));
+                        }
+                        $description.append($('<p/>').html('<h4><b>Note:  </b>' + (calEvent.description == null ? '' : calEvent.description) + '</h4>'));
+                        $('#DetailsModal #pDetails').empty().html($description);
+
+                        //Clear approval status
+                        $('#DetailsModal #pApproval').html('');
+
+                        //Set approval status
+                        if (calEvent.approved) {
+                            $('#DetailsModal #pApproval').html('Approved');
+                            $('#DetailsModal #pApproval').css('color', 'green');
+                        }
+                        else {
+                            $('#DetailsModal #pApproval').html('Pending Approval');
+                            $('#DetailsModal #pApproval').css('color', 'silver');
+                            GetApproval(calEvent); //If not yet approved, call GetApproval action to check for status changes
+                        }
+
+                        //Display DetailsModal
+                        $('#DetailsModal').modal();
+
+                    },
+```
+
+Add the following `HTML` code:
+```html
+
+<div id="DetailsModal" class="modal fade" role="dialog" style="overflow:scroll">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title"><strong><span class="eventTitle"></span></strong></h3>
+            </div>
+            <div class="modal-body">
+                <p id="pDetails"></p>
+            </div>
+            <div class="text-center">
+                <h3><strong><span id="pApproval" style="color:silver;"></span></strong></h3>
+            </div>
+            <div class="modal-footer mt-40">
+                <button type="button" class="btn btn-danger pull-left EventDelete" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-trash"></span> Delete
+                </button>
+                <button type="button" class="btn btn-primary" id="EventEdit" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-pencil"></span> Edit
+                </button>
+                <button type="button" class="btn btn-default pull-right" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-remove"></span> Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+
+
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3408-Create delete feature  
