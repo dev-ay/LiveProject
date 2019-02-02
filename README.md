@@ -369,7 +369,7 @@ The element inspector in Chrome Developer Tools is very helpful for this task.  
 > **Details:**
 > Read entries from Events table pertaining to Time Off Events and populate the calendar  
 ### Solution: 
-On the backend, create the following *"GetEvents"* method using Entity Framework for database context:
+On the backend in `C#`, I create the following *"GetEvents"* method using Entity Framework for database context:
 ```csharp
         //Get events from database context
         public JsonResult GetEvents()
@@ -658,6 +658,58 @@ Here I re-utilize the *"SaveModal"* created in story [3411] for updating events,
 > **Details:**
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
 ### Solution: 
+In modal footers of both the *"DetailsModal"* from story [3413] and the *"SaveModal"* from story [3411] I would add delete buttons as follows:
+```html
+                <button type="button" class="btn btn-danger pull-left EventDelete" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-trash"></span> Delete
+                </button>
+```
+I add the following `JavaScript` code for making a backend request through `AJAX`:
+```javascript
+            //Delete current event when Delete button is clicked
+            $('.EventDelete').click(function () {
+                if (selectedEvent != null && confirm('Are you sure you wish to delete this event?')) {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/TimeOffEvent/DeleteEvent',
+                        data: { 'EventId': selectedEvent.eventID },
+                        success: function (data) {
+                            if (data.status) {
+                                //Hide modal and refresh calendar
+                                $('#DetailsModal').modal('hide');
+                                $('#SaveModal').modal('hide');
+                                $('#calendarTimeOff').fullCalendar('removeEvents', selectedEvent.id);
+                            }
+                        },
+                        error: function () {
+                            alert('This event failed to delete.  Please try again or contact your system admin.');
+                        }
+                    })
+                }
+
+            })
+
+```
+On the backend in `C#`, I create the following *"DeleteEvent"* function:
+```csharp
+        //Delete existing event with provided EventId
+        [HttpPost]
+        public JsonResult DeleteEvent(Guid EventId)
+        {
+            var status = false;
+
+            var c = db.TimeOffEvents.Where(a => a.EventId == EventId).FirstOrDefault();
+            if (c != null)
+            {
+                db.TimeOffEvents.Remove(c);
+                db.SaveChanges();
+                status = true;
+            }
+
+            return new JsonResult { Data = new { status = status } };
+        }
+```
+
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3412-Make calendar events visually responsive  
