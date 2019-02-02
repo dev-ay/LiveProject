@@ -384,7 +384,7 @@ On the backend, create the following *"GetEvents"* method using Entity Framework
 ```
 The above code uses *"db"* which is the name of the database context created through Entity Framework instantiated elsewhere in the source file.  This action/method will be called by the frontend `AJAX` and will return a list of events in `JSON` object format as *"Data"*.
 
-On the frontend, in the webpage script section, add the following:
+On the frontend, in the webpage script section, I add the following:
 ```javascript
             //Retrieve events from database and call GenerateCalendar()
             function DisplayEvents() {
@@ -427,9 +427,9 @@ On the frontend, in the webpage script section, add the following:
 > **Details:**
 > When the user clicks on an existing event, create a modal that displays the event details in plain text.  Include an Edit button that opens an edit modal for making changes.  
 ### Solution: 
-This is where we would utilize a FullCalendar **callback**, specifically the "eventClick" callback.
+This is where we would utilize a FullCalendar **callback**, specifically the "eventClick" callback.  In other words, when the user clicks on an existing event on the calendar, the function you define under the "eventClick" attribute will be executed.
 
-In the **.fullcalendar()** constructor/initializer, add the following "eventClick" attribute:
+In the **.fullcalendar()** constructor/initializer, I add the following "eventClick" attribute:
 ```javascript
                 $('#calendarTimeOff').fullCalendar({
                 
@@ -512,6 +512,103 @@ Add the following `HTML` code:
 > **Details:**
 > When the user clicks on an existing event, open an edit modal with form inputs pre-populated with event data, and allow users to make changes, and a Save button to save and update that entry in the database.  Also include button to cancel the edit and to delete the event.  
 ### Solution: 
+The details modal in story [3413] has an edit button with id of "EventEdit".  When it is clicked, I want to bring up an edit modal (i.e. *"SaveModal"*) for making changes to an existing event.
+
+I add the following `JavaScript` code:
+```javascript
+            //If user clicks Edit button, open SaveModal to edit event
+            $('#EventEdit').click(function () {
+                //Hide details modal
+                $('#DetailsModal').modal('hide');
+
+                //Prepare the input values for the SaveModal and then make it visible
+                if (selectedEvent != null) {
+                    $('#inputEventID').val(selectedEvent.eventID);
+                    $('#inputTitle').val(selectedEvent.title);
+                    $('#inputNote').val(selectedEvent.description);
+                    $('#inputStart').val(UTCtimestampToLocalISO(selectedEvent.start).substring(0, 19));
+                    $('#inputEnd').val(selectedEvent.end != null ? UTCtimestampToLocalISO(selectedEvent.end).substring(0, 19) : 0);
+                }
+                $('#SaveModal .eventTitle').text('Edit Event');
+                $('#SaveModal').modal();
+            })
+
+
+            //Each time the SaveModel is exited, reset any changes
+            $('#SaveModal').on("hidden.bs.modal", function () {
+                //If attempting new selection, unselect
+                //else if editing existing event without saving, undo user changes by restoring cache for start and end times
+                if (isNewSelection) {
+                    $('#calendarTimeOff').fullCalendar('unselect');
+                    isNewSelection = false; //New selection is now over
+                }
+                else {
+                    if (!wantToSave) {
+                        selectedEvent.start = startCache;
+                        selectedEvent.end = endCache;
+                        $('#calendarTimeOff').fullCalendar('updateEvent', selectedEvent)
+                    }
+                    wantToSave = false; //reset wantToSave to false
+                }
+                $('.EventDelete').show();
+            });
+
+```
+
+For the *"SaveModal"* I add the following `HTML`:
+```html
+<div id="SaveModal" class="modal fade" role="dialog" style="overflow:scroll">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title"><strong><span class="eventTitle">Edit Event</span></strong></h3>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <input type="hidden" id="inputEventID" value="0" />
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="inputTitle">Title:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputTitle" placeholder="Enter your text here" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="inputNote">Note:</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="inputNote" rows="6" placeholder="Enter your text here"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="inputStart">Start:</label>
+                        <div class="col-sm-10">
+                            <input type="datetime-local" class="form-control" id="inputStart" step="900" onkeydown="return false">
+                        </div>
+                    </div>
+                    <div class="form-group" id="divEnd">
+                        <label class="control-label col-sm-2" for="inputEnd">End:</label>
+                        <div class="col-sm-10">
+                            <input type="datetime-local" class="form-control" id="inputEnd" step="900" onkeydown="return false">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger pull-left EventDelete">
+                    <span class="glyphicon glyphicon-trash"></span> Delete
+                </button>
+                <button type="button" class="btn btn-success" id="EventSave">
+                    <span class="glyphicon glyphicon-floppy-save"></span> Save
+                </button>
+                <button type="button" class="btn btn-default pull-right" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-remove"></span> Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+```
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3410-Implement an events creation feature  
