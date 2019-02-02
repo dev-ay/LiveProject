@@ -615,6 +615,43 @@ For the *"SaveModal"* I add the following `HTML`:
 > **Details:**
 > When the user clicks a time slot on Calendar or selects a time range, open an edit modal with the corresponding start and end times pre-entered into time inputs  
 ### Solution: 
+For this story you would utilize the FullCalendar *"select"* callback. I add the following attribute to the **.fullcalendar()** constructor/initializer:
+```javascript
+                $('#calendarTimeOff').fullCalendar({
+                
+                    ...
+                    
+                    select: function (start, end) {
+                        //If this is a brand new selection, rather than an event edit, then prepare a clean SaveModal
+                        if (isNewSelection == false) {
+                            selectedEvent = {
+                                id: 0,
+                                eventID: 0,
+                                start: start,
+                                end: end,
+                                title: '',
+                                description: '',
+                                allDay: (moment(start).format('HH:mm:ss') == '00:00:00') && (moment(end).format('HH:mm:ss') == '00:00:00'),
+                                color: '#3a87ad'
+                            }
+                            $('#SaveModal').modal();
+                            $('#SaveModal .eventTitle').text('Create Event');
+                            $('#inputTitle').val('');
+                            $('#inputNote').val('');
+                            $('#inputStart').val(UTCtimestampToLocalISO(start).substring(0, 19));
+                            $('#inputEnd').val(UTCtimestampToLocalISO(end).substring(0, 19));
+                            $('.EventDelete').hide();
+                        }
+                        isNewSelection = true;
+
+                    },
+                    
+                    ...
+                    
+                }
+
+```
+Here I re-utilize the *"SaveModal"* created in story [3411] for updating events, but here I use it for creating a brand new event.
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3408-Create delete feature  
