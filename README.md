@@ -754,40 +754,30 @@ I use the `jQuery` **.on('input', function() )** function track changes to the s
                 }
             })
 ```
-            //Update event visually each time the start time input is adjusted by user in the SaveModal
-            $('#inputStart').on('input', function () {
 
-                //Update selectedEvent.start to match user input
-                selectedEvent.start = localISOtoUTCtimestamp($('#inputStart').val());
-
-                //If brand new selection, then update onscreen selection,
-                //Else, adjust existing front end event
+I use the `jQuery` **.on("hidden.bs.modal", function() )** function to track when the user has exited the edit modal, and to restore the calendar as necessary:  
+```javascript
+            //Each time the SaveModel is exited, reset any changes
+            $('#SaveModal').on("hidden.bs.modal", function () {
+                //If attempting new selection, unselect
+                //else if editing existing event without saving, undo user changes by restoring cache for start and end times
                 if (isNewSelection) {
-                    $('#calendarTimeOff').fullCalendar('select', UTCtimestampToLocalISO(selectedEvent.start), UTCtimestampToLocalISO(selectedEvent.end))
+                    $('#calendarTimeOff').fullCalendar('unselect');
+                    isNewSelection = false; //New selection is now over
                 }
                 else {
-                    $('#calendarTimeOff').fullCalendar('updateEvent', selectedEvent)
+                    if (!wantToSave) {
+                        selectedEvent.start = startCache;
+                        selectedEvent.end = endCache;
+                        $('#calendarTimeOff').fullCalendar('updateEvent', selectedEvent)
+                    }
+                    wantToSave = false; //reset wantToSave to false
                 }
+                $('.EventDelete').show();
+            });
 
-            })
-
-            //Update event visually each time the end time input is adjusted by user in the SaveModal
-            $('#inputEnd').on('input', function () {
-
-                //Update selectedEvent.end to match user input
-                selectedEvent.end = localISOtoUTCtimestamp($('#inputEnd').val());
-
-                //If brand new selection, then update onscreen selection,
-                //Else, adjust existing front end event
-                if (isNewSelection) {
-                    $('#calendarTimeOff').fullCalendar('select', UTCtimestampToLocalISO(selectedEvent.start), UTCtimestampToLocalISO(selectedEvent.end)); //selectedEvent.end
-                }
-                else {
-                    $('#calendarTimeOff').fullCalendar('updateEvent', selectedEvent)
-                }
-            })
 ```
-
+Notice that when exiting the edit modal, a new selection is always unselected.  The reason is that if the user saved a new selection, a new event would be drawn that exactly mirrors the original selection.  Therefore the new selection can always be unselected.
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3428-Add features in TimeOffEvents/Create and fix runtime errors  
