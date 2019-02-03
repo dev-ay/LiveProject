@@ -717,6 +717,7 @@ On the backend in `C#`, I create the following *"DeleteEvent"* function:
 > When a user makes adjustments to the start/end times of either an existing event or a brand-new selection, cause the event to update visually on the calendar while the edit modal is displayed.  However, if the user does not save the event and exits the modal, visually restore the event to the original state (i.e. existing event returns to original state, and brand-new selection disappears) 
 ### Solution: 
 The essense of this user story is that when the start or end times of an event (either an existing event or a new selection) is being edited in the edit modal, or what I've named the *"SaveModal"*, the event itself should be temporarily re-drawn on the calendar to visually reflect the new times.  However, if the user does not save the changes and exits the *"SaveModal"*, the changes need to be canceled. By "canceled" I mean that an existing event needs to return to its original start and end times as it exists in the database, and it means that new selections need to be unselected.
+
 The way I have chosen to implement this solution, is to store the original values of an event (either existing or new selection), in cache variables called *"startCache"* and *"endCache"* as soon as the edit modal is opened.  I use a boolean variable called *"wantToSave"* to track whether the user clicked the *"Save"* button.  If the user exits the *"SaveModal"* and the *"Save"* button was never clicked, then I restore the existing event to times stored in *"startCache"* and *"endCache"* or unselect a new selection.  The reason for this style of implementation is, as I mentioned in the [Overview][#OVERVIEW], to minimize the amount of backend database access.  I therefore utilize a frontend cache rather than rely on reloading events from the database.
 
 I use the `jQuery` **.on('input', function() )** function track changes to the start and end time inputs in the edit modal, and to redraw events on the calendar:
@@ -755,7 +756,7 @@ I use the `jQuery` **.on('input', function() )** function track changes to the s
             })
 ```
 
-I use the `jQuery` **.on("hidden.bs.modal", function() )** function to track when the user has exited the edit modal, and to restore the calendar as necessary:  
+I use the `jQuery` **.on("hidden.bs.modal", function() )** function to track a `Bootstrap` modal hide event to track when the user has exited the *"SaveModal"*, and to restore the calendar where necessary:  
 ```javascript
             //Each time the SaveModel is exited, reset any changes
             $('#SaveModal').on("hidden.bs.modal", function () {
@@ -777,7 +778,7 @@ I use the `jQuery` **.on("hidden.bs.modal", function() )** function to track whe
             });
 
 ```
-Notice that when exiting the edit modal, a new selection is always unselected.  The reason is that if the user saved a new selection, a new event would be drawn that exactly mirrors the original selection.  Therefore the new selection can always be unselected.
+Notice that when exiting the edit modal, a new selection is always unselected.  The reason is that if the user saved a new selection, a new event would be drawn that exactly mirrors the new selection, on top of one another.  Therefore the new selection can always be unselected on modal exit.
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3428-Add features in TimeOffEvents/Create and fix runtime errors  
