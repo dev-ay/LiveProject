@@ -790,6 +790,25 @@ Notice that when exiting the edit modal, a new selection is always unselected.  
 > **Details:**
 > Currently, whenever a change is made to the calendar, the view would return to the default, i.e. monthly view.  Implement a feature where if the user selects the weekly view, it will remain after changes are made to the calendar.  
 ### Solution: 
+The impetus for this user story arose out of my previous implementation where I would re-generate the calendar each time an event update was made.  This meant that whenever an event was changed the calendar would return to the monthly view, even if the user was on the weekly agenda view.
+
+I utilize the *"viewRender"* callback from FullCalendar which provides the current view object whenever the view is modified.  I store the view name in the HTML5 Web Storage on the client browser using the persistent *"localStorage"*.
+```javascript
+                $('#calendarTimeOff').fullCalendar({
+                
+                    ...
+                    
+                    viewRender: function (view, element) {
+                        //When user changes view, cache that view choice
+                        localStorage.setItem("fcDefaultView", view.name);
+                    },
+                    defaultView: (localStorage.getItem("fcDefaultView") !== null ? localStorage.getItem("fcDefaultView") : "month"),
+                    
+                    ...
+                    
+                 }
+```
+Please note that since this solution was created I changed my implementation of event updates so that I only update frontend events individually and independently rather than regenerate the entire calendar after each update.  That makes this story solution less relevant.  However, persistence is still desirable across user sessions or if the user refreshes the webpage.  I revisit this concept of persistence [later on][D] and modify my implementation by restoring time range as well, in addition to view name only.
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3433-Fix runtime errors  
