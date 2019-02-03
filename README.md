@@ -816,6 +816,56 @@ Please note that since this solution was created I changed my implementation of 
 > &nbsp;&nbsp;\- Occasionally the delete button would show for a brand-new selection.  
 > &nbsp;&nbsp;\- Occasionally the times in the input fields would mismatch the onscreen event.  
 ### Solution: 
+Since I chose to re-use the edit modal, or *"SaveModal"*, both for editing existing events as well as for new selections, it is important to pay attention to when the *"Delete"* button is displayed.  Deleting is not relevant for a new event selection.  The way I manage this is when the FullCalendar *"select"* callback is triggered, I hide the *"Delete"* button, and whenever the *"SaveModal"* is exited, I make it visible again.  This ensures that the *"Delete"* button is always visible except for new selections.
+
+...javascript
+                    select: function (start, end) {
+                    
+                            ...
+
+                            $('.EventDelete').hide();
+                            
+                            ...
+
+                    },
+```
+See [3410] for the entire *"select"* callback function.
+
+```javascript
+
+            $('#SaveModal').on("hidden.bs.modal", function () {
+            
+                ...
+
+                $('.EventDelete').show();
+                
+                ...
+                
+            });
+```
+See [3411] for the entire modal hide function.
+<br /><br />
+In order to understand my solution to time inconsistencies, it helps to understand how time is managed.  In our backend database, time is stored as a string in the format of "D/M/YYYY h:mm:ss A" such as "2/1/2019 1:00:00 PM".  If your timezone offset is UTC -8:00 hours, for example, as it was for this project, then the UTC equivalent time will be "2/1/2019 9:00:00 PM".  In `Unix timestamp` this would translate to 1549054800000 in milliseconds.  `Unix timestamp` refers to the number of milliseconds since January 1st, 1970 (sometimes also represented in seconds by dividing by 1000).  This UTC based timestamp in milliseconds is what is receive on the frontend and is what is stored by FullCalendar.  When the FullCalendar "timezone:" **option** is set to 'local', FullCalendar automatically displays events in local time.
+
+On the other hand, the edit modal, or *"SaveModal"* uses `HTML` inputs of type *"datetime-local"*, which inputs and outputs time in the `ISO 8601` format of "YYYY-MM-DDTHH:mm:ss".  To continue our earlier example, in local time that would be written as "2019-02-01T13:00:00".
+
+What this means is that events are store in FullCalendar in UTC time as a timestamp, and when the *"SaveModal"* is opened, the *"datetime-local"* needs that timestamp to be adjusted for local time, and then converted to an ISO 8601 formatted string.  Conversely, when the user makes changes and is ready to save, the updated time must be converted from an ISO 8601 string to UTC time in the form of a `Unix timestamp`.
+
+I therefore create the following functions to perform this conversion:
+```javascript
+            //Inputs a UTC Unix timestamp and returns a local ISO string
+            function UTCtimestampToLocalISO(timestamp) {
+                return moment(timestamp).format('YYYY-MM-DD[T]HH:mm:ss');
+            }
+
+            //Inputs a UTC local ISO string and outputs a Unix timestamp
+            function localISOtoUTCtimestamp(localISO) {
+                return (new Date(localISO)).getTime();
+            }
+```
+
+These functions are called at various points to convert between `HTML` time inputs and FullCalendar time storage.
+
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3432-Implement calendar event resizing feature  
