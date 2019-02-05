@@ -872,6 +872,168 @@ These functions are called at various points to convert between `HTML` time inpu
 > **Details:**
 > When the user resizes an existing event, display the edit modal with updated start and end times pre-populated  
 ### Solution: 
+FullCalendar allows for event resizing, but only by the end time of an event, and not the start time.  Changing the start time by mouse is considered a drag and drop event.  I utilize two **callbacks** to implement resizing, *"eventDragStart"* and *"eventResize"*, which are called at the beginning and successful completion of a resizing event, respectively.
+```javascript
+                    eventDragStart: function (event) {
+                        //Store starting values for later comparason
+                        startCacheMouse = event.start;
+                        //For 1 day durations FullCalendar can return null for event.end
+                        endCacheMouse = (event.end == null) ? moment(event.start).add(1, 'day') : endCacheMouse = event.end;
+                    },
+                    
+                    eventResize: function (event, delta, revertFunc) {
+                        saveMouseEvent(event, delta, revertFunc);
+                    },
+```
+
+The callback *"eventResize"* conveniently provides several useful inputs for us.  Firstly, as is expected, it provides us with *event* which is the actual event object that was resized.  Next, it provides *delta*, which is a `MomentJS` duration object representing the amount of change caused by the resizing.  Lastly, it provides a function *revertFunc* which when called, reverts the changes and restores *event* to its pre-resizing state.  I pass all of these parameters to a function I call *saveMouseEvent"*.
+```javascript
+            //When a user changes an event by mouse, open the confirmation modal
+            function saveMouseEvent(event, delta, revertFunc) {
+
+                //Update modal information
+                $('#ConfirmModal .eventTitle').html('<strong>Confirm Change: </strong>' + event.title);
+                $('#changeStart').html('<strong>New Start Time: </strong><br\> <span style="color: green">' + event.start.format('LLLL') + '</span><br\><br\>');
+
+                //If startCacheMouse and endCacheMouse were both at midnight, then the event started from the allDay slot, else it started from the agenda section
+                if (startCacheMouse.format('HH:mm:ss') == '00:00:00' && endCacheMouse.format('HH:mm:ss') == '00:00:00') { //Started from allDay slot
+
+                    //If event.end is null then the event landed in the agenda section.  Calculate event.end.
+                    //If event.end is not null then FullCalendar has already provided the right datetime
+                    if (event.end == null) {
+
+                        //The implementation chosen here is to maintain the same duration from the allDay slot to the agenda section.
+                        //For example, if the original event was 3 day from the allDay slot, the new event will be 72 hours in length,
+                        //  even if the user drops the event somewhere other than at midnight.
+                        //So in this example, if the user drops the event at 11:30am on Monday, the event will end at
+                        //  11:30am on Thursday, i.e. 72 hours later.
+                        let duration = endCacheMouse.diff(startCacheMouse);
+                        console.log(duration);
+                        event.end = moment(event.start).add(duration);
+
+                    }
+
+                }
+                else { //Started from agenda slot
+
+                    //If event.end is null then the event landed in the allDay slot.  Calculate event.end.
+                    //If event.end is not null then FullCalendar has already provided the right datetime
+                    if (event.end == null) {
+
+                        //  The implementation chosen here is that any date included in the original event, even partial days, will be
+                        //    included fully by the new event in the allDay slot.
+                        //  For example, if the original event started any time on Monday, and ended any time on Friday, then the new
+                        //    event in the allDay slot will start from Monday at 12:00am to Saturday at 12:00am
+                        //  The reason for this implementation choice is for the user who did not know how to use the allDay slot, and
+                        //    created a multi-day event in the agenda section, and then later wished to move it to the allDay slot.
+                        //
+                        //  As a result, in the scenario where the user accidentally drags an event from the allDay slot to the agenda
+                        //    section and then confirms, in order to restore the event, the user would have 3 options:
+                        //    1 - Move the start of the event back to 12:00am of the original start date in the agenda section,
+                        //        then the event will automatically move to the allDay slot.  If time is partically cut off
+                        //        and 12am is not visible on the calendar, the user can move up the event by the hours needed.
+                        //        For example, if the event landed on 6am, then the user can move the event up by 6 hours and it
+                        //        will return to the allDay slot.
+                        //    2 - Drag the event to the allDay slot to the intended start date and then subtract 1 end date by resizing.
+                        //    3 - Resize the end time to somewhere in the middle of the previous day, then drag the event into the
+                        //        allDay slot.
+                        //    4 - Modify the event using the editor by clicking on the event and then clicking "Edit"
+                        //
+                        event.end = moment(endCacheMouse).add(delta).stripTime().add(1, 'day');
+                    }
+                }
+
+
+                //Make updates based on newly calculated end times
+                $('#changeEnd').html('<strong>New End Time: </strong><br\> <span style="color: green">' + event.end.format('LLLL') + '</span>');
+                event.allDay = (moment(event.start).format('HH:mm:ss') == '00:00:00') && (moment(event.end).format('HH:mm:ss') == '00:00:00');
+                $('#calendarTimeOff').fullCalendar('updateEvent', event);
+
+                //Only show start time if it changes (end time will always change from a mouse event)
+                if (String(startCacheMouse) == String(event.start)) $('#changeStart').hide();
+                else $('#changeStart').show();
+
+                //Bring event and revertFunc outside the function so they can be accessed by ConfirmModal
+                mouseEvent = event;
+                revertFunction = revertFunc;
+
+                //Open ConfirmModal
+                $('#ConfirmModal').modal();
+            }
+
+```
+
+I create a new modal, which I call *"ConfirmModal"* which displays any updated date-time values for the event, and asks for user confirmation before updating the database.
+```html
+<div id="ConfirmModal" class="modal fade" role="dialog" style="overflow:scroll;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title "><span class="eventTitle"></span></h3>
+            </div>
+            <div class="modal-body">
+                <p><h4 id="changeTitle"></h4></p>
+                <p><h4 id="changeStart"></h4></p>
+                <p><h4 id="changeEnd"></h4></p>
+            </div>
+            <div class="modal-footer mt-40">
+                <button type="button" class="btn btn-success" id="confirm" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-check"></span> Yes
+                </button>
+                <button type="button" class="btn btn-danger pull-right" id="cancel" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-remove"></span> No
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+The *"ConfirmModal"* has two buttons with id's *"confirm"* and *"cancel"*, which, along with the *"ConfirmModal"*, are only used for purely mouse generated events (i.e. event resizing or dragging and dropping by mouse).  These elements do not apply if the edit modal is used to confirm changes.
+```javascript
+            //If user confirms a mouse change event, update database
+            $('#confirm').click(function () {
+
+                //Create object that exactly matches database column properties
+                let savedEventData = {
+                    EventId: mouseEvent.eventID,
+                    Title: mouseEvent.title,
+                    Note: mouseEvent.description,
+                    Start: mouseEvent.start.format(),
+                    End: mouseEvent.end.format()
+                }
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/TimeOffEvent/SaveEvent',
+                    data: savedEventData,
+                    success: function (data) {
+                        if (data.status) {
+                            //Update events
+                            for (x in events) {
+                                if (events[x].eventID == mouseEvent.eventID) {
+                                    events[x].start = mouseEvent.start;
+                                    events[x].end = mouseEvent.end;
+                                    events[x].allDay = (moment(mouseEvent.start).format('HH:mm:ss') == '00:00:00') && (moment(mouseEvent.end).format('HH:mm:ss') == '00:00:00');
+                                }
+                            }
+                        }
+                    },
+                    error: function (error) {
+                        alert('This event failed to save.  Please try again or contact your system admin.');
+                    }
+                })
+
+            });
+
+
+            //If user cancels a mouse change event, call the revert function to restore event to original state
+            $('#cancel').click(function () {
+                revertFunction();
+            });
+```
+
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES)*
 ## 3429-Implement calendar events drag and drop capabilities  
