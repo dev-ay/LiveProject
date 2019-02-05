@@ -1,5 +1,5 @@
 # AGILE FULLSTACK MVC LIVE PROJECT:&nbsp;&nbsp;Schedule-It 
-### (...Page still under construction. Please check back for updates...)
+### (...Page still under construction. Please check back for updates....)
 
 <p align="center">
   <img src="/img/SI-header.png" alt="Schedule-It Live Project" title="Schedule-It Live Project"/>
