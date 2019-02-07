@@ -1078,18 +1078,22 @@ In addition, when dragging an event from the all-day section to the agenda secti
 
 - If the event starts out from the all-day section
   - And If event.end is null
-    - Then calculate event.end using **method #A**
+    - Then calculate event.end using **Method #A**
 - Else (event starts out from the agenda section)
   - And if event. is null
-    - Then calculate event.end using **method #B**
+    - Then calculate event.end using **Method #B**
 
 *The way to calculate event.end is different depending on which direction the event is traveling, and also based on some decisions that I made regarding implementation:*  
 
 
 **Method #A:** When an event starts out from the all-day section, it represents 24 hours.  I chose to retain the 24 hour span when the event lands in the agenda section (e.g. a one day event that lands on Monday 2pm will end on Tuesday at 2pm, etc.).  In practice, the user can drag the all-day event to the right start time in the agenda section, confirm the change, and then resize the end time if a 24 hour duration is not desired.
+
+
 The way I calculate event.end is to subtract *"startCacheMouse"* from *"endCacheMouse"* to get the duration of the original event, and then add that duration to the new start time.
 
 **Method #B:** When an event starts out from the agenda section and lands in the all-day section, I decided to round-up the duration of the event.  What I mean is this, if the user drags a two hour event into the all-day slot, I will turn that into a single full day event.  Again, if the user drags an event that lasts from 2pm on Friday to 6pm on Sunday into the all-day slot, I will turn that into a 3-day event, and so on.
+
+
 The way I calculate event.end in this senario is I strip time from the original end time, which is the same as setting it to 12am, then I add 24 hours (this effectively rounds the end time to the end of the day), then finally I add the change *"delta"* provided by the *"eventDrop"* **callback**.
 
 You will notice these two methods beinng implemented in the function *"saveMouseEvent"*:
