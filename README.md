@@ -1096,7 +1096,7 @@ The way I calculate event.end is to subtract *"startCacheMouse"* from *"endCache
 
 The way I calculate event.end in this senario is I strip time from the original end time, which is the same as setting it to 12am, then I add 24 hours (this effectively rounds the end time to the end of the day), then finally I add the change *"delta"* provided by the *"eventDrop"* **callback**.
 
-You will notice these two methods beinng implemented in the function *"saveMouseEvent"*:
+You will notice these two methods being implemented in the function *"saveMouseEvent"*:
 ```javascript
             //When a user changes an event by mouse, open the confirmation modal
             function saveMouseEvent(event, delta, revertFunc) {
