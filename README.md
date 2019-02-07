@@ -1078,10 +1078,10 @@ In addition, when dragging an event from the all-day section to the agenda secti
 
 - If the event starts out from the all-day section
   - And If event.end is null
-    - Then calculate event.end using method #A
+    - Then calculate event.end using **method #A**
 - Else (event starts out from the agenda section)
   - And if event. is null
-    - Then calculate event.end using method #B
+    - Then calculate event.end using **method #B**
 
 *The way to calculate event.end is different depending on which direction the event is traveling, and also based on some decisions that I made regarding implementation:*  
 
