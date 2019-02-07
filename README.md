@@ -1084,6 +1084,8 @@ In addition, when dragging an event from the all-day section to the agenda secti
     - Then calculate event.end using method #B
 
 *The way to calculate event.end is different depending on which direction the event is traveling, and also based on some decisions that I made regarding implementation:*  
+
+
 **Method #A:** When an event starts out from the all-day section, it represents 24 hours.  I chose to retain the 24 hour span when the event lands in the agenda section (e.g. a one day event that lands on Monday 2pm will end on Tuesday at 2pm, etc.).  In practice, the user can drag the all-day event to the right start time in the agenda section, confirm the change, and then resize the end time if a 24 hour duration is not desired.
 The way I calculate event.end is to subtract *"startCacheMouse"* from *"endCacheMouse"* to get the duration of the original event, and then add that duration to the new start time.
 
