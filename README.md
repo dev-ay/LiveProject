@@ -1178,9 +1178,9 @@ You will notice these two methods being implemented in the function *"saveMouseE
 > **Details:**
 > Allow users to continue editing if a save attempt is unsuccessful, until the user closes the modal manually  
 ### Solution: 
-The background for this story is that the edit modal, or *"SaveModal"*, would close even if a save attempt was unsuccessful, such as entering invalid times.  The reason for this was that `HTML` tag for the save button included "data-dismiss=\"modal\"", which in effect closes the modal each time the save button is clicked.  The solution therefore is to remove the "data-dismiss" attribute from the save button tag.
+The background for this story is that the edit modal, or *"SaveModal"*, would close even if a save attempt was unsuccessful, such as when entering invalid times.  The reason for this was that the `HTML` tag for the save button included the attribute 'data-dismiss="modal"', which in effect closes the edit modal each time the save button is clicked.  The solution therefore is to remove the "data-dismiss" attribute from the save button tag.
 
-Along the same vein, the delete button also contain the same "data-dismiss" attribute.  This means that even if the user selects "No" when asked to confim a delete attempt, the edit modal would close.  Therefore, I also remove the "data-dismiss" attribute from the delete button tag. 
+Along the same vein, the delete button also contains the same "data-dismiss" attribute.  This means that even if the user selects "No" when asked to confim a delete attempt, the edit modal would close.  Therefore, I also remove the "data-dismiss" attribute from the delete button tag. 
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3435-Prevent users from creating events shorter than 15 minutes  
