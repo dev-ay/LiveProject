@@ -41,7 +41,8 @@ ___
     * [Update TimeOffEvent Approval Status From Database When DetailsModal Opens][A]
     * [Modify Test Entries in Seed Data To Begin Dynamically On Current Week][B]
     * [Modify calendar display preperties based on viewport size][C]
-    * [Implement persistence of displayed time range across sessions][D]
+    * [Create Method for Debugging By Logging to Console All Event Time Variables][D]
+    * [Implement persistence of displayed time range across sessions][E]
 4. **[OTHER STORIES](#OTHER-STORIES)**
   * [3108-Rename Model.ID][3108]
   * [3109-Redirect "Manage" button][3109]
@@ -191,7 +192,8 @@ This section includes stories relating to the operation of, and interactions wit
     * [Update TimeOffEvent Approval Status From Database When DetailsModal Opens][A]
     * [Modify Test Entries in Seed Data To Begin Dynamically On Current Week][B]
     * [Modify calendar display preperties based on viewport size][C]
-    * [Implement persistence of displayed time range across sessions][D]
+    * [Create Method for Debugging By Logging to Console All Event Time Variables][D]
+    * [Implement persistence of displayed time range across sessions][E]
 
 
 ## 3174-Add a one week FullCalendar to the tempSchedule/Create view. 
@@ -1448,7 +1450,8 @@ if (!context.Users.Any(u => u.UserName == "admin1@FakeEmail.com"))
 [A]:#update-timeoffevent-approval-status-from-database-when-detailsmodal-opens
 [B]:#modify-test-entries-in-seed-data-to-begin-dynamically-on-current-week
 [C]:#modify-calendar-display-preperties-based-on-viewport-size
-[D]:#implement-persistence-of-displayed-time-range-across-sessions
+[D]:#Create-Method-for-Debugging-By-Logging-to-Console-All-Event-Time-Variables
+[E]:#implement-persistence-of-displayed-time-range-across-sessions
 
 [3108]:#3108-rename-modelid
 [3109]:#3109-redirect-manage-button
