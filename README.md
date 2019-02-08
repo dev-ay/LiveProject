@@ -38,11 +38,11 @@ ___
     * [3435-Prevent Users From Creating Events Shorter Than 15 Minutes][3435]
     * [3436-Found Event Start and End Times to the Nearest 15 Minute Increments][3436]
   * [Additional Enhancements](#Additional-Enhancements)
-    * [Update TimeOffEvent Approval Status From Database When DetailsModal Opens][A]
-    * [Modify Test Entries in Seed Data To Begin Dynamically On Current Week][B]
-    * [Modify calendar display preperties based on viewport size][C]
-    * [Create Method for Debugging By Logging to Console All Event Time Variables][D]
-    * [Implement persistence of displayed time range across sessions][E]
+    * [A-Update TimeOffEvent Approval Status From Database When DetailsModal Opens][A]
+    * [B-Modify Test Entries in Seed Data To Begin Dynamically On Current Week][B]
+    * [C-Modify calendar display preperties based on viewport size][C]
+    * [D-Create Method for Debugging By Logging to Console All Event Time Variables][D]
+    * [E-Implement persistence of displayed time range across sessions][E]
 4. **[OTHER STORIES](#OTHER-STORIES)**
   * [3108-Rename Model.ID][3108]
   * [3109-Redirect "Manage" button][3109]
@@ -189,11 +189,11 @@ This section includes stories relating to the operation of, and interactions wit
     * [3435-Prevent Users From Creating Events Shorter Than 15 Minutes][3435]
     * [3436-Found Event Start and End Times to the Nearest 15 Minute Increments][3436]
   * [Additional Enhancements](#Additional-Enhancements)
-    * [Update TimeOffEvent Approval Status From Database When DetailsModal Opens][A]
-    * [Modify Test Entries in Seed Data To Begin Dynamically On Current Week][B]
-    * [Modify calendar display preperties based on viewport size][C]
-    * [Create Method for Debugging By Logging to Console All Event Time Variables][D]
-    * [Implement persistence of displayed time range across sessions][E]
+    * [A-Update TimeOffEvent Approval Status From Database When DetailsModal Opens][A]
+    * [B-Modify Test Entries in Seed Data To Begin Dynamically On Current Week][B]
+    * [C-Modify calendar display preperties based on viewport size][C]
+    * [D-Create Method for Debugging By Logging to Console All Event Time Variables][D]
+    * [E-Implement persistence of displayed time range across sessions][E]
 
 
 ## 3174-Add a one week FullCalendar to the tempSchedule/Create view. 
@@ -1199,19 +1199,23 @@ Along the same vein, the delete button also contains the same "data-dismiss" att
 ## Additional Enhancements:
 > **Details:**
 > Parent story.  Please see the sub-stories below.
-## Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
+## A-Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
 ### Solution: 
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
-## Modify Test Entries in Seed Data To Begin Dynamically On Current Week  
+## B-Modify Test Entries in Seed Data To Begin Dynamically On Current Week  
 ### Solution: 
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
-## Modify calendar display preperties based on viewport size  
+## C-Modify calendar display preperties based on viewport size  
 ### Solution:  
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
-## Implement persistence of displayed time range across sessions  
+## D-Create Method for Debugging By Logging to Console All Event Time Variables
+### Solution:  
+
+*Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
+## E-Implement persistence of displayed time range across sessions  
 ### Solution: 
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
@@ -1447,11 +1451,11 @@ if (!context.Users.Any(u => u.UserName == "admin1@FakeEmail.com"))
 [3434]:#3434-prevent-edit-modal-from-closing-automatically-if-save-is-unsuccessful
 [3435]:#3435-prevent-users-from-creating-events-shorter-than-15-minutes
 [3436]:#3436-round-event-start-and-end-times-to-the-nearest-15-minute-increments
-[A]:#update-timeoffevent-approval-status-from-database-when-detailsmodal-opens
-[B]:#modify-test-entries-in-seed-data-to-begin-dynamically-on-current-week
-[C]:#modify-calendar-display-preperties-based-on-viewport-size
-[D]:#Create-Method-for-Debugging-By-Logging-to-Console-All-Event-Time-Variables
-[E]:#implement-persistence-of-displayed-time-range-across-sessions
+[A]:#A-update-timeoffevent-approval-status-from-database-when-detailsmodal-opens
+[B]:#B-modify-test-entries-in-seed-data-to-begin-dynamically-on-current-week
+[C]:#C-modify-calendar-display-preperties-based-on-viewport-size
+[D]:#D-Create-Method-for-Debugging-By-Logging-to-Console-All-Event-Time-Variables
+[E]:#E-implement-persistence-of-displayed-time-range-across-sessions
 
 [3108]:#3108-rename-modelid
 [3109]:#3109-redirect-manage-button
