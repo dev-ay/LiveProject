@@ -1187,6 +1187,26 @@ Along the same vein, the delete button also contains the same "data-dismiss" att
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3435-Prevent users from creating events shorter than 15 minutes  
 ### Solution: 
+For this story, we do not need to worry about mouse resizing events.  The reason for this is that in the agenda view each time slot is by default 30 minutes in duration.  Therefore, as long as we do not change the default, FullCalendar will not allow users to resize an event to less than 30 minutes in duration.
+
+The area that does matter, is the edit modal, where we need to place manual restrictions on the values of the *"datetime-local"* inputs.  
+
+My chosen implementation for the solution is simply to check for a valid time range when the user clicks the save button on the edit modal.  If the time range is less than 15 minutes, or negative, the user will be alerted and the event will not be saved.  The first thing I do is create a variable *"timeIncrement"* which is set to 15 minutes in milliseconds.
+
+```javascript
+            //Lowest time resolution allowed on calendar.  Expressed in milliseconds.  Currently set to 15 minutes
+            //Can be set to 30 minutes, in which case make step='1800' for '#inputStart'
+            var timeIncrement = 15 * 60 * 1000;  //minutes * seconds * milliseconds
+```
+
+Since event start and end times are stored as timestamps, which are already milliseconds, I can check for minimum time duration in the following way:
+```javascript
+                //User must enter a time range that is at least timeIncrement in length (currently set at 15 minutes)
+                if (selectedEvent.end - selectedEvent.start < timeIncrement) {
+                    alert('You have entered an invalid range.  Please try again.');
+                }
+```
+The above code is placed within **$('#EventSave').click(function () { })**, and the original code body for saving the event to the database would now be contained in **else { }**
 
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## 3436-Round event start and end times to the nearest 15 minute increments  
