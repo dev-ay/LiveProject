@@ -125,21 +125,21 @@ My role on the project was a 2-week-long sprint, and this readme details the sto
   
 
 * Performs all CRUD operations
-* Enables creation of event by selecting time range on calendar
-* Enables mouse-based resizing and dragging and dropping to modify calendar events
-* Provides edit modal where users can edit event details using form inputs
-* Enables visually responsive calendar events that update based on changes to input times on edit modal
-* Utilizes AJAX to only update relevant data when needed
+* Enables creation of events by selecting time range on calendar
+* Enables mouse-based resizing and dragging and dropping to modify event times
+* Provides edit modal to modify event details
+* Enables responsive events that update visually based on changes to input times on edit modal
+* Utilizes AJAX to minimize network traffic
 * Provides monthly calendar view, and weekly agenda view
-* Allows all day events as well as hourly events
+* Enables all day events as well as hourly events
 * Permits dragging and dropping of events between all day and agenda sections
-* Displays unapproved events in silver, and approved events in green
-* Utilizes AJAX to occassionally check for event approval status
+* Displays color-coded events based on event status
+* Checks for changes to approval status when user clicks on an event (AJAX)
 * Various other features
 
-Initially I reloaded the calendar after each event update, as that was the most straightforward way to ensure the calendar precisely reflects the backend database.  This approach was not unreasonably slow.  However, in the interest of providing the best user experience, I decided to modify my program design so that the backend database and frontend calendar were updated separately.  My motivation for this was to optimize the program for potentially slow network connections and to operate as efficiently as possible for the end user.  
+Initially I reloaded the calendar after each change by the user (reloading the calendar involved retrieving all events from the backend), as that was the most straightforward way to ensure that all calendar events precisely mirrored the backend database.  While this approach was not unreasonably slow during testing, in the interest of providing the best possible user experience, I chose to modify my program design so that the backend database and frontend calendar were updated separately.  Although this new approach required more development effort, it eliminated the need to reload the calendar each time a modification is made.  I wished to optimize the program in case of slow user network connections and to minimize dependency on network traffic.  
 
-After my sprint concluded, I continued to make enhancements to the program on my own out of curiosity.  These changes are listed under [Additional Enhancements](#Additional-Enhancements).
+After my sprint concluded, I continued to make enhancements to the project on my local repository out of curiosity.  These additions are listed under [Additional Enhancements](#Additional-Enhancements).
 
 For the highlights of my work on this live project I recommend you jump to the following sections (including their child stories):  
   * [3405-Implement CRUD Operations on TimeOffEvens][3405]
@@ -148,7 +148,7 @@ For the highlights of my work on this live project I recommend you jump to the f
 
 <br />
 
-*Note: The 4-digit number in front of each story is the associated work item number from the version control systems.   I have listed the stories in the order in which I completed them or by context, so you will often notice the numbers being listed out of numeric order.*
+*Note: The 4-digit number in front of each story is the associated work item number from Azure DevOps.   I have listed the stories by context or in the order in which I completed them.  You will therefore notice the numbers regularly being listed out of numeric order.*
 
 *Note: Per request from end customer I will not be uploading source code files to my GitHub repository.  However, I have permission to include code snippets and screenshots in this readme file.*
 
