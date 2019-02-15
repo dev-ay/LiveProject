@@ -107,8 +107,8 @@ The ultimate scope of the end product was an employee clock-in fullstack MVC web
   * Users can create temporary schedules to substitute long-term schedules
   * Users can view their pay over flexible windows of time
   * Users can message other users
-  * Implement a visual calendar system
-  * Implement user authentification
+  * Implements a visual calendar system
+  * Implements user authentification
   * Various other features
   * See [Technologies Used](#Technologies-Used)
 
@@ -118,7 +118,7 @@ This was a multiple-month SCRUM project.  At the time of my participation, there
 The structure of the software is an ASP.NET MVC Application using Code-First Entity Framework to manage a SQL Server database.  We used Visual Studio Community 2017 for development with version control extensions. See [Technologies Used](#Technologies-Used).
 
 ### **My Role:**  
-My role on the project was a 2-week-long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar. I created backend CRUD methods that utilized Entity Framework to access a database.  On the frontend I largely relied on jQuery, and utilized AJAX to communicate with the backend.  The features of my calendar system include the following:  
+My role on the project was a 2-week-long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar including full-stack CRUD functionality as well as allowing modifications through mouse dragging and dropping and resizing, just to name a few. On the backend I created CRUD methods that employed Entity Framework to access the database.  On the frontend I utilized jQuery and relied on AJAX to communicate with the backend.  The features of my calendar system include the following:  
 
 
 <img align="right" src="/img/SI-DragDrop-Thumbnail.png" alt="Dragging and dropping an event" title="Dragging and dropping an event"/>
@@ -128,7 +128,7 @@ My role on the project was a 2-week-long sprint, and this readme details the sto
 * Enables creation of events by selecting time range on calendar
 * Enables mouse-based resizing and dragging and dropping to modify event times
 * Provides edit modal to modify event details
-* Enables responsive events that update visually based on changes to input times on edit modal
+* Implements responsive events that update visually live while input times on edit modal are being changed
 * Utilizes AJAX to minimize network traffic
 * Provides monthly calendar view, and weekly agenda view
 * Enables all day events as well as hourly events
@@ -137,7 +137,7 @@ My role on the project was a 2-week-long sprint, and this readme details the sto
 * Checks for changes to approval status when user clicks on an event (AJAX)
 * Various other features
 
-Initially I reloaded the calendar after each change by the user (reloading the calendar involved retrieving all events from the backend), as that was the most straightforward way to ensure that all calendar events precisely mirrored the backend database.  While this approach was not unreasonably slow during testing, in the interest of providing the best possible user experience, I chose to modify my program design so that the backend database and frontend calendar were updated separately.  Although this new approach required more development effort, it eliminated the need to reload the calendar each time a modification is made.  I wished to optimize the program in case of slow user network connections and to minimize dependency on network traffic.  
+Initially I reloaded the calendar after each change by the user (reloading the calendar involved retrieving all events from the backend), as that was the most straightforward way to ensure that all calendar events precisely mirrored the backend database.  While this approach was not unreasonably slow during testing, in the interest of providing the best possible user experience, I chose to modify my program design so that the backend database and frontend calendar were updated separately.  Although this alternative approach required more development effort, it eliminated the need to reload the calendar each time a modification is made.  I wanted to optimize the program in the event of a slow user network connections and to minimize dependency on network traffic.  
 
 After my sprint concluded, I continued to make enhancements to the project on my local repository out of curiosity.  These additions are listed under [Additional Enhancements](#Additional-Enhancements).
 
