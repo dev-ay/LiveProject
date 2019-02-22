@@ -95,7 +95,7 @@ ___
 ___
 
 ## OVERVIEW
-This is an Agile/SCRUM live project that I participated in at the Tech Academy for a production clock-in software.  The overall project occurs over many months, but my personal participation was over a single 2-week sprint.  This Readme only lists the stories assigned to me.
+This is an Agile/SCRUM live project that I participated in at the Tech Academy for a production clock-in software.  The overall project occurs over many months, but my personal participation was over a single 2-week sprint.  This Readme only lists the stories assigned to me (albeit not a complete list).
 
 <img align="right" src="/img/SI-Day-Week-Thumbnail.png" alt="1-week view with all-day and agenda sections" title="1-week view with all-day and agenda sections"/>
 
