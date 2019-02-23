@@ -1214,7 +1214,38 @@ The above code is placed within **$('#EventSave').click(function () { })**, and 
 > &nbsp;&nbsp;\- Date pickers in browsers such as Edge do not restrict time values.  Therefore, when the user attempts to save an event, round the times to the nearest 15 minute increments.   
 > &nbsp;&nbsp;\- For browsers that do support value control, such as Chrome, cause time to change 15 minutes at a time.  
 ### Solution: 
+Instead of prompting the user to enter a precise valid time, I simply round any time input to the nearest 15 minute increment prior to saving.  The process I use for rounding is firstly to divide the inputted time by 15 minutes to get a factor, let's call it **F**, and then rounding **F** to the nearest whole number.  Finally, I take the rounded factor **F** and multiply that by 15 minutes.  This ensures that the resulting time is a multiple of 15 minutes and as close as possible to the original time input.
 
+```javascript
+            $('#EventSave').click(function () {
+            
+                  //User must enter a time range that is at least timeIncrement in length (currently set at 15 minutes)
+                  if (...) {
+                  
+                  ...
+                  
+                  }
+                  else {
+                  
+                    ...
+                  
+                    //For Edge browser which cannot enforce time increments
+                    //Round the start time to the nearest time increment (i.e. currently set to 15 minutes)
+                    if (parseInt(selectedEvent.start) / timeIncrement != 0) {
+                        selectedEvent.start = Math.round(selectedEvent.start / timeIncrement) * timeIncrement;
+                    }
+
+                    //For Edge browser which cannot enforce time increments
+                    //Round the end time to the nearest time increment (i.e. currently set to 15 minutes)
+                    if (parseInt(selectedEvent.end) / timeIncrement != 0) {
+                        selectedEvent.end = Math.round(selectedEvent.end / timeIncrement) * timeIncrement;
+                    }
+                    
+                    ...
+                    
+                  }
+            })
+```
 *Jump to:&nbsp;&nbsp;[Table of Contents](#TABLE-OF-CONTENTS) > [FullCallendar Stories](#FULLCALENDAR-STORIES) >*
 ## Additional Enhancements:
 > **Details:**
