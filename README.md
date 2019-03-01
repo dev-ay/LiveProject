@@ -1252,11 +1252,11 @@ Instead of prompting the user to enter a precise valid time, I simply round any 
 > Parent story.  Please see the sub-stories below.
 ## A-Update TimeOffEvent Approval Status From Database When DetailsModal Opens  
 ### Solution: 
-When the calendar is first generated, it requests events data from the backend database.  Among the information obtained during that process is whether the requested time-off event has been approved by an administrator.  Unapproved events are rendered in grey/silver, and approved events are rendered in green.  My motivation for this story/work item is the idea that events can be approved by an administrator in real time.  Therefore, there needs to be a way to update the approval status of events after the calendar has been generated, without having to reload all events data from the database repeatedly.
+When the calendar is first generated, the client requests events data from the server.  Among the information obtained during that process is whether the requested time-off events have been approved by an administrator.  Unapproved events are rendered in grey/silver, and approved events are rendered in green.  My motivation for this story/work item is the idea that events can be approved by an administrator at any time.  Therefore, there needs to be a way to update the approval status of events after the calendar has been generated, without having to reload all events data from the database repeatedly.
 
 The simplest solution is to include in the instructions to the user to refresh the webpage whenever they want to see the latest approval statuses.  Another solution may be to implement a WebSocket connection which would be especially appropriate for critical features.  In this case, as we are dealing with an employee's time-off schedule requests, which is not a mission critical feature, I chose a middle-of-the-way solution.
 
-The solution I chose is to update an event's approval status when a user clicks on the event on the calendar, that is, if the event is not already approvded.  In other words, when the user clicks on an unapproved event, I make an AJAX call specifically for the approval status of that single event.  An additional feature I decided to add is a section for approval status on the "DetailsModal" with an **id** of "modalApproval".
+The solution I chose is to update an event's approval status when a user clicks on the event in the calendar, that is, if the event is not already approvded.  In other words, when the user clicks on an unapproved event, I make an AJAX call for the latest approval status for that event.  An additional feature I decided to add is a section for approval status on the "DetailsModal" with an **id** of "modalApproval".
 
 ```html
 <div id="DetailsModal" class="modal fade" role="dialog" style="overflow:scroll">
@@ -1276,7 +1276,8 @@ The solution I chose is to update an event's approval status when a user clicks 
 </div>
 ```
 
-In the initializer for the calendar I update the **eventClick** callback to display the current approval status of an event on the "DetailsModal" when it is displayed.  Then, if the event is unapproved, I call the function "GetApproval" which checks the database for an update.
+
+In the initializer for the calendar I update the **eventClick** callback to display the current approval status of an event on the "DetailsModal" when it is displayed.  Then, if the event is not yet approved, I call the function "GetApproval" to check the server for an update.
 ```javascript
             //Generate FullCalendar and populate with database events
             function GenerateCalendar(events) {
@@ -1312,7 +1313,8 @@ In the initializer for the calendar I update the **eventClick** callback to disp
             }
 ```
 
-For the "GetApproval" function, I make an AJAX call to the backend for the latest approval status for the event currently being viewed.  If the lastest status is approved, I update the "modalApproval" text in the "DetailsModal" and I also update the event color on the calendar for the corresponding event..
+
+For the "GetApproval" function, I make an AJAX call to the backend for the latest approval status for the event currently being viewed.  If the status becomes approved, I update the "modalApproval" text in the "DetailsModal" and I also update the event color on the calendar for the corresponding event.
 ```javascript
             //Makes database call to verify whether event has been approved
             function GetApproval(event) {
