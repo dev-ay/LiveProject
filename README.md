@@ -80,7 +80,7 @@ ___
 ## TECHNOLOGIES USED
   **Languages:**&nbsp;&nbsp;C#, T-SQL, JavaScript, HTML, CSS
   
-  **Frameworks/Libraries:**&nbsp;&nbsp;ASP.NET MVC, Entity Framework, jQuery, Bootstrap, FullCalendar, MomentJS
+  **Frameworks/Libraries:**&nbsp;&nbsp;ASP.NET MVC, Entity Framework Code First, jQuery, Bootstrap, FullCalendar, MomentJS
   
   **Version Control:**&nbsp;&nbsp;Git, Team Foundation Server
   
@@ -118,7 +118,7 @@ This was a multiple-month SCRUM project.  At the time of my participation, there
 The structure of the software is an ASP.NET MVC Application using Code-First Entity Framework to manage a SQL Server database.  We used Visual Studio Community 2017 for development with version control extensions. See [Technologies Used](#Technologies-Used).
 
 ### **My Role:**  
-My role on the project was a 2-week-long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar including full-stack CRUD functionality as well as allowing modifications through mouse dragging and dropping and resizing, just to name a few. On the backend I created CRUD methods that employed Entity Framework to access the database.  On the frontend I utilized jQuery and relied on AJAX to communicate with the backend.  The features of my calendar system include the following:  
+My role on the project was a 2-week-long sprint, and this readme details the stories assigned to me.  My most significant contribution was the creation of a fully functional visual Calendar including full-stack CRUD functionality as well as allowing modifications through mouse dragging and dropping and resizing, just to name a few. On the backend I created CRUD API methods that employed Entity Framework to access the database.  On the frontend I utilized jQuery and relied on AJAX to communicate with the backend.  The features of my calendar system include the following:  
 
 
 <img align="right" src="/img/SI-DragDrop-Thumbnail.png" alt="Dragging and dropping an event" title="Dragging and dropping an event"/>
